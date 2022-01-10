@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObiRopeBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObiRopeBase
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Obi.ObiRopeBase">
+  
+  
+  <h1 id="Obi_ObiRopeBase" data-uid="Obi.ObiRopeBase" class="text-break">Class ObiRopeBase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Obi.ObiActor.html">ObiActor</a></div>
+    <div class="level2"><span class="xref">ObiRopeBase</span></div>
+      <div class="level3"><a class="xref" href="Obi.ObiRod.html">ObiRod</a></div>
+      <div class="level3"><a class="xref" href="Obi.ObiRope.html">ObiRope</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Obi.IObiParticleCollection.html">IObiParticleCollection</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnBlueprintLoaded">ObiActor.OnBlueprintLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnBlueprintUnloaded">ObiActor.OnBlueprintUnloaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnBeginStep">ObiActor.OnBeginStep</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnSubstep">ObiActor.OnSubstep</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnEndStep">ObiActor.OnEndStep</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnInterpolate">ObiActor.OnInterpolate</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_m_ActiveParticleCount">ObiActor.m_ActiveParticleCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_solverIndices">ObiActor.solverIndices</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_solverBatchOffsets">ObiActor.solverBatchOffsets</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_m_Solver">ObiActor.m_Solver</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_m_Loaded">ObiActor.m_Loaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_m_CollisionMaterial">ObiActor.m_CollisionMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_solver">ObiActor.solver</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_isLoaded">ObiActor.isLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_collisionMaterial">ObiActor.collisionMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_particleCount">ObiActor.particleCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_activeParticleCount">ObiActor.activeParticleCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_usesOrientedParticles">ObiActor.usesOrientedParticles</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_usesAnisotropicParticles">ObiActor.usesAnisotropicParticles</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_usesCustomExternalForces">ObiActor.usesCustomExternalForces</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_actorLocalToSolverMatrix">ObiActor.actorLocalToSolverMatrix</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_actorSolverToLocalMatrix">ObiActor.actorSolverToLocalMatrix</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_sourceBlueprint">ObiActor.sourceBlueprint</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_sharedBlueprint">ObiActor.sharedBlueprint</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_blueprint">ObiActor.blueprint</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_Awake">ObiActor.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnDestroy">ObiActor.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnEnable">ObiActor.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnDisable">ObiActor.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnValidate">ObiActor.OnValidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_AddToSolver">ObiActor.AddToSolver()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_RemoveFromSolver">ObiActor.RemoveFromSolver()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_SetSolver_Obi_ObiSolver_">ObiActor.SetSolver(ObiSolver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnBlueprintRegenerate_Obi_ObiActorBlueprint_">ObiActor.OnBlueprintRegenerate(ObiActorBlueprint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_UpdateCollisionMaterials">ObiActor.UpdateCollisionMaterials()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_CopyParticle_System_Int32_System_Int32_">ObiActor.CopyParticle(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_TeleportParticle_System_Int32_Vector3_">ObiActor.TeleportParticle(Int32, Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_Teleport_Vector3_Quaternion_">ObiActor.Teleport(Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_SwapWithFirstInactiveParticle_System_Int32_">ObiActor.SwapWithFirstInactiveParticle(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_ActivateParticle_System_Int32_">ObiActor.ActivateParticle(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_DeactivateParticle_System_Int32_">ObiActor.DeactivateParticle(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_IsParticleActive_System_Int32_">ObiActor.IsParticleActive(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_SetSelfCollisions_System_Boolean_">ObiActor.SetSelfCollisions(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_SetConstraintsDirty_Oni_ConstraintType_">ObiActor.SetConstraintsDirty(Oni.ConstraintType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetConstraintsByType_Oni_ConstraintType_">ObiActor.GetConstraintsByType(Oni.ConstraintType)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_UpdateParticleProperties">ObiActor.UpdateParticleProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetParticleRuntimeIndex_System_Int32_">ObiActor.GetParticleRuntimeIndex(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetParticlePosition_System_Int32_">ObiActor.GetParticlePosition(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetParticleOrientation_System_Int32_">ObiActor.GetParticleOrientation(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetParticleAnisotropy_System_Int32_Vector4__Vector4__Vector4__">ObiActor.GetParticleAnisotropy(Int32, Vector4, Vector4, Vector4)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetParticleMaxRadius_System_Int32_">ObiActor.GetParticleMaxRadius(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetParticleColor_System_Int32_">ObiActor.GetParticleColor(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_SetPhase_System_Int32_">ObiActor.SetPhase(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_SetMass_System_Single_">ObiActor.SetMass(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_GetMass_Vector3__">ObiActor.GetMass(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_AddForce_Vector3_ForceMode_">ObiActor.AddForce(Vector3, ForceMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_AddTorque_Vector3_ForceMode_">ObiActor.AddTorque(Vector3, ForceMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_ResetParticles">ObiActor.ResetParticles()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_SaveStateToBlueprint_Obi_ObiActorBlueprint_">ObiActor.SaveStateToBlueprint(ObiActorBlueprint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_StoreState">ObiActor.StoreState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_ClearState">ObiActor.ClearState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_LoadBlueprint_Obi_ObiSolver_">ObiActor.LoadBlueprint(ObiSolver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_UnloadBlueprint_Obi_ObiSolver_">ObiActor.UnloadBlueprint(ObiSolver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_BeginStep_System_Single_">ObiActor.BeginStep(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_Substep_System_Single_">ObiActor.Substep(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_EndStep_System_Single_">ObiActor.EndStep(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_Interpolate">ObiActor.Interpolate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Obi.ObiActor.html#Obi_ObiActor_OnSolverVisibilityChanged_System_Boolean_">ObiActor.OnSolverVisibilityChanged(Boolean)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Obi.html">Obi</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Obi_ObiRopeBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ObiRopeBase : ObiActor, IObiParticleCollection</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Obi_ObiRopeBase_elements" data-uid="Obi.ObiRopeBase.elements">elements</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ObiStructuralElement&gt; elements</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Obi.ObiStructuralElement.html">ObiStructuralElement</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Obi_ObiRopeBase_m_SelfCollisions" data-uid="Obi.ObiRopeBase.m_SelfCollisions">m_SelfCollisions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_SelfCollisions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Obi_ObiRopeBase_restLength_" data-uid="Obi.ObiRopeBase.restLength_">restLength_</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float restLength_</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Obi_ObiRopeBase_path_" data-uid="Obi.ObiRopeBase.path*"></a>
+  <h4 id="Obi_ObiRopeBase_path" data-uid="Obi.ObiRopeBase.path">path</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObiPath path { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Obi.ObiPath.html">ObiPath</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Obi_ObiRopeBase_restLength_" data-uid="Obi.ObiRopeBase.restLength*"></a>
+  <h4 id="Obi_ObiRopeBase_restLength" data-uid="Obi.ObiRopeBase.restLength">restLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float restLength { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Obi_ObiRopeBase_CalculateLength_" data-uid="Obi.ObiRopeBase.CalculateLength*"></a>
+  <h4 id="Obi_ObiRopeBase_CalculateLength" data-uid="Obi.ObiRopeBase.CalculateLength">CalculateLength()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CalculateLength()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Obi_ObiRopeBase_GetElementAt_" data-uid="Obi.ObiRopeBase.GetElementAt*"></a>
+  <h4 id="Obi_ObiRopeBase_GetElementAt_System_Single_System_Single__" data-uid="Obi.ObiRopeBase.GetElementAt(System.Single,System.Single@)">GetElementAt(Single, out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObiStructuralElement GetElementAt(float mu, out float elementMu)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">mu</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">elementMu</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Obi.ObiStructuralElement.html">ObiStructuralElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Obi_ObiRopeBase_RebuildConstraintsFromElements_" data-uid="Obi.ObiRopeBase.RebuildConstraintsFromElements*"></a>
+  <h4 id="Obi_ObiRopeBase_RebuildConstraintsFromElements" data-uid="Obi.ObiRopeBase.RebuildConstraintsFromElements">RebuildConstraintsFromElements()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RebuildConstraintsFromElements()</code></pre>
+  </div>
+  
+  
+  <a id="Obi_ObiRopeBase_RebuildElementsFromConstraints_" data-uid="Obi.ObiRopeBase.RebuildElementsFromConstraints*"></a>
+  <h4 id="Obi_ObiRopeBase_RebuildElementsFromConstraints" data-uid="Obi.ObiRopeBase.RebuildElementsFromConstraints">RebuildElementsFromConstraints()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildElementsFromConstraints()</code></pre>
+  </div>
+  
+  
+  <a id="Obi_ObiRopeBase_RebuildElementsFromConstraintsInternal_" data-uid="Obi.ObiRopeBase.RebuildElementsFromConstraintsInternal*"></a>
+  <h4 id="Obi_ObiRopeBase_RebuildElementsFromConstraintsInternal" data-uid="Obi.ObiRopeBase.RebuildElementsFromConstraintsInternal">RebuildElementsFromConstraintsInternal()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RebuildElementsFromConstraintsInternal()</code></pre>
+  </div>
+  
+  
+  <a id="Obi_ObiRopeBase_RecalculateRestLength_" data-uid="Obi.ObiRopeBase.RecalculateRestLength*"></a>
+  <h4 id="Obi_ObiRopeBase_RecalculateRestLength" data-uid="Obi.ObiRopeBase.RecalculateRestLength">RecalculateRestLength()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecalculateRestLength()</code></pre>
+  </div>
+  
+  
+  <a id="Obi_ObiRopeBase_RecalculateRestPositions_" data-uid="Obi.ObiRopeBase.RecalculateRestPositions*"></a>
+  <h4 id="Obi_ObiRopeBase_RecalculateRestPositions" data-uid="Obi.ObiRopeBase.RecalculateRestPositions">RecalculateRestPositions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RecalculateRestPositions()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Obi_ObiRopeBase_OnElementsGenerated" data-uid="Obi.ObiRopeBase.OnElementsGenerated">OnElementsGenerated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ObiActor.ActorCallback OnElementsGenerated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Obi.ObiActor.ActorCallback.html">ObiActor.ActorCallback</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Obi.IObiParticleCollection.html">IObiParticleCollection</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

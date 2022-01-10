@@ -1,0 +1,4876 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ViveInput
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ViveInput
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTC.UnityPlugin.Vive.ViveInput">
+  
+  
+  <h1 id="HTC_UnityPlugin_Vive_ViveInput" data-uid="HTC.UnityPlugin.Vive.ViveInput" class="text-break">Class ViveInput
+  </h1>
+  <div class="markdown level0 summary"><p>Singleton that manage and update controllers input</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ViveInput</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">SingletonBehaviour</span>&lt;<a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.html">ViveInput</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTC.UnityPlugin.Vive.html">HTC.UnityPlugin.Vive</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="HTC_UnityPlugin_Vive_ViveInput_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ViveInput : SingletonBehaviour&lt;ViveInput&gt;, SingletonBehaviour&lt;ViveInput&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_BUTTON_EVENT_COUNT" data-uid="HTC.UnityPlugin.Vive.ViveInput.BUTTON_EVENT_COUNT">BUTTON_EVENT_COUNT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int BUTTON_EVENT_COUNT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_CONTROLLER_AXIS_COUNT" data-uid="HTC.UnityPlugin.Vive.ViveInput.CONTROLLER_AXIS_COUNT">CONTROLLER_AXIS_COUNT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int CONTROLLER_AXIS_COUNT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_CONTROLLER_BUTTON_COUNT" data-uid="HTC.UnityPlugin.Vive.ViveInput.CONTROLLER_BUTTON_COUNT">CONTROLLER_BUTTON_COUNT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int CONTROLLER_BUTTON_COUNT</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_clickInterval_" data-uid="HTC.UnityPlugin.Vive.ViveInput.clickInterval*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_clickInterval" data-uid="HTC.UnityPlugin.Vive.ViveInput.clickInterval">clickInterval</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float clickInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddClick_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddClick*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddClick_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddClick(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">AddClick(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Add click handler for the button on the controller identified by role
+Use ViveInput.ClickCount to get click count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddClick(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListener*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddListener_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListener(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,Action)">AddListener(ViveRoleProperty, ControllerButton, ButtonEventType, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListener(ViveRoleProperty role, ControllerButton button, ButtonEventType eventType, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListener*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddListener_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleValueEventListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListener(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener)">AddListener(ViveRoleProperty, ControllerButton, ButtonEventType, ViveInput.RoleValueEventListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListener(ViveRoleProperty role, ControllerButton button, ButtonEventType eventType, ViveInput.RoleValueEventListener callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener.html">ViveInput.RoleValueEventListener</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,Action)">AddListenerEx(Type, Int32, ControllerButton, ButtonEventType, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListenerEx(Type roleType, int roleValue, ControllerButton button, ButtonEventType eventType, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleValueEventListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener)">AddListenerEx(Type, Int32, ControllerButton, ButtonEventType, ViveInput.RoleValueEventListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListenerEx(Type roleType, int roleValue, ControllerButton button, ButtonEventType eventType, ViveInput.RoleValueEventListener callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener.html">ViveInput.RoleValueEventListener</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,Action)">AddListenerEx&lt;TRole&gt;(TRole, ControllerButton, ButtonEventType, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListenerEx&lt;TRole&gt;(TRole role, ControllerButton button, ButtonEventType eventType, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleEventListener___0__" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleEventListener{``0})">AddListenerEx&lt;TRole&gt;(TRole, ControllerButton, ButtonEventType, ViveInput.RoleEventListener&lt;TRole&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListenerEx&lt;TRole&gt;(TRole role, ControllerButton button, ButtonEventType eventType, ViveInput.RoleEventListener&lt;TRole&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleEventListener-1.html">ViveInput.RoleEventListener</a>&lt;TRole&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddListenerEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleValueEventListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddListenerEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener)">AddListenerEx&lt;TRole&gt;(TRole, ControllerButton, ButtonEventType, ViveInput.RoleValueEventListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddListenerEx&lt;TRole&gt;(TRole role, ControllerButton button, ButtonEventType eventType, ViveInput.RoleValueEventListener callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener.html">ViveInput.RoleValueEventListener</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddPress_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddPress*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddPress_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddPress(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">AddPress(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Add press handler for the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPress(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddPressDown_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddPressDown*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddPressDown_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddPressDown(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">AddPressDown(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Add press down handler for the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPressDown(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_AddPressUp_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddPressUp*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_AddPressUp_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.AddPressUp(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">AddPressUp(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Add press up handler for the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPressUp(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_ClickCount_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCount*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_ClickCount_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCount(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton)">ClickCount(HandRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Return amount of clicks in a row for the button on the controller identified by role
+Set ViveInput.clickInterval to configure click interval</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ClickCount(HandRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_ClickCount_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCount*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_ClickCount_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCount(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton)">ClickCount(ViveRoleProperty, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Return amount of clicks in a row for the button on the controller identified by role
+Set ViveInput.clickInterval to configure click interval</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ClickCount(ViveRoleProperty role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_ClickCountEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCountEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_ClickCountEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCountEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton)">ClickCountEx(Type, Int32, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ClickCountEx(Type roleType, int roleValue, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_ClickCountEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCountEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_ClickCountEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.ClickCountEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton)">ClickCountEx&lt;TRole&gt;(TRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ClickCountEx&lt;TRole&gt;(TRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetAxis_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerAxis_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxis(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerAxis,System.Boolean)">GetAxis(HandRole, ControllerAxis, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetAxis(HandRole role, ControllerAxis axis, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetAxis_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerAxis_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxis(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerAxis,System.Boolean)">GetAxis(ViveRoleProperty, ControllerAxis, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetAxis(ViveRoleProperty role, ControllerAxis axis, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetAxisEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerAxis_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxisEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerAxis,System.Boolean)">GetAxisEx(Type, Int32, ControllerAxis, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetAxisEx(Type roleType, int roleValue, ControllerAxis axis, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetAxisEx__1___0_HTC_UnityPlugin_Vive_ControllerAxis_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetAxisEx``1(``0,HTC.UnityPlugin.Vive.ControllerAxis,System.Boolean)">GetAxisEx&lt;TRole&gt;(TRole, ControllerAxis, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetAxisEx&lt;TRole&gt;(TRole role, ControllerAxis axis, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxis_HTC_UnityPlugin_Vive_HandRole_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxis(HTC.UnityPlugin.Vive.HandRole,System.Boolean)">GetPadAxis(HandRole, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the touch pad  on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadAxis(HandRole role, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxis_HTC_UnityPlugin_Vive_ViveRoleProperty_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxis(HTC.UnityPlugin.Vive.ViveRoleProperty,System.Boolean)">GetPadAxis(ViveRoleProperty, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the touch pad  on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadAxis(ViveRoleProperty role, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxisEx_Type_System_Int32_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxisEx(Type,System.Int32,System.Boolean)">GetPadAxisEx(Type, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadAxisEx(Type roleType, int roleValue, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadAxisEx__1___0_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadAxisEx``1(``0,System.Boolean)">GetPadAxisEx&lt;TRole&gt;(TRole, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadAxisEx&lt;TRole&gt;(TRole role, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxis_HTC_UnityPlugin_Vive_HandRole_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxis(HTC.UnityPlugin.Vive.HandRole)">GetPadPressAxis(HandRole)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the touch pad on the controller identified by role if pressed,
+otherwise, returns Vector2.zero</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressAxis(HandRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxis_HTC_UnityPlugin_Vive_ViveRoleProperty_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxis(HTC.UnityPlugin.Vive.ViveRoleProperty)">GetPadPressAxis(ViveRoleProperty)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the touch pad on the controller identified by role if pressed,
+otherwise, returns Vector2.zero</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressAxis(ViveRoleProperty role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxisEx_Type_System_Int32_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxisEx(Type,System.Int32)">GetPadPressAxisEx(Type, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressAxisEx(Type roleType, int roleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressAxisEx__1___0_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressAxisEx``1(``0)">GetPadPressAxisEx&lt;TRole&gt;(TRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressAxisEx&lt;TRole&gt;(TRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDelta_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDelta*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDelta_HTC_UnityPlugin_Vive_HandRole_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDelta(HTC.UnityPlugin.Vive.HandRole)">GetPadPressDelta(HandRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressDelta(HandRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDelta_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDelta*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDelta_HTC_UnityPlugin_Vive_ViveRoleProperty_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDelta(HTC.UnityPlugin.Vive.ViveRoleProperty)">GetPadPressDelta(ViveRoleProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressDelta(ViveRoleProperty role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDeltaEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDeltaEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDeltaEx_Type_System_Int32_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDeltaEx(Type,System.Int32)">GetPadPressDeltaEx(Type, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressDeltaEx(Type roleType, int roleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDeltaEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDeltaEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressDeltaEx__1___0_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressDeltaEx``1(``0)">GetPadPressDeltaEx&lt;TRole&gt;(TRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressDeltaEx&lt;TRole&gt;(TRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVector_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVector*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVector_HTC_UnityPlugin_Vive_HandRole_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVector(HTC.UnityPlugin.Vive.HandRole)">GetPadPressVector(HandRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressVector(HandRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVector_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVector*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVector_HTC_UnityPlugin_Vive_ViveRoleProperty_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVector(HTC.UnityPlugin.Vive.ViveRoleProperty)">GetPadPressVector(ViveRoleProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressVector(ViveRoleProperty role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVectorEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVectorEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVectorEx_Type_System_Int32_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVectorEx(Type,System.Int32)">GetPadPressVectorEx(Type, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressVectorEx(Type roleType, int roleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVectorEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVectorEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadPressVectorEx__1___0_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadPressVectorEx``1(``0)">GetPadPressVectorEx&lt;TRole&gt;(TRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadPressVectorEx&lt;TRole&gt;(TRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxis_HTC_UnityPlugin_Vive_HandRole_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxis(HTC.UnityPlugin.Vive.HandRole)">GetPadTouchAxis(HandRole)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the touch pad on the controller identified by role if touched,
+otherwise, returns Vector2.zero</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchAxis(HandRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxis*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxis_HTC_UnityPlugin_Vive_ViveRoleProperty_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxis(HTC.UnityPlugin.Vive.ViveRoleProperty)">GetPadTouchAxis(ViveRoleProperty)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the touch pad on the controller identified by role if touched,
+otherwise, returns Vector2.zero</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchAxis(ViveRoleProperty role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxisEx_Type_System_Int32_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxisEx(Type,System.Int32)">GetPadTouchAxisEx(Type, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchAxisEx(Type roleType, int roleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxisEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxisEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchAxisEx__1___0_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchAxisEx``1(``0)">GetPadTouchAxisEx&lt;TRole&gt;(TRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchAxisEx&lt;TRole&gt;(TRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDelta_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDelta*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDelta_HTC_UnityPlugin_Vive_HandRole_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDelta(HTC.UnityPlugin.Vive.HandRole)">GetPadTouchDelta(HandRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchDelta(HandRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDelta_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDelta*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDelta_HTC_UnityPlugin_Vive_ViveRoleProperty_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDelta(HTC.UnityPlugin.Vive.ViveRoleProperty)">GetPadTouchDelta(ViveRoleProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchDelta(ViveRoleProperty role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDeltaEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDeltaEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDeltaEx_Type_System_Int32_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDeltaEx(Type,System.Int32)">GetPadTouchDeltaEx(Type, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchDeltaEx(Type roleType, int roleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDeltaEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDeltaEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchDeltaEx__1___0_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchDeltaEx``1(``0)">GetPadTouchDeltaEx&lt;TRole&gt;(TRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchDeltaEx&lt;TRole&gt;(TRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVector_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVector*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVector_HTC_UnityPlugin_Vive_HandRole_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVector(HTC.UnityPlugin.Vive.HandRole)">GetPadTouchVector(HandRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchVector(HandRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVector_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVector*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVector_HTC_UnityPlugin_Vive_ViveRoleProperty_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVector(HTC.UnityPlugin.Vive.ViveRoleProperty)">GetPadTouchVector(ViveRoleProperty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchVector(ViveRoleProperty role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVectorEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVectorEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVectorEx_Type_System_Int32_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVectorEx(Type,System.Int32)">GetPadTouchVectorEx(Type, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchVectorEx(Type roleType, int roleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVectorEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVectorEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPadTouchVectorEx__1___0_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPadTouchVectorEx``1(``0)">GetPadTouchVectorEx&lt;TRole&gt;(TRole)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetPadTouchVectorEx&lt;TRole&gt;(TRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPress_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPress*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPress_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPress(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton)">GetPress(HandRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns true while the button on the controller identified by role is held down</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPress(HandRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPress_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPress*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPress_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPress(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton)">GetPress(ViveRoleProperty, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns true while the button on the controller identified by role is held down</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPress(ViveRoleProperty role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressDown_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDown*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressDown_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDown(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton)">GetPressDown(HandRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns true during the frame the user pressed down the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressDown(HandRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressDown_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDown*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressDown_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDown(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton)">GetPressDown(ViveRoleProperty, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns true during the frame the user pressed down the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressDown(ViveRoleProperty role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressDownEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDownEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressDownEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDownEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton)">GetPressDownEx(Type, Int32, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressDownEx(Type roleType, int roleValue, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressDownEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDownEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressDownEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressDownEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton)">GetPressDownEx&lt;TRole&gt;(TRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressDownEx&lt;TRole&gt;(TRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton)">GetPressEx(Type, Int32, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressEx(Type roleType, int roleValue, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton)">GetPressEx&lt;TRole&gt;(TRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressEx&lt;TRole&gt;(TRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressUp_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUp*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressUp_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUp(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton)">GetPressUp(HandRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns true during the frame the user releases the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressUp(HandRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressUp_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUp*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressUp_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUp(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton)">GetPressUp(ViveRoleProperty, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns true during the frame the user releases the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressUp(ViveRoleProperty role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressUpEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUpEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressUpEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUpEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton)">GetPressUpEx(Type, Int32, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressUpEx(Type roleType, int roleValue, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetPressUpEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUpEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetPressUpEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetPressUpEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton)">GetPressUpEx&lt;TRole&gt;(TRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPressUpEx&lt;TRole&gt;(TRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDelta_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDelta*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDelta_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ScrollType_Vector2_HTC_UnityPlugin_Vive_ControllerAxis_HTC_UnityPlugin_Vive_ControllerAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDelta(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ScrollType,Vector2,HTC.UnityPlugin.Vive.ControllerAxis,HTC.UnityPlugin.Vive.ControllerAxis)">GetScrollDelta(HandRole, ScrollType, Vector2, ControllerAxis, ControllerAxis)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetScrollDelta(HandRole role, ScrollType scrollType, Vector2 scale, ControllerAxis xAxis = ControllerAxis.PadX, ControllerAxis yAxis = ControllerAxis.PadY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ScrollType.html">ScrollType</a></td>
+        <td><span class="parametername">scrollType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">xAxis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">yAxis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDelta_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDelta*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDelta_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ScrollType_Vector2_HTC_UnityPlugin_Vive_ControllerAxis_HTC_UnityPlugin_Vive_ControllerAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDelta(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ScrollType,Vector2,HTC.UnityPlugin.Vive.ControllerAxis,HTC.UnityPlugin.Vive.ControllerAxis)">GetScrollDelta(ViveRoleProperty, ScrollType, Vector2, ControllerAxis, ControllerAxis)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetScrollDelta(ViveRoleProperty role, ScrollType scrollType, Vector2 scale, ControllerAxis xAxis = ControllerAxis.PadX, ControllerAxis yAxis = ControllerAxis.PadY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ScrollType.html">ScrollType</a></td>
+        <td><span class="parametername">scrollType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">xAxis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">yAxis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDeltaEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDeltaEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDeltaEx_Type_System_Int32_HTC_UnityPlugin_Vive_ScrollType_Vector2_HTC_UnityPlugin_Vive_ControllerAxis_HTC_UnityPlugin_Vive_ControllerAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDeltaEx(Type,System.Int32,HTC.UnityPlugin.Vive.ScrollType,Vector2,HTC.UnityPlugin.Vive.ControllerAxis,HTC.UnityPlugin.Vive.ControllerAxis)">GetScrollDeltaEx(Type, Int32, ScrollType, Vector2, ControllerAxis, ControllerAxis)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetScrollDeltaEx(Type roleType, int roleValue, ScrollType scrollType, Vector2 scale, ControllerAxis xAxis = ControllerAxis.PadX, ControllerAxis yAxis = ControllerAxis.PadY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ScrollType.html">ScrollType</a></td>
+        <td><span class="parametername">scrollType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">xAxis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">yAxis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDeltaEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDeltaEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetScrollDeltaEx__1___0_HTC_UnityPlugin_Vive_ScrollType_Vector2_HTC_UnityPlugin_Vive_ControllerAxis_HTC_UnityPlugin_Vive_ControllerAxis_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetScrollDeltaEx``1(``0,HTC.UnityPlugin.Vive.ScrollType,Vector2,HTC.UnityPlugin.Vive.ControllerAxis,HTC.UnityPlugin.Vive.ControllerAxis)">GetScrollDeltaEx&lt;TRole&gt;(TRole, ScrollType, Vector2, ControllerAxis, ControllerAxis)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetScrollDeltaEx&lt;TRole&gt;(TRole role, ScrollType scrollType, Vector2 scale, ControllerAxis xAxis = ControllerAxis.PadX, ControllerAxis yAxis = ControllerAxis.PadY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ScrollType.html">ScrollType</a></td>
+        <td><span class="parametername">scrollType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">xAxis</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerAxis.html">ControllerAxis</a></td>
+        <td><span class="parametername">yAxis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValue_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValue*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValue_HTC_UnityPlugin_Vive_HandRole_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValue(HTC.UnityPlugin.Vive.HandRole,System.Boolean)">GetTriggerValue(HandRole, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the trigger button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTriggerValue(HandRole role, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValue_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValue*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValue_HTC_UnityPlugin_Vive_ViveRoleProperty_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValue(HTC.UnityPlugin.Vive.ViveRoleProperty,System.Boolean)">GetTriggerValue(ViveRoleProperty, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns raw analog value of the trigger button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTriggerValue(ViveRoleProperty role, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValueEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValueEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValueEx_Type_System_Int32_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValueEx(Type,System.Int32,System.Boolean)">GetTriggerValueEx(Type, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTriggerValueEx(Type roleType, int roleValue, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValueEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValueEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_GetTriggerValueEx__1___0_System_Boolean_" data-uid="HTC.UnityPlugin.Vive.ViveInput.GetTriggerValueEx``1(``0,System.Boolean)">GetTriggerValueEx&lt;TRole&gt;(TRole, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetTriggerValueEx&lt;TRole&gt;(TRole role, bool usePrevState = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">usePrevState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTime_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTime*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTime_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTime(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton)">LastPressDownTime(HandRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns time of the last frame that user pressed down the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LastPressDownTime(HandRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTime_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTime*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTime_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTime(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton)">LastPressDownTime(ViveRoleProperty, ControllerButton)</h4>
+  <div class="markdown level1 summary"><p>Returns time of the last frame that user pressed down the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LastPressDownTime(ViveRoleProperty role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTimeEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTimeEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTimeEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTimeEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton)">LastPressDownTimeEx(Type, Int32, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LastPressDownTimeEx(Type roleType, int roleValue, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTimeEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTimeEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_LastPressDownTimeEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_" data-uid="HTC.UnityPlugin.Vive.ViveInput.LastPressDownTimeEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton)">LastPressDownTimeEx&lt;TRole&gt;(TRole, ControllerButton)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float LastPressDownTimeEx&lt;TRole&gt;(TRole role, ControllerButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_OnSingletonBehaviourInitialized_" data-uid="HTC.UnityPlugin.Vive.ViveInput.OnSingletonBehaviourInitialized*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_OnSingletonBehaviourInitialized" data-uid="HTC.UnityPlugin.Vive.ViveInput.OnSingletonBehaviourInitialized">OnSingletonBehaviourInitialized()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnSingletonBehaviourInitialized()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveClick_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveClick*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveClick_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveClick(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">RemoveClick(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Remove click handler for the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveClick(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListener*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveListener_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListener(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,Action)">RemoveListener(ViveRoleProperty, ControllerButton, ButtonEventType, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListener(ViveRoleProperty role, ControllerButton button, ButtonEventType eventType, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListener*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveListener_HTC_UnityPlugin_Vive_ViveRoleProperty_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleValueEventListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListener(HTC.UnityPlugin.Vive.ViveRoleProperty,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener)">RemoveListener(ViveRoleProperty, ControllerButton, ButtonEventType, ViveInput.RoleValueEventListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListener(ViveRoleProperty role, ControllerButton button, ButtonEventType eventType, ViveInput.RoleValueEventListener callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener.html">ViveInput.RoleValueEventListener</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,Action)">RemoveListenerEx(Type, Int32, ControllerButton, ButtonEventType, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListenerEx(Type roleType, int roleValue, ControllerButton button, ButtonEventType eventType, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx_Type_System_Int32_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleValueEventListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx(Type,System.Int32,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener)">RemoveListenerEx(Type, Int32, ControllerButton, ButtonEventType, ViveInput.RoleValueEventListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListenerEx(Type roleType, int roleValue, ControllerButton button, ButtonEventType eventType, ViveInput.RoleValueEventListener callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener.html">ViveInput.RoleValueEventListener</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,Action)">RemoveListenerEx&lt;TRole&gt;(TRole, ControllerButton, ButtonEventType, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListenerEx&lt;TRole&gt;(TRole role, ControllerButton button, ButtonEventType eventType, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleEventListener___0__" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleEventListener{``0})">RemoveListenerEx&lt;TRole&gt;(TRole, ControllerButton, ButtonEventType, ViveInput.RoleEventListener&lt;TRole&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListenerEx&lt;TRole&gt;(TRole role, ControllerButton button, ButtonEventType eventType, ViveInput.RoleEventListener&lt;TRole&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleEventListener-1.html">ViveInput.RoleEventListener</a>&lt;TRole&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemoveListenerEx__1___0_HTC_UnityPlugin_Vive_ControllerButton_HTC_UnityPlugin_Vive_ButtonEventType_HTC_UnityPlugin_Vive_ViveInput_RoleValueEventListener_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemoveListenerEx``1(``0,HTC.UnityPlugin.Vive.ControllerButton,HTC.UnityPlugin.Vive.ButtonEventType,HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener)">RemoveListenerEx&lt;TRole&gt;(TRole, ControllerButton, ButtonEventType, ViveInput.RoleValueEventListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveListenerEx&lt;TRole&gt;(TRole role, ControllerButton button, ButtonEventType eventType, ViveInput.RoleValueEventListener callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ButtonEventType.html">ButtonEventType</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveInput.RoleValueEventListener.html">ViveInput.RoleValueEventListener</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemovePress_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemovePress*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemovePress_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemovePress(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">RemovePress(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Remove press handler for the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemovePress(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemovePressDown_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemovePressDown*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemovePressDown_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemovePressDown(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">RemovePressDown(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Remove press down handler for the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemovePressDown(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_RemovePressUp_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemovePressUp*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_RemovePressUp_HTC_UnityPlugin_Vive_HandRole_HTC_UnityPlugin_Vive_ControllerButton_Action_" data-uid="HTC.UnityPlugin.Vive.ViveInput.RemovePressUp(HTC.UnityPlugin.Vive.HandRole,HTC.UnityPlugin.Vive.ControllerButton,Action)">RemovePressUp(HandRole, ControllerButton, Action)</h4>
+  <div class="markdown level1 summary"><p>Remove press up handler for the button on the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemovePressUp(HandRole role, ControllerButton button, Action callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ControllerButton.html">ControllerButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulse_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulse*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulse_HTC_UnityPlugin_Vive_HandRole_System_UInt16_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulse(HTC.UnityPlugin.Vive.HandRole,System.UInt16)">TriggerHapticPulse(HandRole, UInt16)</h4>
+  <div class="markdown level1 summary"><p>Trigger vibration of the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticPulse(HandRole role, ushort durationMicroSec = 500)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">durationMicroSec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulse_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulse*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulse_HTC_UnityPlugin_Vive_ViveRoleProperty_System_UInt16_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulse(HTC.UnityPlugin.Vive.ViveRoleProperty,System.UInt16)">TriggerHapticPulse(ViveRoleProperty, UInt16)</h4>
+  <div class="markdown level1 summary"><p>Trigger vibration of the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticPulse(ViveRoleProperty role, ushort durationMicroSec = 500)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">durationMicroSec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulseEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulseEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulseEx_Type_System_Int32_System_UInt16_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulseEx(Type,System.Int32,System.UInt16)">TriggerHapticPulseEx(Type, Int32, UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticPulseEx(Type roleType, int roleValue, ushort durationMicroSec = 500)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">durationMicroSec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulseEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulseEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticPulseEx__1___0_System_UInt16_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticPulseEx``1(``0,System.UInt16)">TriggerHapticPulseEx&lt;TRole&gt;(TRole, UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticPulseEx&lt;TRole&gt;(TRole role, ushort durationMicroSec = 500)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">durationMicroSec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibration_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibration*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibration_HTC_UnityPlugin_Vive_HandRole_System_Single_System_Single_System_Single_System_Single_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibration(HTC.UnityPlugin.Vive.HandRole,System.Single,System.Single,System.Single,System.Single)">TriggerHapticVibration(HandRole, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Trigger vibration of the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticVibration(HandRole role, float durationSeconds = 0.01F, float frequency = 85F, float amplitude = 0.125F, float startSecondsFromNow = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.HandRole.html">HandRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">durationSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amplitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">startSecondsFromNow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibration_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibration*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibration_HTC_UnityPlugin_Vive_ViveRoleProperty_System_Single_System_Single_System_Single_System_Single_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibration(HTC.UnityPlugin.Vive.ViveRoleProperty,System.Single,System.Single,System.Single,System.Single)">TriggerHapticVibration(ViveRoleProperty, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Trigger vibration of the controller identified by role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticVibration(ViveRoleProperty role, float durationSeconds = 0.01F, float frequency = 85F, float amplitude = 0.125F, float startSecondsFromNow = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.Vive.ViveRoleProperty.html">ViveRoleProperty</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">durationSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amplitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">startSecondsFromNow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibrationEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibrationEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibrationEx_Type_System_Int32_System_Single_System_Single_System_Single_System_Single_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibrationEx(Type,System.Int32,System.Single,System.Single,System.Single,System.Single)">TriggerHapticVibrationEx(Type, Int32, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticVibrationEx(Type roleType, int roleValue, float durationSeconds = 0.01F, float frequency = 85F, float amplitude = 0.125F, float startSecondsFromNow = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Type</span></td>
+        <td><span class="parametername">roleType</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">roleValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">durationSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amplitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">startSecondsFromNow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibrationEx_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibrationEx*"></a>
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_TriggerHapticVibrationEx__1___0_System_Single_System_Single_System_Single_System_Single_" data-uid="HTC.UnityPlugin.Vive.ViveInput.TriggerHapticVibrationEx``1(``0,System.Single,System.Single,System.Single,System.Single)">TriggerHapticVibrationEx&lt;TRole&gt;(TRole, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerHapticVibrationEx&lt;TRole&gt;(TRole role, float durationSeconds = 0.01F, float frequency = 85F, float amplitude = 0.125F, float startSecondsFromNow = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRole</span></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>TRole can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">durationSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amplitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">startSecondsFromNow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRole</span></td>
+        <td><p>Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
+Use ViveRole.ValidateViveRoleEnum() to validate role type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="HTC_UnityPlugin_Vive_ViveInput_onUpdate" data-uid="HTC.UnityPlugin.Vive.ViveInput.onUpdate">onUpdate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event UnityAction onUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">SingletonBehaviour&lt;&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

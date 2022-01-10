@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1055;&#1072;&#1081;&#1087;&#1083;&#1072;&#1081;&#1085; &#1087;&#1086;&#1076;&#1075;&#1086;&#1090;&#1086;&#1074;&#1082;&#1080; &#1082; &#1073;&#1080;&#1083;&#1076;&#1091; &#1087;&#1086;&#1076; &#1057;&#1090;&#1086;&#1088;&#1099; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1055;&#1072;&#1081;&#1087;&#1083;&#1072;&#1081;&#1085; &#1087;&#1086;&#1076;&#1075;&#1086;&#1090;&#1086;&#1074;&#1082;&#1080; &#1082; &#1073;&#1080;&#1083;&#1076;&#1091; &#1087;&#1086;&#1076; &#1057;&#1090;&#1086;&#1088;&#1099; ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="пайплайн-подготовки-к-билду-под-сторы">Пайплайн подготовки к билду под Сторы</h1>
+
+<h2 id="steam">Steam:</h2>
+<ol>
+<li><p>Переводим сборку под платформу “PC, Mac &amp; Linux Standalone”.</p>
+</li>
+<li><p>Добавляем ассет “Steamworks.NET” (<a href="https://github.com/rlabrecque/Steamworks.NET/releases">https://github.com/rlabrecque/Steamworks.NET/releases</a>)</p>
+</li>
+<li><p>В файле steam_appid.txt который в корне проекта поменять AppId на id своего приложения.
+Для каждого тренажера свои 2 id (Free, Premium ) записать в ScriptableObject брать из в SteamWorks
+<img src="./Images/PreparingAssemblyForTheStore1.png" alt="Alt text"></p>
+</li>
+<li><p>(только если ассет добавляли заново) Перезапускаем Юнити</p>
+</li>
+<li><p>На DontDestroyObject добавляем скрипт “SteamManager” (в данный момент он висит на объекте “TimeChecker”)</p>
+</li>
+<li><p>Добавляем ассет “SDK Steamworks”  (<a href="https://partner.steamgames.com/downloads/steamworks_sdk.zip">https://partner.steamgames.com/downloads/steamworks_sdk.zip</a>)</p>
+</li>
+<li><p>(только если ассет добавляли заново) Перезапускаем Юнити</p>
+</li>
+<li><p>Добавляем ассет &quot;SteamVR Plugin&quot; (<a href="https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647">https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647</a>)</p>
+</li>
+<li><p>Меняем “MessageControllerPlug” на объекте “TimeChecker” на версию под Steam.</p>
+</li>
+<li><p>Убираем настройку роста в сцене обучения и главном меню.</p>
+</li>
+<li><p>В зависимости от версии Free или Premium:</p>
+</li>
+</ol>
+<p>11.1. В скрипте “MessageControllerPlug” меняем переменную “_liceneType” на Free/Premium.</p>
+<p>11.2. В префабе UI меняем ссылку в SelectModePanel на SelectModeFree или SelectMode</p>
+<ol start="12">
+<li><p>Проверяем чтобы в ProjectSettings&gt;XR Plug-in Management в Сборках под PC был активен только OpenVR Loader.</p>
+</li>
+<li><p>Проверяем чтобы в Preferences&gt;VIU Settings был активен только OpenVR.</p>
+</li>
+<li><p>Проверяем что все настройки плагинов применены(обычно это происходит при смены платформы сборки и включения  OpenVR Loader и OpenVR) Если они будут сразу в проекте и переключать мы их будем системно то я хочу сделать таблицу какие параметры они меняют и в жесткую через код их на всякий случай применять.</p>
+</li>
+<li><p>Создаем билд под PC в папке “OpenVRZamknutoeProstranstvo” или “OpenVRZamknutoeProstranstvoFree” в зависимости от версии приложения.</p>
+</li>
+<li><p>Запаковываем это всё в Zip архив с произвольным именем.</p>
+</li>
+</ol>
+<h2 id="oculus">Oculus:</h2>
+<ol>
+<li><p>Добавить в проект ассет “Oculus Integration” только папку Platform (<a href="https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022">https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022</a>)</p>
+</li>
+<li><p>(только если ассет добавляли заново) Перезапускаем Юнити</p>
+</li>
+<li><p>Меняем “MessageControllerPlug” на объекте “TimeChecker” на версию под Oculus и заполняем поле &quot;appID&quot; в зависимости от приложения для билда(данныи можно получить с страницы приложения в сторе или из заполненого под  сторы специального скриптабл обжекта).</p>
+</li>
+<li><p>Проверяем чтобы в ProjectSettings&gt;XR Plug-in Management в Сборках под Android был активен только Oculus .</p>
+</li>
+<li><p>Проверяем чтобы в Preferences&gt;VIU Settings был активен Oculus Android.</p>
+</li>
+<li><p>Проверяем что все настройки плагинов применены(обычно это происходит при смены платформы сборки и включения  Oculus и Oculus Android) Если они будут сразу в проекте и переключать мы их будем системно то я хочу сделать таблицу какие параметры они меняют и в жесткую через код их на всякий случай применять.</p>
+</li>
+<li><p>В сцене обучения меняем модель контроллеров и картинку с контроллерами под Oculus. Так же выключаем картинки одевания и настройки шлема воовсем.</p>
+</li>
+<li><p>В UI меняем  картинку в ControllerInfo под Oculus.</p>
+</li>
+<li><p>Добавляем в ProjectSettings&gt;Player&gt;PublishingSettings ключ подписи и вводим логин пароли от ключа и проекта.</p>
+</li>
+<li><p>Меняем версию в шапке ProjectSettings&gt;Player  на большую и Bundle version.</p>
+</li>
+<li><p>Меняем файл манифеста под Oculus.</p>
+</li>
+<li><p>В зависимости от версии Free или Premium:</p>
+</li>
+</ol>
+<p>10.1. В скрипте “MessageControllerPlug” меняем переменную “_liceneType” на Free/Premium.</p>
+<p>10.2. В префабе UI меняем ссылку в SelectModePanel на SelectModeFree или SelectMode</p>
+<ol start="11">
+<li><p>Проверяем что в ProjectSettings&gt;Player&gt;PublishingSettings стоит галочка у Custom Main Manifest.</p>
+</li>
+<li><p>Устанавливаем имя проекта “VRTrainersConfinedSpace” а компанию “Goldfinchworks” .</p>
+</li>
+<li><p>Создаем билд под Android.</p>
+</li>
+</ol>
+<h2 id="viveport">VivePort:</h2>
+<ol>
+<li><p>Устанавливаем плагин “VIVEPORT SDK” (<a href="https://developer.vive.com/resources/viveport/viveport-documentation/english/viveport-sdk/integration-viveport-sdk/unity-developers/">https://developer.vive.com/resources/viveport/viveport-documentation/english/viveport-sdk/integration-viveport-sdk/unity-developers/</a>)</p>
+</li>
+<li><p>(только если ассет добавляли заново) Перезапускаем Юнити</p>
+</li>
+<li><p>На DontDestroyObject добавляем скрипт “MainThreadDispatcher” (в данный момент он висит на объекте “TimeChecker”).</p>
+</li>
+<li><p>Меняем “MessageControllerPlug” на объекте “TimeChecker” на версию под Vive заполняем поле &quot;appID&quot; и &quot;apiKey&quot; в зависимости от приложения для билда(данныи можно получить с страницы приложения в сторе или из заполненого под  сторы специального скриптабл обжекта).</p>
+</li>
+<li><p>Проверяем чтобы в ProjectSettings&gt;XR Plug-in Management в Сборках под Android был активен только WaveXR .</p>
+</li>
+<li><p>Проверяем чтобы в Preferences&gt;VIU Settings был активен WaveVR.</p>
+</li>
+<li><p>Проверяем что все настройки плагинов применены(обычно это происходит при смены платформы сборки и включения  WaveXR и WaveVR) Если они будут сразу в проекте и переключать мы их будем системно то я хочу сделать таблицу какие параметры они меняют и в жесткую через код их на всякий случай применять.</p>
+</li>
+<li><p>Добавляем в ProjectSettings&gt;Player&gt;PublishingSettings ключ подписи и вводим логин пароли от ключа и проекта.</p>
+</li>
+<li><p>Меняем версию в шапке ProjectSettings&gt;Player  на большую.</p>
+</li>
+<li><p>В зависимости от версии Free или Premium:</p>
+</li>
+</ol>
+<p>10.1. В скрипте “MessageControllerPlug” меняем переменную “_liceneType” на Free/Premium.</p>
+<p>10.2. В префабе UI меняем ссылку в SelectModePanel на SelectModeFree или SelectMode</p>
+<ol start="11">
+<li><p>Устанавливаем имя проекта “VRTrainersConfinedSpace” а компанию “Goldfinchworks” .</p>
+</li>
+<li><p>Меняем файл манифеста под Vive.</p>
+</li>
+<li><p>Проверяем что в ProjectSettings&gt;Player&gt;PublishingSettings стоит галочка у Custom Main Manifest.</p>
+</li>
+<li><p>Создаем билд под Android.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

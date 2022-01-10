@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1055;&#1077;&#1088;&#1074;&#1086;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1072;&#1103; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1072; &#1085;&#1086;&#1074;&#1086;&#1081; &#1089;&#1094;&#1077;&#1085;&#1099; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1055;&#1077;&#1088;&#1074;&#1086;&#1085;&#1072;&#1095;&#1072;&#1083;&#1100;&#1085;&#1072;&#1103; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1072; &#1085;&#1086;&#1074;&#1086;&#1081; &#1089;&#1094;&#1077;&#1085;&#1099; ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="первоначальная-настройка-новой-сцены">Первоначальная настройка новой сцены</h1>
+
+<p><em>Сердце тренажера должно поддерживаться в чистоте :)</em></p>
+<p><span style="color:red"><strong>После создания новой сцены необходимо удалить с нее все имеющиеся объекты!!!</strong></span></p>
+<p>UPD. Шаблон сцены можно взять по пути <strong>&quot;Assets/VRCommonComponents/Scenes/!SceneTemplate&quot;</strong>
+Для его использования необходимо скопировать шаблон сцены, переместить в папку тренажера и переименовать в название тренажера транслитом</p>
+<h2 id="иерархия">Иерархия</h2>
+<p>В корне сцены должны находиться 4 пустых объекта и ничего больше:<br>
+---System---<br>
+---InteractiveObjects---<br>
+---View---<br>
+---ServiceObjects---<br>
+Позиция и поворот данных объектов должны быть обнулены. Скаляция по всем 3-м осям равна 1</p>
+<p><strong>---System---</strong><br>
+Внутрь этого объекта помещаются все объекты, являющиеся ядром тренажера, а именно:</p>
+<ol>
+<li>VROrigin</li>
+<li>Всевозможные менеджеры (все менеджеры должны быть сгруппированы под пустым объектом Managers)</li>
+<li>TPMain</li>
+</ol>
+<p><strong>---InteractiveObjects---</strong><br>
+Внутрь этого объекта помещаются, с которыми, явно или неявно, может взаимодействовать пользователь в процессе прохождения тренажера (Пример, газоанализатор, знак, цепь, рабочие в тренажере &quot;Замкнутое пространство&quot;</p>
+<p><strong>---View---</strong><br>
+Внутрь этого объекта помещаются неинтерактивные объекты окружения (Пример, стол, бочка, здание и прочее подобное)</p>
+<p><strong>---ServiceObjects---</strong><br>
+Внутрь этого объекта помещаются вспомогательные модули тренажера, освещение, звук (Пример, AudioReverbZone, коллайдеры пола, модуль CloseToWall)</p>
+<p>Пример иерархии:<br>
+<img src="/Images/FirstTimeSceneSetup_1.png" alt="Alt text"></p>
+<h2 id="порядок-создания-объектов-на-сцене">Порядок создания объектов на сцене</h2>
+<ol>
+<li>Создать пустой объект в корне сцены</li>
+<li>Переименовать его в ---System---</li>
+<li>Обнулить положение и поворот созданного объекта.</li>
+<li>Проверить скаляцию созданного объекта по всем 3-м осям. Она должны быть равна 1</li>
+<li>Перетащить префаб VROrigin, лежащий по пути <strong>&quot;Assets/VRCommonComponents/Prefabs/VROriginFinal/VROrigin&quot;</strong> на созданный объект. (Положение префаба настраивается при создании окружения сцены)</li>
+<li>Создать пустой объект дочерним от ---System---</li>
+<li>Переименовать его в Managers</li>
+<li>Создать пустой объект дочерним от Managers</li>
+<li>Переименовать его в EventManager</li>
+<li>Повесить на него скрипт EventManager. <span style="color:red"><strong>(ВАЖНО! Так как в проекте присутуствуют 2 скрипта с названием EventManager, необходимо убедиться, что на объект EventManager автоматически повесился скрипт DictionaryForEventManager В противном случае необходимо использовать другой скрипт)</strong></span></li>
+<li>Создать пустой объект дочерним от Managers</li>
+<li>Переименовать его в AudioManager</li>
+<li>Повесить на него скрипт AudioManager. <span style="color:red"><strong>(ВАЖНО! Так как в проекте присутуствуют 2 скрипта с названием AudioManager, необходимо убедиться, что в инспекторе видно только поле TargetAudioSource. В противном случае необходимо использовать другой скрипт)</strong></span></li>
+<li>В поле AudioSource перетащить камеру, лежащую по пути <strong>&quot;---System---/VROrigin/Height/ViveRig/Camera&quot;</strong> в иерархии на сцене</li>
+<li>Создать пустой объект дочерним от Managers</li>
+<li>Переименовать его в TPMain (Это объект, использующийся как родитель для всех телепортов, которые будут существовать на сцене)</li>
+<li>Создать пустой объект дочерним от Managers</li>
+<li>Переименовать его в LessonManager</li>
+<li>Повесить на него скрипт LessonManager_V2.</li>
+<li>В инспекторе в поле TeleportMainObject перетащить созданный ранее объект TPMain</li>
+<li>Создать пустой объект дочерним от LessonManager</li>
+<li>Переименовать его в Scenaries</li>
+<li>Создать пустой объект дочерним от Scenaries</li>
+<li>Переименовать его в Prestage. <span style="color:red"><strong>ВАЖНО! Данное название не должно изменяться!</strong></span></li>
+<li>Повесить на него скрипт LessonManagerScenario_V2</li>
+<li>Создать пустой объект дочерним от Scenaries</li>
+<li>Переименовать его в Learning. <span style="color:red"><strong>ВАЖНО! Данное название не должно изменяться!</strong></span></li>
+<li>Повесить на него скрипт LessonManagerScenario_V2</li>
+<li>Создать пустой объект дочерним от Scenaries</li>
+<li>Переименовать его в Training. <span style="color:red"><strong>ВАЖНО! Данное название не должно изменяться!</strong></span></li>
+<li>Повесить на него скрипт LessonManagerScenario_V2</li>
+<li>Создать пустой объект дочерним от Scenaries</li>
+<li>Переименовать его в Exam. <span style="color:red"><strong>ВАЖНО! Данное название не должно изменяться!</strong></span></li>
+<li>Повесить на него скрипт LessonManagerScenario_V2</li>
+<li>Создать пустой объект в корне сцены</li>
+<li>Переименовать его в ---InteractiveObjects---</li>
+<li>Обнулить положение и поворот созданного объекта.</li>
+<li>Проверить скаляцию созданного объекта по всем 3-м осям. Она должны быть равна 1</li>
+<li>Создать пустой объект в корне сцены</li>
+<li>Переименовать его в ---View---</li>
+<li>Обнулить положение и поворот созданного объекта.</li>
+<li>Проверить скаляцию созданного объекта по всем 3-м осям. Она должны быть равна 1</li>
+<li>Создать пустой объект в корне сцены</li>
+<li>Переименовать его в ---ServiceObjects---</li>
+<li>Обнулить положение и поворот созданного объекта.</li>
+<li>Проверить скаляцию созданного объекта по всем 3-м осям. Она должны быть равна 1</li>
+<li>Перетащить префаб InitPosition, лежащий по пути <strong>&quot;Assets/VRCommonComponents/InternalAssets/InitPosition/InitPosition&quot;</strong> на созданный объект. (Положение префаба настраивается при создании окружения сцены и должно быть на уровне пола в точке VROrigin)</li>
+<li>В инспекторе в поле DarkScreen перетащить объект IntoDarkness, лежащий по пути <strong>&quot;---System---/VROrigin/Height/ViveRig/Camera/IntoDarkness&quot;</strong> в иерархии на сцене</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1050;&#1040;&#1050; &#1057;&#1054;&#1041;&#1056;&#1040;&#1058;&#1068; &#1041;&#1048;&#1051;&#1044; &#1055;&#1054;&#1044; IOS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1050;&#1040;&#1050; &#1057;&#1054;&#1041;&#1056;&#1040;&#1058;&#1068; &#1041;&#1048;&#1051;&#1044; &#1055;&#1054;&#1044; IOS ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="как-собрать-билд-под-ios">КАК СОБРАТЬ БИЛД ПОД IOS</h1>
+
+<h2 id="1-включите-cloud-build">1. ВКЛЮЧИТЕ CLOUD BUILD</h2>
+<p>В Unity проекте в окне Service включите CloudBuild<br>
+<img src="./Images/PreparingToBuildOnIOS1.png" alt="Alt text"><br>
+Так же его можно включить и на самом Dashboard<br>
+<img src="./Images/PreparingToBuildOnIOS2.png" alt="Alt text"></p>
+<h2 id="2-приступите-к-настройкам">2. ПРИСТУПИТЕ К НАСТРОЙКАМ</h2>
+<p>Начните настраивать свой CloudBuild выбрав платформой iOS, первые несколько страниц настроек не вызывают никаких проблем и вопросов.</p>
+<h2 id="3-проблемная-страница-настроек">3. ПРОБЛЕМНАЯ СТРАНИЦА НАСТРОЕК</h2>
+<p><img src="./Images/PreparingToBuildOnIOS3.png" alt="Alt text"></p>
+<p>Эта страница настроек является самой важной. При создании нового проекта селектор &quot;Choose iOS Credentials&quot;должен быть установлен на &quot;Add new provisioning credentials&quot;, если у вас уже есть &quot;iOS Credentials&quot;(машина и вид распространения приложения не изменились) то можно выбрать его.</p>
+<p>Для получения &quot;Mobile Prov File&quot; и &quot;p12 File&quot; необходима машина с OS X и аккаунт разработчика Apple. Рассмотрим создание виртуальной машины с OSX.</p>
+<h3 id="создаем-виртуальную-машину-на-osx">СОЗДАЕМ ВИРТУАЛЬНУЮ МАШИНУ НА OSX</h3>
+<p>Сокращение от статьи: <a href="https://it-blog.ru/other/ustanovka-macos-high-sierra-10-13-na-virtualbox/#1">Установка MacOS High Sierra 10.13 на VirtualBox</a></p>
+<ol>
+<li><p><strong>Скачиваем необходимые файлы</strong><br>
+<a href="https://disk.yandex.ru/d/U7Zvrt4SOk_h0w">Пак для виртуальной машины</a></p>
+</li>
+<li><p><strong>Создаем виртуальную машину.</strong><br>
+Устанавливаем VirtualBox и создаем новую виртуальную машину.<br>
+Для тех, у кого в списке версий не появились 64-разрядные системы, необходимо включить виртуализацию в BIOS вашего компьютера. Перезагружаемся и в настройках BIOS находим пункт Virtualization, у вас он может называться несколько иначе, отмечаем в Enabled. Сохраняем настройки BIOSa, перезагружаемся и вновь заходим в VirtualBox. Монтируем скаченный образ системы &quot;macOSHighSierra10.13.6.iso&quot; на виртуальный привод. Далее необходимо настроить виртуальную машину с помощью скриптов. Запускаем скрипт &quot;vbox_macos.cmd&quot;</p>
+</li>
+<li><p><strong>Установка MacOS High Sierra.</strong><br>
+Запускаем виртуальную машину. В появившемся окне выбираем наш виртуальный жесткий диск и нажимаем вверху кнопку стереть. Задаем имя жесткого диска. Если выпадает ошибка то необходимо переустановить дату с помощью терминала командой
+<code>date 060710102018</code><br>
+Если после перезапуска появляется окно Shell, то вводим и продолжаем установку:<br>
+<code>fs1:</code><br>
+<code>cd &quot;macOS Install Data&quot;</code><br>
+<code>cd &quot;Locked Files&quot;</code><br>
+<code>cd &quot;Boot Files&quot;</code><br>
+<code>boot.efi</code></p>
+</li>
+<li><p>Установка разрешения и решение проблем с видеопамятью.
+Для того что бы видеопамять использовалась по максимально (128мб) монтируем образ VM Tool и нажимаем Install VMware Tools. Дайте установщику пять-десять минут, после чего вы должны получить уведомление о «Расширении системы» . После чего выберите опцию «Открыть настройки безопасности». После этих манипуляций разрешение экрана вновь изменится. Чтобы исправить это, необходимо зайти в Терминал и ввести следующую команду, где <width> и <height> соответственно ширина и высота вашего монитора:<br>
+<code>Sudo /Library/Application\ Support/VMware\ Tools/vmware-resolutionset &lt;width&gt; &lt;height&gt;</code><p>
+</height></width></li>
+</ol>
+<h2 id="4-получение-необходимых-сертификатов">4. ПОЛУЧЕНИЕ НЕОБХОДИМЫХ СЕРТИФИКАТОВ</h2>
+<h3 id="получаем--файл-mobileprovision">Получаем  Файл*. mobileprovision</h3>
+<p>Файл*. mobileprovision используется для кодовой подписи вашего приложения. Вы можете открыть файл *.mobileprovision в файле TextEdit. Содержимое файла структурировано в XML. Он содержит идентификаторы приложений UUID, bundle ID, разработка/производство и все права, включая aps-environment.
+Его получение не составляет труда по ссылке в вашем apple профиле AppleDeveloper можно даже без мака.</p>
+<p><img src="./Images/PreparingToBuildOnIOS4.png" alt="Alt text"><br>
+<img src="./Images/PreparingToBuildOnIOS5.png" alt="Alt text"><br>
+<img src="./Images/PreparingToBuildOnIOS6.png" alt="Alt text"><br>
+<span style="color:red">Если AppID не был заранее создан под это приложение то создаем его </span> <a href="#AppIDCreation">Создание AppID</a><br>
+<img src="./Images/PreparingToBuildOnIOS7.png" alt="Alt text"><br>
+<img src="./Images/PreparingToBuildOnIOS8.png" alt="Alt text"><br>
+<img src="./Images/PreparingToBuildOnIOS9.png" alt="Alt text"></p>
+<h3 id="создание-appid"><a name="AppIDCreation">Создание AppID</a></h3>
+<p>Для создания mobileprovision необходимо использовать AppID<br>
+<img src="./Images/PreparingToBuildOnIOS10.png" alt="Alt text"><br>
+<strong>Меню для создания AppID</strong><br>
+<img src="./Images/PreparingToBuildOnIOS11.png" alt="Alt text"><br>
+Для регистрации AppID необходим BundleID</p>
+<h3 id="получаем-12p">Получаем 12p</h3>
+<p>Нужен OSx для работы с &quot;Ассистентом сертификации&quot;</p>
+<ol>
+<li><p>В машине на OSX запускаем приложение &quot;Связка ключей&quot; из него можно отправить запрос сертификата формата .certSigningRequest (CSR) у бюро
+<img src="./Images/PreparingToBuildOnIOS12.png" alt="Alt text"></p>
+</li>
+<li><p>В появившимся окне нужно указать почту на которую зарегистрирован аккаунт разработчика<br>
+<img src="./Images/PreparingToBuildOnIOS13.png" alt="Alt text"></p>
+</li>
+<li><p>Сохраняем файл (CSR) на диск, далее он нам понадобится при создании сертификата p12
+<img src="./Images/PreparingToBuildOnIOS14.png" alt="Alt text"></p>
+</li>
+<li><p>Теперь заходим в аккаунт разработчика на панель Сертификаты и создаем новый сертификат формата cer
+<img src="./Images/PreparingToBuildOnIOS15.png" alt="Alt text"></p>
+</li>
+<li><p>В одном из следующих диалоговых окон будет поле для внесения в него (CSR) файла
+<img src="./Images/PreparingToBuildOnIOS16.png" alt="Alt text"></p>
+</li>
+<li><p>Перенести полученный сертификат формата cer в машину с OSX занести информацию о нем в связку ключей, и экспортировать потом из нее в формате p12
+<img src="./Images/PreparingToBuildOnIOS17.png" alt="Alt text"></p>
+</li>
+<li><p>При экспорте необходимо будет ввести пароль для доступа к файлу p12 (его необходимо так же будет внести при билде в CloudBuild)
+<img src="./Images/PreparingToBuildOnIOS18.png" alt="Alt text"></p>
+</li>
+</ol>
+<h3 id="действия-при-успешном-cloudbuild">Действия при успешном CloudBuild</h3>
+<p>Получив и внеся все необходимые сертификаты в настройки Cloud Build, начнется автоматическая сборка проекта, следует заметитьчто при полученном файле p12 единожды, можно билдить несколько приложений, без нужды получать этот сертификат еще раз, так что повторно необходимо только создать файл.mobileprovision. для другого приложения</p>
+<h2 id="5-переносим-наш-ipa-файл-билда-на-сервера-apple">5. ПЕРЕНОСИМ НАШ IPA ФАЙЛ БИЛДА НА СЕРВЕРА APPLE</h2>
+<ol>
+<li><p>Скачиваем проект на OSX<br>
+Теперь необходимо скачать наш проект в формате ipa на машину с OSX для дальнейшей транспортировки на сервера apple<br>
+<img src="./Images/PreparingToBuildOnIOS19.png" alt="Alt text"></p>
+</li>
+<li><p>Подготавливаем приложение в аккаунте разработчика<br>
+В нашем аккаунте разработчика необходимо перейти в AppStoreConnect там выбрать вкладку &quot;Мои приложения&quot;<br>
+<img src="./Images/PreparingToBuildOnIOS20.png" alt="Alt text"></p>
+</li>
+</ol>
+<p>Выбрать пункт &quot;Создать новое приложение&quot;<br>
+<img src="./Images/PreparingToBuildOnIOS21.png" alt="Alt text"></p>
+<p>Далее заполняем несколько форм в id пакета записываем bundleid в SKU любой свой идентификатор<br>
+<img src="./Images/PreparingToBuildOnIOS22.png" alt="Alt text"></p>
+<p>Только теперь , после того как приложение внесено в аккаунт разработчика, мы устанавливаем программу &quot;Transporter&quot; которая перенесет наше приложение на сервер apple (Если программа не была внесена заранее в ваш аккаунт то появится ошибка)<br>
+<img src="./Images/PreparingToBuildOnIOS23.png" alt="Alt text"><br>
+<img src="./Images/PreparingToBuildOnIOS24.png" alt="Alt text"><br>
+<img src="./Images/PreparingToBuildOnIOS25.png" alt="Alt text"><br>
+<img src="./Images/PreparingToBuildOnIOS26.png" alt="Alt text"></p>
+<h2 id="6-предоставить-информацию-о-соответствии-экспортным-требованиям">6. ПРЕДОСТАВИТЬ ИНФОРМАЦИЮ О СООТВЕТСТВИИ ЭКСПОРТНЫМ ТРЕБОВАНИЯМ</h2>
+<p>После того как наша сборка будет доставлена на сервера apple и обработана, для того что бы возможно было начать тестирование в приложении TestFlyight необходимо внести информацию о соответствии экспортным требованиям</p>
+<h2 id="7-назначить-тестировщиков">7. НАЗНАЧИТЬ ТЕСТИРОВЩИКОВ</h2>
+<p>Теперь мы можем назначить наших тестировщиков на тест сборки. Им автоматически придут приглашения на указанную почту с ссылкой для тестирования сборки в приложении TestFlyight</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

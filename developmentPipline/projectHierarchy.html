@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1048;&#1077;&#1088;&#1072;&#1088;&#1093;&#1080;&#1103; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1072; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1048;&#1077;&#1088;&#1072;&#1088;&#1093;&#1080;&#1103; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1072; ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="иерархия-проекта">Иерархия проекта</h1>
+
+<ol>
+<li><p>При добавлении новых компонентов в проект следовать строгой иерархии и правил оформления изменений.</p>
+</li>
+<li><p>Запрещено изменять что-либо (в том числе скрипты ) внутри внешних ассетов и плагинов. Если нужен функционал, описанный внутри внешних ассетов, нужно либо использовать наследование, либо копировать код. Но сами внутренние ассеты изменять запрещено</p>
+</li>
+<li><p>Не добавлять новые ассеты без согласования с техлидом
+Если необходимо добавить новый ассет (пример: Obi Rope, Filo cable, Graphy, ...), нужно добавить его, а потом полностью перенести в отдельную папку &quot;ExternalAssets&quot; в корне проекта.</p>
+</li>
+<li><p>Если это ассет с паком 3D моделей, то необходимо сначала загрузить данный ассет во внешний проект &quot;3D Models and Assets&quot;, а оттуда только необходимые в сцене компоненты экспортировать через расширение .unitypackage внутрь папки тренажера в Trainers</p>
+</li>
+<li><p>Коммитить в Main может только техлид</p>
+</li>
+<li><p>В Main всегда лежит последняя ПОЛНОСТЬЮ РАБОЧАЯ версия приложения (Если это тренажер, то его возможно пройти)</p>
+</li>
+<li><p>Изменения в Main идут только из Develop. Для того, чтобы залить свои изменения в develop, необходимо отправить pull request, который также разрешает только техлид</p>
+</li>
+</ol>
+<h2 id="при-переносе-префаба-не-находящегося-в-vrcommoncomponents-из-одного-тренажера-в-другой-необходимо-следовать-следующей-инструкции">При переносе префаба, не находящегося в VRCommonComponents из одного тренажера в другой необходимо следовать следующей инструкции</h2>
+<ol>
+<li><p>Экспортировать префаб в unitypackage</p>
+</li>
+<li><p>Импортировать префаб в целевом тренажере</p>
+</li>
+<li><p>Перетащить префаб на сцену</p>
+</li>
+<li><p>Распаковать префаб (клик правой клавишей мыши -&gt; Prefab -&gt; Unpack Completely</p>
+</li>
+<li><p>Удалить файл префаба</p>
+</li>
+<li><p>(при необходимости) Создать префаб из объекта на сцене</p>
+</li>
+</ol>
+<h2 id="структура-иерархии">Структура иерархии:</h2>
+<p>📂 ExternalAssets - Здесь находятся внешние ассеты сторонних разработчиков, которые используются во всех тренажерах</p>
+<p>__:open_file_folder: Wave</p>
+<p>__:open_file_folder: XR</p>
+<p>__:open_file_folder: TextMesh Pro</p>
+<p>__:open_file_folder: HTC.UnityPlugin</p>
+<p>📂 Plugins - Система подключаемых модулей позволяет расширять функционал Unity. Подключаемые модули это нативные DLL как правило реализованные на языке C/C++. Они позволяют получить доступ к сторонним библиотекам (например распознавания речи), системным вызовам и прочему функционалу недоступному Unity в стандартной поставке. Чтобы подключаемый модуль распознался Unity их следует разместить в папке Plugins и как и для папки Editor, это повлияет на порядок компиляции скриптов. Подробности смотри на странице</p>
+<p>__:open_file_folder: Android</p>
+<p>__:open_file_folder: PlasticSCM</p>
+<p>📂 Trainers - Здесь находятся специфичные, индивидуальные компоненты тренажеров, в соответствующих папках именованных названием тренажеров &quot;Транслитом&quot;</p>
+<p>__:open_file_folder: OhranaTruda</p>
+<p>__:open_file_folder: ZamknutoeProstranstvo</p>
+<p>__:open_file_folder: PozharnayaBezopasnost</p>
+<p>📂 VRCommonComponents - Здесь находятся компоненты написанные нашей командой, которые имеют общее значение и выполняют функции одинаковые во всех тренажерах</p>
+<p>__:open_file_folder: Effects</p>
+<p>__:open_file_folder: Fonts</p>
+<p>__:open_file_folder: GarbageDependencies</p>
+<p>__:open_file_folder: Images</p>
+<p>__:open_file_folder: InternalAssets - Здесь находятся компоненты тренажеров, которые выполняют специфическую роль только в рамках данного тренажера</p>
+<p>__:open_file_folder: Prefabs</p>
+<p>__:open_file_folder: Scenes</p>
+<p>__:open_file_folder: Scripts</p>
+<p>___:open_file_folder: Extension</p>
+<p>___:open_file_folder: InteractiveObject</p>
+<p>____:open_file_folder: EventManager</p>
+<p>____:open_file_folder: GlobalData</p>
+<p>____:open_file_folder: LessonManager</p>
+<p>_____:open_file_folder: Editor</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

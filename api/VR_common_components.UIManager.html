@@ -1,0 +1,977 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UIManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UIManager
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="VR_common_components.UIManager">
+  
+  
+  <h1 id="VR_common_components_UIManager" data-uid="VR_common_components.UIManager" class="text-break">Class UIManager
+  </h1>
+  <div class="markdown level0 summary"><p>Модуль, позволяющий контроллировать поведение UI в тренажере</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UIManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VR_common_components.html">VR_common_components</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="VR_common_components_UIManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UIManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="VR_common_components_UIManager_AdsPanel" data-uid="VR_common_components.UIManager.AdsPanel">AdsPanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель рекламы тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject AdsPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_BlockedTrainerPanel" data-uid="VR_common_components.UIManager.BlockedTrainerPanel">BlockedTrainerPanel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject BlockedTrainerPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_ControllerInfoPanel" data-uid="VR_common_components.UIManager.ControllerInfoPanel">ControllerInfoPanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель меню информации о работе с контроллерами</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject ControllerInfoPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_CurrentState" data-uid="VR_common_components.UIManager.CurrentState">CurrentState</h4>
+  <div class="markdown level1 summary"><p>Текущее состояние UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public State CurrentState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">State</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_FailedPanel" data-uid="VR_common_components.UIManager.FailedPanel">FailedPanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель сообщения об ошибке</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject FailedPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_GrayscalePanel" data-uid="VR_common_components.UIManager.GrayscalePanel">GrayscalePanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель засерения мира</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject GrayscalePanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_MenuMask" data-uid="VR_common_components.UIManager.MenuMask">MenuMask</h4>
+  <div class="markdown level1 summary"><p>Слои, которые будут обрабатываться рейкастером, когда меню активно</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask MenuMask</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LayerMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_OtherMask" data-uid="VR_common_components.UIManager.OtherMask">OtherMask</h4>
+  <div class="markdown level1 summary"><p>Слои, которые будут игнорироваться рейкастером, когда меню неактивно</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask OtherMask</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LayerMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_PassedPanel" data-uid="VR_common_components.UIManager.PassedPanel">PassedPanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель сообщения об успешном прохождении тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject PassedPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_PausePanel" data-uid="VR_common_components.UIManager.PausePanel">PausePanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель меню паузы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject PausePanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_PreviousState" data-uid="VR_common_components.UIManager.PreviousState">PreviousState</h4>
+  <div class="markdown level1 summary"><p>Предидущее состояние UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public State PreviousState</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">State</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_SelectModePanel" data-uid="VR_common_components.UIManager.SelectModePanel">SelectModePanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель меню выбора режима тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SelectModePanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_TimerPanel" data-uid="VR_common_components.UIManager.TimerPanel">TimerPanel</h4>
+  <div class="markdown level1 summary"><p>Ссылка на панель таймера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject TimerPanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_TrainerLoadSceneName" data-uid="VR_common_components.UIManager.TrainerLoadSceneName">TrainerLoadSceneName</h4>
+  <div class="markdown level1 summary"><p>Название сцены, которая является загрузочной</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TrainerLoadSceneName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_UICanvas" data-uid="VR_common_components.UIManager.UICanvas">UICanvas</h4>
+  <div class="markdown level1 summary"><p>Ссылка на канвас данной UI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform UICanvas</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_UIManager_uiTargetLogic" data-uid="VR_common_components.UIManager.uiTargetLogic">uiTargetLogic</h4>
+  <div class="markdown level1 summary"><p>Ссылка на модуль отвечающий за передвижение меню</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UITargetLogic uiTargetLogic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UITargetLogic</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="VR_common_components_UIManager_DisableTimer_" data-uid="VR_common_components.UIManager.DisableTimer*"></a>
+  <h4 id="VR_common_components_UIManager_DisableTimer" data-uid="VR_common_components.UIManager.DisableTimer">DisableTimer()</h4>
+  <div class="markdown level1 summary"><p>Метод, выключающий панель таймера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableTimer()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_EnableTimer_" data-uid="VR_common_components.UIManager.EnableTimer*"></a>
+  <h4 id="VR_common_components_UIManager_EnableTimer" data-uid="VR_common_components.UIManager.EnableTimer">EnableTimer()</h4>
+  <div class="markdown level1 summary"><p>Метод, включающий панель таймера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableTimer()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ExitAplication_" data-uid="VR_common_components.UIManager.ExitAplication*"></a>
+  <h4 id="VR_common_components_UIManager_ExitAplication" data-uid="VR_common_components.UIManager.ExitAplication">ExitAplication()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitAplication()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_HideMenu_" data-uid="VR_common_components.UIManager.HideMenu*"></a>
+  <h4 id="VR_common_components_UIManager_HideMenu" data-uid="VR_common_components.UIManager.HideMenu">HideMenu()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий UI в состояние &quot;Меню скрыто&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideMenu()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_OnTimerTick_" data-uid="VR_common_components.UIManager.OnTimerTick*"></a>
+  <h4 id="VR_common_components_UIManager_OnTimerTick" data-uid="VR_common_components.UIManager.OnTimerTick">OnTimerTick()</h4>
+  <div class="markdown level1 summary"><p>Метод, вызывающийся при каждом тике таймера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTimerTick()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_Pause_" data-uid="VR_common_components.UIManager.Pause*"></a>
+  <h4 id="VR_common_components_UIManager_Pause" data-uid="VR_common_components.UIManager.Pause">Pause()</h4>
+  <div class="markdown level1 summary"><p>Метод, показывающий/скрывающий панель паузы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ReloadScene_" data-uid="VR_common_components.UIManager.ReloadScene*"></a>
+  <h4 id="VR_common_components_UIManager_ReloadScene" data-uid="VR_common_components.UIManager.ReloadScene">ReloadScene()</h4>
+  <div class="markdown level1 summary"><p>Метод, перезагружающий сцену в обход загрузочной сцены</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadScene()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_SetMaskMenu_" data-uid="VR_common_components.UIManager.SetMaskMenu*"></a>
+  <h4 id="VR_common_components_UIManager_SetMaskMenu_System_Boolean_" data-uid="VR_common_components.UIManager.SetMaskMenu(System.Boolean)">SetMaskMenu(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Метод, устанавливающий маску слоев для обработки рейкастерами</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaskMenu(bool isMenuShowed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isMenuShowed</span></td>
+        <td><p>Включено ли меню</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_SetMode_" data-uid="VR_common_components.UIManager.SetMode*"></a>
+  <h4 id="VR_common_components_UIManager_SetMode_GlobalTrainerData_TrainerModes_" data-uid="VR_common_components.UIManager.SetMode(GlobalTrainerData.TrainerModes)">SetMode(GlobalTrainerData.TrainerModes)</h4>
+  <div class="markdown level1 summary"><p>Метод, устанавливающий режим тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMode(GlobalTrainerData.TrainerModes mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GlobalTrainerData.TrainerModes</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Целевой режим</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ShowAdsMode_" data-uid="VR_common_components.UIManager.ShowAdsMode*"></a>
+  <h4 id="VR_common_components_UIManager_ShowAdsMode" data-uid="VR_common_components.UIManager.ShowAdsMode">ShowAdsMode()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий UI в состояние &quot;рекламы тренажера&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowAdsMode()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ShowBlockedTrainer_" data-uid="VR_common_components.UIManager.ShowBlockedTrainer*"></a>
+  <h4 id="VR_common_components_UIManager_ShowBlockedTrainer_System_Boolean_" data-uid="VR_common_components.UIManager.ShowBlockedTrainer(System.Boolean)">ShowBlockedTrainer(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowBlockedTrainer(bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ShowCheckDialog_" data-uid="VR_common_components.UIManager.ShowCheckDialog*"></a>
+  <h4 id="VR_common_components_UIManager_ShowCheckDialog_GameObject_" data-uid="VR_common_components.UIManager.ShowCheckDialog(GameObject)">ShowCheckDialog(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий тренажер в состояние &quot;Диалоговое окно&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowCheckDialog(GameObject linkedPanel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">linkedPanel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ShowControllerInfo_" data-uid="VR_common_components.UIManager.ShowControllerInfo*"></a>
+  <h4 id="VR_common_components_UIManager_ShowControllerInfo" data-uid="VR_common_components.UIManager.ShowControllerInfo">ShowControllerInfo()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий UI в состояние &quot;Информации о работе с контроллерами&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowControllerInfo()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ShowError_" data-uid="VR_common_components.UIManager.ShowError*"></a>
+  <h4 id="VR_common_components_UIManager_ShowError_System_String_System_String_System_Boolean_" data-uid="VR_common_components.UIManager.ShowError(System.String,System.String,System.Boolean)">ShowError(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Метод, отображающий панель ошибки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowError(string header = &quot;&#1055;&#1088;&#1086;&#1074;&#1072;&#1083;&#1077;&#1085;&#1086;!&quot;, string description = &quot;&quot;, bool isFatal = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">header</span></td>
+        <td><p>Заголовок ошибки</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Описание ошибки</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isFatal</span></td>
+        <td><p>Ошибка фатальная?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ShowError_" data-uid="VR_common_components.UIManager.ShowError*"></a>
+  <h4 id="VR_common_components_UIManager_ShowError_VR_common_components_UIManagerMessageObject_" data-uid="VR_common_components.UIManager.ShowError(VR_common_components.UIManagerMessageObject)">ShowError(UIManagerMessageObject)</h4>
+  <div class="markdown level1 summary"><p>Метод, отображающий панель ошибки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowError(UIManagerMessageObject definition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.UIManagerMessageObject.html">UIManagerMessageObject</a></td>
+        <td><span class="parametername">definition</span></td>
+        <td><p>Сообщение об ошибке</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ShowPassed_" data-uid="VR_common_components.UIManager.ShowPassed*"></a>
+  <h4 id="VR_common_components_UIManager_ShowPassed_System_String_System_String_" data-uid="VR_common_components.UIManager.ShowPassed(System.String,System.String)">ShowPassed(String, String)</h4>
+  <div class="markdown level1 summary"><p>Метод, отображающий панель успешного прохождения тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowPassed(string header = &quot;&quot;, string description = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">header</span></td>
+        <td><p>Заголовок</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>Описание</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ShowPassed_" data-uid="VR_common_components.UIManager.ShowPassed*"></a>
+  <h4 id="VR_common_components_UIManager_ShowPassed_VR_common_components_UIManagerMessageObject_" data-uid="VR_common_components.UIManager.ShowPassed(VR_common_components.UIManagerMessageObject)">ShowPassed(UIManagerMessageObject)</h4>
+  <div class="markdown level1 summary"><p>Метод, отображающий панель успешного прохождения тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowPassed(UIManagerMessageObject definition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.UIManagerMessageObject.html">UIManagerMessageObject</a></td>
+        <td><span class="parametername">definition</span></td>
+        <td><p>Сообщение об успешном прохождении тренажера</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ShowSelectMode_" data-uid="VR_common_components.UIManager.ShowSelectMode*"></a>
+  <h4 id="VR_common_components_UIManager_ShowSelectMode" data-uid="VR_common_components.UIManager.ShowSelectMode">ShowSelectMode()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий UI в состояние &quot;Выбор режима тренажера&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowSelectMode()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ToExam_" data-uid="VR_common_components.UIManager.ToExam*"></a>
+  <h4 id="VR_common_components_UIManager_ToExam" data-uid="VR_common_components.UIManager.ToExam">ToExam()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий тренажер в режим экзамена с последующей загрузкой сцены</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToExam()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ToLearning_" data-uid="VR_common_components.UIManager.ToLearning*"></a>
+  <h4 id="VR_common_components_UIManager_ToLearning" data-uid="VR_common_components.UIManager.ToLearning">ToLearning()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий тренажер в режим обучения с последующей загрузкой сцены</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToLearning()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ToPreStage_" data-uid="VR_common_components.UIManager.ToPreStage*"></a>
+  <h4 id="VR_common_components_UIManager_ToPreStage" data-uid="VR_common_components.UIManager.ToPreStage">ToPreStage()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий тренажер в режим подготовки с последующей загрузкой сцены</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToPreStage()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_ToScene_" data-uid="VR_common_components.UIManager.ToScene*"></a>
+  <h4 id="VR_common_components_UIManager_ToScene_System_String_" data-uid="VR_common_components.UIManager.ToScene(System.String)">ToScene(String)</h4>
+  <div class="markdown level1 summary"><p>Метод, выполняющий переход в другую сцену</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToScene(string sceneName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_UIManager_ToTraining_" data-uid="VR_common_components.UIManager.ToTraining*"></a>
+  <h4 id="VR_common_components_UIManager_ToTraining" data-uid="VR_common_components.UIManager.ToTraining">ToTraining()</h4>
+  <div class="markdown level1 summary"><p>Метод, переключающий тренажер в режим тренировки с последующей загрузкой сцены</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToTraining()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_UIManager_Update_" data-uid="VR_common_components.UIManager.Update*"></a>
+  <h4 id="VR_common_components_UIManager_Update" data-uid="VR_common_components.UIManager.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

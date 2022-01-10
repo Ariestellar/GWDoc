@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StandaloneRaycaster
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StandaloneRaycaster
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTC.UnityPlugin.Pointer3D.StandaloneRaycaster">
+  
+  
+  <h1 id="HTC_UnityPlugin_Pointer3D_StandaloneRaycaster" data-uid="HTC.UnityPlugin.Pointer3D.StandaloneRaycaster" class="text-break">Class StandaloneRaycaster
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseMultiMethodRaycaster.html">BaseMultiMethodRaycaster</a></div>
+    <div class="level2"><a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseFallbackCamRaycaster.html">BaseFallbackCamRaycaster</a></div>
+    <div class="level3"><a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html">Pointer3DRaycaster</a></div>
+    <div class="level4"><span class="xref">StandaloneRaycaster</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_MIN_SEGMENT_DISTANCE">Pointer3DRaycaster.MIN_SEGMENT_DISTANCE</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_buttonEventDataList">Pointer3DRaycaster.buttonEventDataList</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_sortedRaycastResults">Pointer3DRaycaster.sortedRaycastResults</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_breakPoints">Pointer3DRaycaster.breakPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_dragThreshold">Pointer3DRaycaster.dragThreshold</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_clickInterval">Pointer3DRaycaster.clickInterval</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_showDebugRay">Pointer3DRaycaster.showDebugRay</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_HoverEventData">Pointer3DRaycaster.HoverEventData</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_ButtonEventDataList">Pointer3DRaycaster.ButtonEventDataList</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_SortedRaycastResults">Pointer3DRaycaster.SortedRaycastResults</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_BreakPoints">Pointer3DRaycaster.BreakPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_OnEnable">Pointer3DRaycaster.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_OnDisable">Pointer3DRaycaster.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_CleanUpRaycast">Pointer3DRaycaster.CleanUpRaycast()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_Raycast">Pointer3DRaycaster.Raycast()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_Raycast_PointerEventData_System_Collections_Generic_List_RaycastResult__">Pointer3DRaycaster.Raycast(PointerEventData, List&lt;RaycastResult&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_FirstRaycastResult">Pointer3DRaycaster.FirstRaycastResult()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_AddGenerator_HTC_UnityPlugin_Pointer3D_IRaySegmentGenerator_">Pointer3DRaycaster.AddGenerator(IRaySegmentGenerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_RemoveGenerator_HTC_UnityPlugin_Pointer3D_IRaySegmentGenerator_">Pointer3DRaycaster.RemoveGenerator(IRaySegmentGenerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_CurrentSegmentGenerator">Pointer3DRaycaster.CurrentSegmentGenerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_ForceEnableSegmentGenerator__1">Pointer3DRaycaster.ForceEnableSegmentGenerator&lt;TGenerator&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_ForceDisableSegmentGenerators">Pointer3DRaycaster.ForceDisableSegmentGenerators()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_raycastMode">Pointer3DRaycaster.raycastMode</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_velocity">Pointer3DRaycaster.velocity</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_gravity">Pointer3DRaycaster.gravity</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_InitSegmentGenerator">Pointer3DRaycaster.InitSegmentGenerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_ToString">Pointer3DRaycaster.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseFallbackCamRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseFallbackCamRaycaster_NearDistance">BaseFallbackCamRaycaster.NearDistance</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseFallbackCamRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseFallbackCamRaycaster_FarDistance">BaseFallbackCamRaycaster.FarDistance</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseFallbackCamRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseFallbackCamRaycaster_eventCamera">BaseFallbackCamRaycaster.eventCamera</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseFallbackCamRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseFallbackCamRaycaster_OnDestroy">BaseFallbackCamRaycaster.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseMultiMethodRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseMultiMethodRaycaster_methods">BaseMultiMethodRaycaster.methods</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseMultiMethodRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseMultiMethodRaycaster_AddRaycastMethod_HTC_UnityPlugin_Pointer3D_IRaycastMethod_">BaseMultiMethodRaycaster.AddRaycastMethod(IRaycastMethod)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseMultiMethodRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseMultiMethodRaycaster_RemoveRaycastMethod_HTC_UnityPlugin_Pointer3D_IRaycastMethod_">BaseMultiMethodRaycaster.RemoveRaycastMethod(IRaycastMethod)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseMultiMethodRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseMultiMethodRaycaster_ForeachRaycastMethods_Ray_System_Single_System_Collections_Generic_List_RaycastResult__">BaseMultiMethodRaycaster.ForeachRaycastMethods(Ray, Single, List&lt;RaycastResult&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="HTC.UnityPlugin.Pointer3D.BaseMultiMethodRaycaster.html#HTC_UnityPlugin_Pointer3D_BaseMultiMethodRaycaster_GetRaycasterResultComparer">BaseMultiMethodRaycaster.GetRaycasterResultComparer()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTC.UnityPlugin.Pointer3D.html">HTC.UnityPlugin.Pointer3D</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="HTC_UnityPlugin_Pointer3D_StandaloneRaycaster_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StandaloneRaycaster : Pointer3DRaycaster</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTC_UnityPlugin_Pointer3D_StandaloneRaycaster_GetScrollDelta_" data-uid="HTC.UnityPlugin.Pointer3D.StandaloneRaycaster.GetScrollDelta*"></a>
+  <h4 id="HTC_UnityPlugin_Pointer3D_StandaloneRaycaster_GetScrollDelta" data-uid="HTC.UnityPlugin.Pointer3D.StandaloneRaycaster.GetScrollDelta">GetScrollDelta()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Vector2 GetScrollDelta()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_GetScrollDelta">Pointer3DRaycaster.GetScrollDelta()</a></div>
+  
+  
+  <a id="HTC_UnityPlugin_Pointer3D_StandaloneRaycaster_Start_" data-uid="HTC.UnityPlugin.Pointer3D.StandaloneRaycaster.Start*"></a>
+  <h4 id="HTC_UnityPlugin_Pointer3D_StandaloneRaycaster_Start" data-uid="HTC.UnityPlugin.Pointer3D.StandaloneRaycaster.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="HTC.UnityPlugin.Pointer3D.Pointer3DRaycaster.html#HTC_UnityPlugin_Pointer3D_Pointer3DRaycaster_Start">Pointer3DRaycaster.Start()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

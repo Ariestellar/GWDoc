@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1054;&#1089;&#1085;&#1086;&#1074;&#1099; &#1088;&#1072;&#1073;&#1086;&#1090;&#1099; &#1089; Plastic SCM </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1054;&#1089;&#1085;&#1086;&#1074;&#1099; &#1088;&#1072;&#1073;&#1086;&#1090;&#1099; &#1089; Plastic SCM ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><span style="color:red">Принцип работы файла &quot;Ignore&quot; отличается от привычной системы git. Файлы и папки для игнорирования, которые были внесены в него после запуска проекта, приводят к затруднениям в работе т.к. не игнорируются в полной мере. Перед заливкой проекта в репозиторий необходимо убедиться в наличии и правильной настройке &quot;Ignore&quot; файла.</span></p>
+<h1 id="основы-работы-с-plastic-scm">Основы работы с Plastic SCM</h1>
+<p><img src="./Images/VersionControlGuidline1.png" alt="Alt text"><br>
+Из этого видео вы узнаете, чем Plastic SCM отличается от Git, как начать работать с Plastic, как правильно делать merge веток, научитесь настраивать клиент для удобной работы и узнаете каким стратегиям придерживаться при работе с данной системой контроля версий.<br>
+<a href="http://www.youtube.com/watch?v=Z8rD7-8z__Y"><img src="http://img.youtube.com/vi/Z8rD7-8z__Y/0.jpg" alt="ALT text"></a><br>
+<strong>ССЫЛКА НА ВИДЕО ⬆️:arrow_up::arrow_up:</strong></p>
+<p>[Официальная инструкция по работе с Plastic]{https://www.plasticscm.com/documentation/labs/main}</p>
+<p>[Как выглядит gitignor для Plastic]{http://blog.plasticscm.com/2020/01/definitive-ignoreconf-for-unity-projects.html}</p>
+<h1 id="правила-нашей-команды-по-работе-в-plastic">ПРАВИЛА НАШЕЙ КОМАНДЫ ПО РАБОТЕ В PLASTIC</h1>
+<p><strong>Как работаем в Plastic SCM</strong><br>
+Plastic - система контроля версий, поддерживающая ветки разработки, которые можно разделять и сливать.<br>
+Есть 3 основные ветки для каждого:</p>
+<ol>
+<li>Main - главная ветка, там лежат только полностью рабочие версии приложения. В нее коммитит только техлид</li>
+<li>Develop - основная &quot;current&quot; ветка разработки. Для того, чтобы залить в нее изменения, нужно будет отправить pull request, техлид его одобряет и разрешает, либо говорит, что изменить</li>
+<li>Личная ветка разработки (или даже несколько, как удобнее). В ней можно делать что угодно
+...</li>
+</ol>
+<p>Сцены проекта:</p>
+<ol>
+<li>Main - основная сцена, у каждого она есть, в нее заливать изменения по согласованию с техлидом (т.е. &quot;Никита, я доделал свои шаги, main сейчас свободна, чтобы я их залил?&quot;) и только в develop сцене. Художник и Sound designer могут в ней работать постоянно без лишней синхронизации (но в своих ветках все равно)</li>
+<li>Своя отдельная сцена. В ней экспериментируем, в основную добавляем только готовые оттестированные решения</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

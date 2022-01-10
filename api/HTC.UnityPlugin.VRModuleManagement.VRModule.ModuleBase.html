@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VRModule.ModuleBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VRModule.ModuleBase
+   ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase">
+  
+  
+  <h1 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase" class="text-break">Class VRModule.ModuleBase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VRModule.ModuleBase</span></div>
+      <div class="level2"><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.GoogleVRModule.html">GoogleVRModule</a></div>
+      <div class="level2"><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.OculusVRModule.html">OculusVRModule</a></div>
+      <div class="level2"><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.SimulatorVRModule.html">SimulatorVRModule</a></div>
+      <div class="level2"><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.SteamVRModule.html">SteamVRModule</a></div>
+      <div class="level2"><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.UnityEngineVRModule.html">UnityEngineVRModule</a></div>
+      <div class="level2"><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.UnityXRModule.html">UnityXRModule</a></div>
+      <div class="level2"><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.WaveVRModule.html">WaveVRModule</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HTC.UnityPlugin.VRModuleManagement.html">HTC.UnityPlugin.VRModuleManagement</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ModuleBase</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_INVALID_DEVICE_INDEX" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.INVALID_DEVICE_INDEX">INVALID_DEVICE_INDEX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const uint INVALID_DEVICE_INDEX = 4294967295U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_MAX_DEVICE_COUNT" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.MAX_DEVICE_COUNT">MAX_DEVICE_COUNT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const uint MAX_DEVICE_COUNT = 64U</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_isActivated_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.isActivated*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_isActivated" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.isActivated">isActivated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isActivated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_moduleIndex_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.moduleIndex*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_moduleIndex" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.moduleIndex">moduleIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int moduleIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_moduleOrder_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.moduleOrder*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_moduleOrder" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.moduleOrder">moduleOrder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int moduleOrder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_Activated_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.Activated*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_Activated" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.Activated">Activated()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Activated()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_AxisToPress_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.AxisToPress*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_AxisToPress_System_Boolean_System_Single_System_Single_System_Single_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.AxisToPress(System.Boolean,System.Single,System.Single,System.Single)">AxisToPress(Boolean, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AxisToPress(bool previousPressedState, float currentAxisValue, float setThreshold, float unsetThreshold)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">previousPressedState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">currentAxisValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">setThreshold</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">unsetThreshold</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_BeforeRenderUpdate_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.BeforeRenderUpdate*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_BeforeRenderUpdate" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.BeforeRenderUpdate">BeforeRenderUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void BeforeRenderUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_Deactivated_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.Deactivated*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_Deactivated" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.Deactivated">Deactivated()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deactivated()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_EnsureDeviceStateLength_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.EnsureDeviceStateLength*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_EnsureDeviceStateLength_System_UInt32_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.EnsureDeviceStateLength(System.UInt32)">EnsureDeviceStateLength(UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnsureDeviceStateLength(uint capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_EnsureValidDeviceState_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.EnsureValidDeviceState*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_EnsureValidDeviceState_System_UInt32_HTC_UnityPlugin_VRModuleManagement_IVRModuleDeviceState__HTC_UnityPlugin_VRModuleManagement_IVRModuleDeviceStateRW__" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.EnsureValidDeviceState(System.UInt32,HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceState@,HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW@)">EnsureValidDeviceState(UInt32, out IVRModuleDeviceState, out IVRModuleDeviceStateRW)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnsureValidDeviceState(uint index, out IVRModuleDeviceState prevState, out IVRModuleDeviceStateRW currState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceState.html">IVRModuleDeviceState</a></td>
+        <td><span class="parametername">prevState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW.html">IVRModuleDeviceStateRW</a></td>
+        <td><span class="parametername">currState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_FixedUpdate_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.FixedUpdate*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_FixedUpdate" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.FixedUpdate">FixedUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FixedUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_FlushDeviceState_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.FlushDeviceState*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_FlushDeviceState" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.FlushDeviceState">FlushDeviceState()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void FlushDeviceState()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_GetDeviceStateLength_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.GetDeviceStateLength*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_GetDeviceStateLength" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.GetDeviceStateLength">GetDeviceStateLength()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint GetDeviceStateLength()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_GetLeftControllerDeviceIndex_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.GetLeftControllerDeviceIndex*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_GetLeftControllerDeviceIndex" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.GetLeftControllerDeviceIndex">GetLeftControllerDeviceIndex()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual uint GetLeftControllerDeviceIndex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_GetRightControllerDeviceIndex_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.GetRightControllerDeviceIndex*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_GetRightControllerDeviceIndex" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.GetRightControllerDeviceIndex">GetRightControllerDeviceIndex()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual uint GetRightControllerDeviceIndex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_HasInputFocus_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.HasInputFocus*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_HasInputFocus" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.HasInputFocus">HasInputFocus()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasInputFocus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_InvokeControllerRoleChangedEvent_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.InvokeControllerRoleChangedEvent*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_InvokeControllerRoleChangedEvent" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.InvokeControllerRoleChangedEvent">InvokeControllerRoleChangedEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeControllerRoleChangedEvent()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_InvokeInputFocusEvent_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.InvokeInputFocusEvent*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_InvokeInputFocusEvent_System_Boolean_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.InvokeInputFocusEvent(System.Boolean)">InvokeInputFocusEvent(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InvokeInputFocusEvent(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_LateUpdate_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.LateUpdate*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_LateUpdate" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.LateUpdate">LateUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LateUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_OnActivated_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.OnActivated*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_OnActivated" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.OnActivated">OnActivated()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnActivated()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_OnDeactivated_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.OnDeactivated*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_OnDeactivated" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.OnDeactivated">OnDeactivated()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDeactivated()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ProcessConnectedDeviceChanged_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ProcessConnectedDeviceChanged*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ProcessConnectedDeviceChanged" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ProcessConnectedDeviceChanged">ProcessConnectedDeviceChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessConnectedDeviceChanged()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ProcessDeviceInputChanged_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ProcessDeviceInputChanged*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ProcessDeviceInputChanged" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ProcessDeviceInputChanged">ProcessDeviceInputChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessDeviceInputChanged()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ProcessDevicePoseChanged_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ProcessDevicePoseChanged*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ProcessDevicePoseChanged" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ProcessDevicePoseChanged">ProcessDevicePoseChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessDevicePoseChanged()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_SetupKnownDeviceModel_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.SetupKnownDeviceModel*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_SetupKnownDeviceModel_HTC_UnityPlugin_VRModuleManagement_IVRModuleDeviceStateRW_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.SetupKnownDeviceModel(HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW)">SetupKnownDeviceModel(IVRModuleDeviceStateRW)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void SetupKnownDeviceModel(IVRModuleDeviceStateRW deviceState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW.html">IVRModuleDeviceStateRW</a></td>
+        <td><span class="parametername">deviceState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ShouldActiveModule_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ShouldActiveModule*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_ShouldActiveModule" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.ShouldActiveModule">ShouldActiveModule()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ShouldActiveModule()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_TriggerHapticVibration_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.TriggerHapticVibration*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_TriggerHapticVibration_System_UInt32_System_Single_System_Single_System_Single_System_Single_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.TriggerHapticVibration(System.UInt32,System.Single,System.Single,System.Single,System.Single)">TriggerHapticVibration(UInt32, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TriggerHapticVibration(uint deviceIndex, float durationSeconds = 0.01F, float frequency = 85F, float amplitude = 0.125F, float startSecondsFromNow = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">deviceIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">durationSeconds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frequency</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">amplitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">startSecondsFromNow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_TriggerViveControllerHaptic_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.TriggerViveControllerHaptic*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_TriggerViveControllerHaptic_System_UInt32_System_UInt16_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.TriggerViveControllerHaptic(System.UInt32,System.UInt16)">TriggerViveControllerHaptic(UInt32, UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TriggerViveControllerHaptic(uint deviceIndex, ushort durationMicroSec = 500)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">deviceIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">durationMicroSec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_TryGetValidDeviceState_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.TryGetValidDeviceState*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_TryGetValidDeviceState_System_UInt32_HTC_UnityPlugin_VRModuleManagement_IVRModuleDeviceState__HTC_UnityPlugin_VRModuleManagement_IVRModuleDeviceStateRW__" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.TryGetValidDeviceState(System.UInt32,HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceState@,HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW@)">TryGetValidDeviceState(UInt32, out IVRModuleDeviceState, out IVRModuleDeviceStateRW)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryGetValidDeviceState(uint index, out IVRModuleDeviceState prevState, out IVRModuleDeviceStateRW currState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceState.html">IVRModuleDeviceState</a></td>
+        <td><span class="parametername">prevState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW.html">IVRModuleDeviceStateRW</a></td>
+        <td><span class="parametername">currState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_Update_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.Update*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_Update" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Update()</code></pre>
+  </div>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_UpdateDeviceState_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.UpdateDeviceState*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_UpdateDeviceState_HTC_UnityPlugin_VRModuleManagement_IVRModuleDeviceState___HTC_UnityPlugin_VRModuleManagement_IVRModuleDeviceStateRW___" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.UpdateDeviceState(HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceState[],HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW[])">UpdateDeviceState(IVRModuleDeviceState[], IVRModuleDeviceStateRW[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateDeviceState(IVRModuleDeviceState[] prevState, IVRModuleDeviceStateRW[] currState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceState.html">IVRModuleDeviceState</a>[]</td>
+        <td><span class="parametername">prevState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="HTC.UnityPlugin.VRModuleManagement.IVRModuleDeviceStateRW.html">IVRModuleDeviceStateRW</a>[]</td>
+        <td><span class="parametername">currState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_UpdateTrackingSpaceType_" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.UpdateTrackingSpaceType*"></a>
+  <h4 id="HTC_UnityPlugin_VRModuleManagement_VRModule_ModuleBase_UpdateTrackingSpaceType" data-uid="HTC.UnityPlugin.VRModuleManagement.VRModule.ModuleBase.UpdateTrackingSpaceType">UpdateTrackingSpaceType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateTrackingSpaceType()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

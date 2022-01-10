@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1055;&#1086;&#1088;&#1103;&#1076;&#1086;&#1082; &#1088;&#1077;&#1075;&#1080;&#1089;&#1090;&#1088;&#1072;&#1094;&#1080;&#1080; &#1085;&#1086;&#1074;&#1099;&#1093; &#1074;&#1077;&#1088;&#1089;&#1080;&#1081; &#1074; &#1074;&#1077;&#1090;&#1082;&#1077; Development </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1055;&#1086;&#1088;&#1103;&#1076;&#1086;&#1082; &#1088;&#1077;&#1075;&#1080;&#1089;&#1090;&#1088;&#1072;&#1094;&#1080;&#1080; &#1085;&#1086;&#1074;&#1099;&#1093; &#1074;&#1077;&#1088;&#1089;&#1080;&#1081; &#1074; &#1074;&#1077;&#1090;&#1082;&#1077; Development ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="порядок-регистрации-новых-версий-в-ветке-development">Порядок регистрации новых версий в ветке Development</h1>
+
+<p>Вся работа над новыми тренажерами, инструментами, фичами должна производится в отдельной ветви которая исходит из ветки Development.</p>
+<p>Когда цикл разработки нового модуля окончен (полностью протестирован, задокументирован и.т.д), ветку, в которой происходила работа
+необходимо залить в Development (если в Development за время разработки произошли изменения то обновится протестировать,
+если нужно внести правки в соответствии с новыми изменениями).</p>
+<p>Это действие считается релизом, после успешного вливания изменений в Development, ему присваивается версия.
+Порядок присваивания:</p>
+<p>3 числа</p>
+<p>Пример: 2021.3.7</p>
+<ul>
+<li>2021-год</li>
+<li>3-изменения в общих файлах, проверяются только по изменению develop. Добавили новую фичу + к версии. Изменили код внутри общих модулей + к версии. Новый тренажер + к версии... При изменении этого числа, третье число сбрасывается</li>
+<li>7-изменения в тренажерах, которые прошли в develop. Например, правки.</li>
+</ul>
+<p>Если это версия для клиента, которая не будет вливатся в Development, то в начале должно быть наименование компании клиента</p>
+<p>Пример: ИЛИМ_2021.3.7</p>
+<p>После определения версии необходимо добавить Label в Plastic с названием новой версии проекта и описанием изменений.</p>
+<p><img src="/Images/LabelPlastic.png" alt="Alt text"></p>
+<p>А так же необходимо добавить в <a href="https://github.com/Goldfinchworks/VersionsGWproProjects">проект с описанием версий</a>  название и описание новой версии в файлик Info.md</p>
+<p>после изменения файлика info.md необходимо заполнить описание релиза:</p>
+<p><img src="/Images/GitRelease.png" alt="Alt text"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

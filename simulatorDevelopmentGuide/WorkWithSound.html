@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1056;&#1072;&#1073;&#1086;&#1090;&#1072; &#1089;&#1086; &#1079;&#1074;&#1091;&#1082;&#1086;&#1084; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1056;&#1072;&#1073;&#1086;&#1090;&#1072; &#1089;&#1086; &#1079;&#1074;&#1091;&#1082;&#1086;&#1084; ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="работа-со-звуком">Работа со звуком</h1>
+
+<p>&quot;Посмотреть ТЗ, почувствовать ТЗ, стать ТЗ&quot; (C) Павел, Sound дизайнер</p>
+<h2 id="правила">Правила:</h2>
+<p><u> Громкость звуков по шкале микшера: </u></p>
+<ol>
+<li>Эмбмиенс и всяческие фоновые шумы порядка -60/-45 db, в зависимости от конкретного случая</li>
+<li>Прямой дикторский голос: в пике до -22/-18 db</li>
+<li>Звуки UI, в зависимости от прорезаемости и жёсткости чуть тише голоса, -28/-24 db</li>
+<li>Интерактивные звуки - чтобы звучали естественно, громче фона и тише голоса, при одновременном воспроизведении</li>
+<li>Озвучка при помощи ИИ по адресу <a href="https://zvukogram.com/speech/">https://zvukogram.com/speech/</a>, пользуемся русский - Филипп pro, английский  En - Guy pro)</li>
+</ol>
+<p><u> Инструкция: </u></p>
+<ol>
+<li>Пройти первую версию тренажёра и выписать механики</li>
+<li>Выписать интерактивные и фоновые звуки</li>
+<li>Прописать подсказки в &quot;алгоритмы и ассеты VR тренажеров&quot; (ссылка) , отдать на проверку Project Manager-у</li>
+<li>Доработать, записать в ИИ дикторе (ссылка) первую версию подсказок.</li>
+<li>Подсказки лучше короткие и без длинного перечисления, иначе нужно внимательно следить за акцентированием. Желательно без аббревиатур (особенно где много согласных, н-р: &quot;ПТМ&quot;).</li>
+<li>Расставить первую версию подсказок по Тренажеру используя последнюю версию LessonManager-а, см. Видеоурок от Паши (ссылка)</li>
+<li>Посмотреть базу звуков (ссылка), если нету, то найти нужные на motionarray.com</li>
+<li>Поставить задачу по скачиванию звуков на Project Manager-а (если не понятно, на кого ставить)</li>
+<li>Выбрать нужное из скачанного и перевести во flac¹</li>
+<li>Расставить по тренажёру паралельно создавая под каждый элемент подгруппу микшера²</li>
+<li>Отрегулировать громкость³</li>
+<li>Доработка подсказок и звуков по необходимости.</li>
+</ol>
+<p><u> Порядок согласования текста подсказок: </u></p>
+<ol>
+<li>sound designer - разработал и условно отправил на согласование;</li>
+<li>ведущий (основной) разработчик конкретного проекта VR (отличается в проектах). Проверяет на соответствие механик и порядка шагов;</li>
+<li>Менеджер проектов VR. Проверяет логичность, ясность иъяснений и количества самих подсказок с  точки зрения пользователя;</li>
+<li>Методист проверяет на соответствие методике;</li>
+<li>Директор - Утверждает конечный вариант.</li>
+</ol>
+<p>При возврате на каком либо уровне задачи дизайнеру, обязательно нобходимо прогонять правки через ведущего разработчика, а дальше (при отсутствии каких-либо
+значимых изменений) обратно к тому, кто вернул задачу в разработку, пропуская промежуточные этапы.
+Если же правки крупные или их много, то замечания и исправления снова согласовать с каждым из списка.</p>
+<hr>
+<p>1 - стараться все звуки держать в качестве Flac, по возможности в моно.</p>
+<p>К нему дочерние микшеры:</p>
+<ul>
+<li>&quot;Ambience&quot;</li>
+<li>&quot;Direct&quot;</li>
+<li>&quot;Interactive&quot;</li>
+</ul>
+<p>В микшере &quot;Direct&quot; создать группы:
+Camera, As_Camera, UI, для соответствующих звуков</p>
+<p>2 - создаётся main микшер с названием тренажёра,</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Builder </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Builder ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="builder">Builder</h1>
+
+<p>Модуль отвечающий за настройку конвейера билдов. Создаем билды с требуемыми настройками для различных платформ (Steam, Oculus, Vive) и типов распротсранения (Free, Premium).
+В SO BuilderSettings необходимо заполнить поля
+PrefabTimeCheker-префаб TimeCheker
+PrefabUI-префаб UI
+VIUSettings-SO VIU настроек
+Image Oculus-картинка для контроллеров Окулус
+Image Focus-картинка для контроллеров Фокус
+Trainers-задаем колличество тренажеров после ппод каждый тренажер появляются поля:</p>
+<ul>
+<li>NameTrainers-имя тренажера равно имя проекта</li>
+<li>idTrainers-id тренажера устанавливается в MessageControllerPlug</li>
+<li>NamePatchScene-путь до сцены которая будет включатся в тренажера</li>
+</ul>
+<p><img src="./Images/BuilderSettings.png" alt="Alt text"></p>
+<p>Для того что бы запустить конвейер из командной строки необходимо ввести строку (пример):
+C:\Users\Ariestellar&gt;&quot;C:\Program Files\Unity\Hub\Editor\2020.1.17f1\Editor\Unity.exe&quot; -batchmode -executeMethod ContinuousDevelopment.Builder.StartConveyor -logFile ./Logs/unity.log
+в batchmode</p>
+<h3 id="поля">Поля:</h3>
+<ul>
+<li>List<string> scenesForBuild - итоговый пул сцен для билда перед билдом аккумулирует в себя необходимые сцены (обязательные и сцену для конкретного тренажера)</string></li>
+<li>List<string> requiredScenes - обязательные сцены для всех тренажеров (всегда должны добавлятся во все тренажеры SpawnMenu, MainScene, SplashScene)</string></li>
+<li>BuildTarget currentSelectTargetPlatform - текущая выбранная платформа, для отслеживания статуса переключения платформы проекта (Android, Standartalone)</li>
+<li>LocalBuildTarget currentSelectLocalTargetPlatform - выбранная локальная платформа (Steam, Oculus, Vive) на основе ее выбора применяются все остальные настройки</li>
+<li>LicenseType distributionVersion - выбранная версия распространения продукта (Free, Premium)</li>
+<li>BuilderSettings builderSettings - необходимые настройки для конвейера билдов</li>
+<li>int currentConveyorTrainers - текущий тренажер по порядку в конвейере который подготавливается на данный момент инкременируется при окончании всех билдов для предыдущего тренажера</li>
+<li>int callbackOrder - поле от реализации интерфейса IPostprocessBuildWithReport нигде не используется</li>
+</ul>
+<h3 id="методы">Методы:</h3>
+<ul>
+<li><p>StartConveyor - Стартует конвейер билдов(запускает первую итерацию), в нем задаем настройки общие для всех тренажеров (название компании, обязательные сцены, получение настроек билда)</p>
+</li>
+<li><p>OnPostprocessBuild - Обратный вызов по окончанию сборки от реализации интерфейса IPostprocessBuildWithReport в нем определяем очередность билда тренажера</p>
+</li>
+<li><p>PreparingTimeCheker - подготавливает TimeCheker в зависимости от локальной платформы необходимо вызывать в открытой сцене SpawnMenu</p>
+</li>
+<li><p>IterationConveyor - очередная итерация конвейера, здесь же проверяется нужно ли вообще начинать итерацию или конвейер уже достиг своего апогея здесь вызывается частная настройка для конкретный тренажера</p>
+</li>
+<li><p>SettingPostChangePlatform - установка настроек VIU после переключения платформы, вызывается в CheckPlatform после того как обнаруживается что платформа изменилась</p>
+</li>
+<li><p>SetBuildSettings - установка настроек для каждой отдельной платформы вызывается в IterationConveyor</p>
+</li>
+<li><p>ChangeHandModel - заменяем модель рук в соответствии с названием моделей</p>
+</li>
+<li><p>ChangeUIPanel - заменяем UIPanel в соответствии с видом распространения</p>
+</li>
+<li><p>CheckPlatform - проверяем в Update Editor смену платформы если прлатформа сменилась то изменем установки VIU и запускаем билд</p>
+<p>После создания билдов необходимо подписать Android билды</p>
+</li>
+</ul>
+<p>Это делается с помощью команды командной строки(пример):
+FOR %i IN (D:\Builds\Android*.apk) DO &quot;C:\Program Files\Android\Android Studio\jre\bin\jarsigner.exe&quot; -keystore &quot;D:\KeyForSign\GWProVRTrainers.keystore&quot; -storepass dJKTGns!i6541 -keypass kYHJidb!vf4ss %i vrtrainers_zp</p>
+<p>&quot;C:\Program Files\Android\Android Studio\jre\bin\jarsigner.exe&quot; -keystore &quot;D:\KeyForSign\GWProVRTrainers.keystore&quot; -storepass dJKTGns!i6541 -keypass kYHJidb!vf4ss &quot;D:\Builds\Android\OhranaTrudaForOculusFree30_12_21.apk&quot; vrtrainers_zp</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

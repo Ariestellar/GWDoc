@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1056;&#1040;&#1047;&#1056;&#1040;&#1041;&#1054;&#1058;&#1050;&#1040; &#1057;&#1062;&#1045;&#1053;&#1067; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1056;&#1040;&#1047;&#1056;&#1040;&#1041;&#1054;&#1058;&#1050;&#1040; &#1057;&#1062;&#1045;&#1053;&#1067; ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="разработка-сцены">РАЗРАБОТКА СЦЕНЫ</h1>
+
+<h2 id="правила">Правила</h2>
+<ol>
+<li>Сцена не должна превышать 200к полигонов</li>
+<li>3д объект не должен превышать 10к полигонов</li>
+<li>Проверить текстуру объекта, размера файла н должен превышать 4мб</li>
+<li>Не использовать тиррейн больше чем 100м на 100м (Нужно разобраться, почему)</li>
+<li>Нельзя тиррейну создавать неровности</li>
+<li>Все ландшафтные неровности делать 3д объектом</li>
+<li>У кустов, деревьев и травы снять галочку с Billboard в настройках Edit Grass Texture</li>
+</ol>
+<h2 id="инструкция">Инструкция</h2>
+<ol>
+<li>Изучить методику</li>
+<li>Выписать объекты в «Выбор 3Д моделей для VR-тренажеров»</li>
+<li>Отдать на проверку продукт-менеджер</li>
+<li>Ждем покупки всех объектов, которых не хватает</li>
+<li>Создаем сцену у себя на компьютере</li>
+<li>Проверяем на количество полигонов</li>
+<li>Отдать на проверку</li>
+<li>После одобрения, создаем новую сцену в репозитории</li>
+<li>Переносим все используемые объекты в новую сцену</li>
+<li>Оптимизируем сцену</li>
+<li>Запекаем свет</li>
+</ol>
+<h2 id="чеклист">Чеклист</h2>
+<h3 id="подготовке-сцены-для-нового-тренажера">Подготовке сцены для нового тренажера</h3>
+<ol>
+<li>Алгоритмы и ассеты тренажера (см. таблицу <a href="https://docs.google.com/spreadsheets/d/19FDSJWAwDE2ar8zjWRrxY-PFgi8KgkIAvma4yldXMqI/edit#gid=0">https://docs.google.com/spreadsheets/d/19FDSJWAwDE2ar8zjWRrxY-PFgi8KgkIAvma4yldXMqI/edit#gid=0</a>) собраны по методике</li>
+<li>Схема расстановки объектов согласована с методистом</li>
+<li>Найдены или отправлены в разработку все 3D модели, с которыми взаимодействуем (станки / приборы / инструменты )</li>
+<li>Внешняя часть собрана / найдена / отправлена на разработку (здание, местность...)</li>
+<li>Проверено, что все модели на сцене в общей сложности по количеству полигонов не превосходят 200 000.</li>
+</ol>
+<h3 id="оптимизация-виртуальной-сцены-для-мобильной-платформы-htc-vive-focus-plus">Оптимизация виртуальной сцены для мобильной платформы HTC Vive Focus Plus</h3>
+<ol>
+<li>Общее кол-во полигонов не более 200 000 (200к)</li>
+<li>Все шейдеры, использующиеся на моделях, мобильные</li>
+<li>Нет коллайдеров на объектах, с которыми не может быть взаимодействия</li>
+<li>Occlusion Culling запечен (<a href="https://docs.unity3d.com/ru/530/Manual/OcclusionCulling.html">https://docs.unity3d.com/ru/530/Manual/OcclusionCulling.html</a>)</li>
+<li>Все статичные объекты в сцене помечены как статичные</li>
+<li>Свет запечен (См. инструкцию по запеканию света)</li>
+<li>Нет динамических источников света</li>
+<li>GPU instancing включено для материалов многих одинаковых объектов в сцене</li>
+<li>Все здание и все стены - один объект с одним материалом (для правильной запечки света и чтобы за ними не отрисовывались после постановки в очередь другие объекты с таким же материалом (см. офис в Пожарной безопасности)</li>
+<li>У всех динамических объектов отключены тени</li>
+<li>Для всех LOD-ов объектов (где они есть), тени запечены правильно</li>
+<li>Проверить, что для всего текста в TMPro проставлена галочка “Extra Padding property”</li>
+<li>Все стены всегда отрисовываются первыми (чтобы ненужные объекты за стенами не прошли тест Z-буфера)</li>
+<li>Пример:</li>
+<li><img src="/Images/WorkWithTheScene.png" alt="Alt text"></li>
+</ol>
+<h2 id="план">План</h2>
+<h3 id="projects-in-progress">Projects in progress</h3>
+<p>Необходимые характеристики:</p>
+<p>-- Модель в формате .fbx
+-- Не больше 10000 полигонов (самый верхний предел, т.к. от кол-ва полигонов зависит производительность, а пользователь в очках VR не видит разницы между 1к полигонов и 10к), желательно наличие LOD-ов для модели (например, 500 полигонов, 1000 полигонов, 5000 полигонов)
+-- стилистика реалистичная (VR тренажер, чтобы научить работников пользоваться реальным оборудованием)</p>
+<p>Желательные характеристики:</p>
+<p>-- PBR pipeline (текстурные карты отдельно, если они есть: normalmap, roughness map, albedo map, metallic map)
+-- Запеченные текстуры</p>
+<hr>
+<ol>
+<li>Открыть таблицу Выбор 3Д моделей для VR-тренажеров и копировать старый лист для соответствующего тренажера, если такого еще нет</li>
+<li>Переименовать лист</li>
+<li>Занести все необходимые наименования моделей в столбец 1 таблицы</li>
+<li>Найти модели в интернете, записываем URL ссылки в соответствующие ячейки напротив названия. Когда есть насколько вариантов, дублируем</li>
+</ol>
+<h3 id="где-искать">Где искать</h3>
+<ol>
+<li>Unity Asset Store (ввести в строку поиска русское название, потом английское название, далее добавляем “pack” для сборок моделей )</li>
+<li>Turbosquid (в параметрах поиска под Formats поставить галочку под форматом .fbx , а так же кликнуть на Rigged чтобы модель могла двигаться)</li>
+<li>CGTrader</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

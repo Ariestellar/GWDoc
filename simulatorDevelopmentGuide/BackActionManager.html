@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1052;&#1077;&#1085;&#1077;&#1076;&#1078;&#1077;&#1088; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1072; &#1076;&#1077;&#1081;&#1089;&#1090;&#1074;&#1080;&#1081; (BackActionManager) </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1052;&#1077;&#1085;&#1077;&#1076;&#1078;&#1077;&#1088; &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;&#1072; &#1076;&#1077;&#1081;&#1089;&#1090;&#1074;&#1080;&#1081; (BackActionManager) ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="менеджер-возврата-действий-backactionmanager">Менеджер возврата действий (BackActionManager)</h1>
+
+<p>Данный компоннент служит для возврата действий пользователя тренажера при допущении им ошибки</p>
+<p><img src="/Images/BackActionManager1.png" alt="Alt text"></p>
+<h3 id="основная-задача-компонента">Основная задача компонента</h3>
+<p>При прохождении тренажера в режимах Тренировка и Экзамен пользователь может совершить какие либо ошибки. Неправильные действия пользователя вызовут меню ошибки с описание неправильных действий, а так же 3 кнопки которые предполагают дальнейшие действия пользователя в тренажере.</p>
+<p>Выход - пользователь выходит из тренажера в главное меню выбора тренажеров.</p>
+<p>Повторить - вызывает меню выбора режимов тренажеров в котором пользователь может выбрать другой режим и пройти заново текущий запущенный тренажер</p>
+<p>Продолжить - пользователь возвращает негативные последствия от данной ошибки в исходное состояние и продолжает проходить тренажер.</p>
+<p>Именно действие этой кнопки и реализует данный компонент.</p>
+<h2 id="как-настроить">Как настроить</h2>
+<p><img src="/Images/BackActionManager2.png" alt="Alt text"></p>
+<p>На сцене в объектах менеджеров, необходимо разместить пустой объект с компонентом &quot;BackActionManager&quot; наследуемым от типа MonoBehaviour. Он в свою очередь имеет одну публичную функцию вызов которой необходимо произвести при событии OnClick компонента Button на объекте &quot;Continue&quot; что соответствует клику по кнопке &quot;Продолжить&quot; в меню ошибки</p>
+<p><img src="/Images/BackActionManager3.png" alt="Alt text"></p>
+<p>При этом EventManager должен обрабатывать событие &quot;Запись действия возврата&quot;</p>
+<p><img src="/Images/BackActionManager4.png" alt="Alt text"></p>
+<h3 id="зависимая-логика-других-компонентов">Зависимая логика других компонентов</h3>
+<p>Любой объект взаимодействия который подразумевает откат при неправильном с ним взаимодействии, должен позаботится о том что бы вернутся в исходное состояние. К примеру на скриншоте мы видим компонент который определяет своевременность нахождения пользователя в точке эвакуации, и если он находится там когда это является ошибкой, то компонент посылает событие через EventManager - &quot;Запись действия возврата&quot; и с ним делегат типа Action с записанными действиями которые произведут откат в надлежащее состояние в нашем случае это телепортирование игрока в начальную точку (_setCustomVRPosition.ResetPosition) и сброс переменной PlayerOnPoint</p>
+<h2 id="описание-работы">Описание работы</h2>
+<p><img src="/Images/BackActionManager5.png" alt="Alt text"></p>
+<p>Компонент представляет собой класс, который, в момент своей работы слушает событие EventManager - &quot;Запись действия возврата&quot;. Этого событие обрабатывается в методе AddingAnAction() которое получает уникальное действие возврата от компонента который вызвал это событие, и записывает его в делегат типа Action reverseActions. При срабатывании метода Return() который вызывается при событии OnClick кнопки &quot;Продолжить&quot;все действия записанные в делегате reverseActions выполняются, чем восстанавливают исходное состояние до момента совершения ошибки</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
