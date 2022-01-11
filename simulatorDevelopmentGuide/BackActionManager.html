@@ -80,7 +80,7 @@
 <h1 id="менеджер-возврата-действий-backactionmanager">Менеджер возврата действий (BackActionManager)</h1>
 
 <p>Данный компоннент служит для возврата действий пользователя тренажера при допущении им ошибки</p>
-<p><img src="/Images/BackActionManager1.png" alt="Alt text"></p>
+<p><img src="../Images/BackActionManager1.png" alt="Alt text"></p>
 <h3 id="основная-задача-компонента">Основная задача компонента</h3>
 <p>При прохождении тренажера в режимах Тренировка и Экзамен пользователь может совершить какие либо ошибки. Неправильные действия пользователя вызовут меню ошибки с описание неправильных действий, а так же 3 кнопки которые предполагают дальнейшие действия пользователя в тренажере.</p>
 <p>Выход - пользователь выходит из тренажера в главное меню выбора тренажеров.</p>
@@ -88,15 +88,15 @@
 <p>Продолжить - пользователь возвращает негативные последствия от данной ошибки в исходное состояние и продолжает проходить тренажер.</p>
 <p>Именно действие этой кнопки и реализует данный компонент.</p>
 <h2 id="как-настроить">Как настроить</h2>
-<p><img src="/Images/BackActionManager2.png" alt="Alt text"></p>
+<p><img src="../Images/BackActionManager2.png" alt="Alt text"></p>
 <p>На сцене в объектах менеджеров, необходимо разместить пустой объект с компонентом &quot;BackActionManager&quot; наследуемым от типа MonoBehaviour. Он в свою очередь имеет одну публичную функцию вызов которой необходимо произвести при событии OnClick компонента Button на объекте &quot;Continue&quot; что соответствует клику по кнопке &quot;Продолжить&quot; в меню ошибки</p>
-<p><img src="/Images/BackActionManager3.png" alt="Alt text"></p>
+<p><img src="../Images/BackActionManager3.png" alt="Alt text"></p>
 <p>При этом EventManager должен обрабатывать событие &quot;Запись действия возврата&quot;</p>
-<p><img src="/Images/BackActionManager4.png" alt="Alt text"></p>
+<p><img src="../Images/BackActionManager4.png" alt="Alt text"></p>
 <h3 id="зависимая-логика-других-компонентов">Зависимая логика других компонентов</h3>
 <p>Любой объект взаимодействия который подразумевает откат при неправильном с ним взаимодействии, должен позаботится о том что бы вернутся в исходное состояние. К примеру на скриншоте мы видим компонент который определяет своевременность нахождения пользователя в точке эвакуации, и если он находится там когда это является ошибкой, то компонент посылает событие через EventManager - &quot;Запись действия возврата&quot; и с ним делегат типа Action с записанными действиями которые произведут откат в надлежащее состояние в нашем случае это телепортирование игрока в начальную точку (_setCustomVRPosition.ResetPosition) и сброс переменной PlayerOnPoint</p>
 <h2 id="описание-работы">Описание работы</h2>
-<p><img src="/Images/BackActionManager5.png" alt="Alt text"></p>
+<p><img src="../Images/BackActionManager5.png" alt="Alt text"></p>
 <p>Компонент представляет собой класс, который, в момент своей работы слушает событие EventManager - &quot;Запись действия возврата&quot;. Этого событие обрабатывается в методе AddingAnAction() которое получает уникальное действие возврата от компонента который вызвал это событие, и записывает его в делегат типа Action reverseActions. При срабатывании метода Return() который вызывается при событии OnClick кнопки &quot;Продолжить&quot;все действия записанные в делегате reverseActions выполняются, чем восстанавливают исходное состояние до момента совершения ошибки</p>
 </article>
           </div>
@@ -105,6 +105,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Goldfinchworks/GWDocFXProject/blob/main/simulatorDevelopmentGuide/BackActionManager.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

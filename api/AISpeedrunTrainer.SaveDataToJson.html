@@ -83,8 +83,7 @@
   
   <h1 id="AISpeedrunTrainer_SaveDataToJson" data-uid="AISpeedrunTrainer.SaveDataToJson" class="text-break">Class SaveDataToJson
   </h1>
-  <div class="markdown level0 summary"><p>Класс, сохраняющий и загружающий данные из json файла</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -127,8 +126,7 @@
   
   <a id="AISpeedrunTrainer_SaveDataToJson_GetFolderPath_" data-uid="AISpeedrunTrainer.SaveDataToJson.GetFolderPath*"></a>
   <h4 id="AISpeedrunTrainer_SaveDataToJson_GetFolderPath" data-uid="AISpeedrunTrainer.SaveDataToJson.GetFolderPath">GetFolderPath()</h4>
-  <div class="markdown level1 summary"><p>Метод, возвращающий путь к папке с данными</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -145,21 +143,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>Путь к папке с данными</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="AISpeedrunTrainer_SaveDataToJson_Load_" data-uid="AISpeedrunTrainer.SaveDataToJson.Load*"></a>
-  <h4 id="AISpeedrunTrainer_SaveDataToJson_Load__1_System_String___0__" data-uid="AISpeedrunTrainer.SaveDataToJson.Load``1(System.String,``0@)">Load&lt;T&gt;(String, out T)</h4>
-  <div class="markdown level1 summary"><p>Метод, загружающий данные из файла</p>
-</div>
+  <h4 id="AISpeedrunTrainer_SaveDataToJson_Load_System_String_AISpeedrunTrainer_TrackedObject__" data-uid="AISpeedrunTrainer.SaveDataToJson.Load(System.String,AISpeedrunTrainer.TrackedObject@)">Load(String, out TrackedObject)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Load&lt;T&gt;(string fileName, out T loadedData)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool Load(string trackerName, out TrackedObject loadedData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,15 +169,13 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">fileName</span></td>
-        <td><p>Название файла</p>
-</td>
+        <td><span class="parametername">trackerName</span></td>
+        <td></td>
       </tr>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="AISpeedrunTrainer.TrackedObject.html">TrackedObject</a></td>
         <td><span class="parametername">loadedData</span></td>
-        <td><p>Загруженные данные</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -196,22 +190,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>Успешность загрузки</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -219,13 +197,12 @@
   
   
   <a id="AISpeedrunTrainer_SaveDataToJson_Save_" data-uid="AISpeedrunTrainer.SaveDataToJson.Save*"></a>
-  <h4 id="AISpeedrunTrainer_SaveDataToJson_Save__1___0_System_String_" data-uid="AISpeedrunTrainer.SaveDataToJson.Save``1(``0,System.String)">Save&lt;T&gt;(T, String)</h4>
-  <div class="markdown level1 summary"><p>Метод, записывающий данные в файл</p>
-</div>
+  <h4 id="AISpeedrunTrainer_SaveDataToJson_Save_AISpeedrunTrainer_TrackedObject_System_String_" data-uid="AISpeedrunTrainer.SaveDataToJson.Save(AISpeedrunTrainer.TrackedObject,System.String)">Save(TrackedObject, String)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Save&lt;T&gt;(T data, string fileName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Save(TrackedObject data, string fileName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -238,30 +215,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="AISpeedrunTrainer.TrackedObject.html">TrackedObject</a></td>
         <td><span class="parametername">data</span></td>
-        <td><p>Данные</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fileName</span></td>
-        <td><p>Название файла</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>

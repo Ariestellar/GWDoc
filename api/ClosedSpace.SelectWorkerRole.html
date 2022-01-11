@@ -88,13 +88,45 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">SelectWorkerRole</span></div>
+    <div class="level1"><a class="xref" href="VR_common_components.RaycastableObject.html">RaycastableObject</a></div>
+    <div class="level2"><span class="xref">SelectWorkerRole</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IPointerDownHandler</span></div>
+    <div><span class="xref">IPointerEnterHandler</span></div>
+    <div><span class="xref">IPointerExitHandler</span></div>
+    <div><span class="xref">IPointerUpHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_LeftHandRaycastOnObject">RaycastableObject.LeftHandRaycastOnObject</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_RightHandRaycastOnObject">RaycastableObject.RightHandRaycastOnObject</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_maxDistanceForClick">RaycastableObject.maxDistanceForClick</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerDown_PointerEventData_">RaycastableObject.OnPointerDown(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerEnter_PointerEventData_">RaycastableObject.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerExit_PointerEventData_">RaycastableObject.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckDistance_PointerEventData_">RaycastableObject.CheckDistance(PointerEventData)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ClosedSpace.html">ClosedSpace</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="ClosedSpace_SelectWorkerRole_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SelectWorkerRole : RaycastableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class SelectWorkerRole : RaycastableObject, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -141,7 +173,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MaterialHighlighting</span></td>
+        <td><a class="xref" href="VR_common_components.MaterialHighlighting.html">MaterialHighlighting</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -353,6 +385,8 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerUp_PointerEventData_">RaycastableObject.OnPointerUp(PointerEventData)</a></div>
   
   
   <a id="ClosedSpace_SelectWorkerRole_OnWatchingClick_" data-uid="ClosedSpace.SelectWorkerRole.OnWatchingClick*"></a>
@@ -409,6 +443,19 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ShowLoginLog()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IPointerDownHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerEnterHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerExitHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerUpHandler</span>
   </div>
 </article>
           </div>

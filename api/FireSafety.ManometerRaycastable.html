@@ -88,13 +88,45 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ManometerRaycastable</span></div>
+    <div class="level1"><a class="xref" href="VR_common_components.RaycastableObject.html">RaycastableObject</a></div>
+    <div class="level2"><span class="xref">ManometerRaycastable</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IPointerDownHandler</span></div>
+    <div><span class="xref">IPointerEnterHandler</span></div>
+    <div><span class="xref">IPointerExitHandler</span></div>
+    <div><span class="xref">IPointerUpHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_LeftHandRaycastOnObject">RaycastableObject.LeftHandRaycastOnObject</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_RightHandRaycastOnObject">RaycastableObject.RightHandRaycastOnObject</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_maxDistanceForClick">RaycastableObject.maxDistanceForClick</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerDown_PointerEventData_">RaycastableObject.OnPointerDown(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerEnter_PointerEventData_">RaycastableObject.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerExit_PointerEventData_">RaycastableObject.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckDistance_PointerEventData_">RaycastableObject.CheckDistance(PointerEventData)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FireSafety.html">FireSafety</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="FireSafety_ManometerRaycastable_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ManometerRaycastable : RaycastableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class ManometerRaycastable : RaycastableObject, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -117,7 +149,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">CheckCanvas</span></td>
+        <td><a class="xref" href="VR_common_components.CheckCanvas.html">CheckCanvas</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -151,6 +183,21 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerUp_PointerEventData_">RaycastableObject.OnPointerUp(PointerEventData)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IPointerDownHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerEnterHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerExitHandler</span>
+  </div>
+  <div>
+      <span class="xref">IPointerUpHandler</span>
+  </div>
 </article>
           </div>
           

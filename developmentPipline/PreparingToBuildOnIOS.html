@@ -81,13 +81,13 @@
 
 <h2 id="1-включите-cloud-build">1. ВКЛЮЧИТЕ CLOUD BUILD</h2>
 <p>В Unity проекте в окне Service включите CloudBuild<br>
-<img src="./Images/PreparingToBuildOnIOS1.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS1.png" alt="Alt text"><br>
 Так же его можно включить и на самом Dashboard<br>
-<img src="./Images/PreparingToBuildOnIOS2.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS2.png" alt="Alt text"></p>
 <h2 id="2-приступите-к-настройкам">2. ПРИСТУПИТЕ К НАСТРОЙКАМ</h2>
 <p>Начните настраивать свой CloudBuild выбрав платформой iOS, первые несколько страниц настроек не вызывают никаких проблем и вопросов.</p>
 <h2 id="3-проблемная-страница-настроек">3. ПРОБЛЕМНАЯ СТРАНИЦА НАСТРОЕК</h2>
-<p><img src="./Images/PreparingToBuildOnIOS3.png" alt="Alt text"></p>
+<p><img src="../Images/PreparingToBuildOnIOS3.png" alt="Alt text"></p>
 <p>Эта страница настроек является самой важной. При создании нового проекта селектор &quot;Choose iOS Credentials&quot;должен быть установлен на &quot;Add new provisioning credentials&quot;, если у вас уже есть &quot;iOS Credentials&quot;(машина и вид распространения приложения не изменились) то можно выбрать его.</p>
 <p>Для получения &quot;Mobile Prov File&quot; и &quot;p12 File&quot; необходима машина с OS X и аккаунт разработчика Apple. Рассмотрим создание виртуальной машины с OSX.</p>
 <h3 id="создаем-виртуальную-машину-на-osx">СОЗДАЕМ ВИРТУАЛЬНУЮ МАШИНУ НА OSX</h3>
@@ -119,42 +119,42 @@
 <h3 id="получаем--файл-mobileprovision">Получаем  Файл*. mobileprovision</h3>
 <p>Файл*. mobileprovision используется для кодовой подписи вашего приложения. Вы можете открыть файл *.mobileprovision в файле TextEdit. Содержимое файла структурировано в XML. Он содержит идентификаторы приложений UUID, bundle ID, разработка/производство и все права, включая aps-environment.
 Его получение не составляет труда по ссылке в вашем apple профиле AppleDeveloper можно даже без мака.</p>
-<p><img src="./../Images/PreparingToBuildOnIOS4.png" alt="Alt text"><br>
+<p><img src="../Images/PreparingToBuildOnIOS4.png" alt="Alt text"><br>
 <img src="../Images/PreparingToBuildOnIOS5.png" alt="Alt text"><br>
-<img src="Images/PreparingToBuildOnIOS6.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS6.png" alt="Alt text"><br>
 <span style="color:red">Если AppID не был заранее создан под это приложение то создаем его </span> <a href="#AppIDCreation">Создание AppID</a><br>
-<img src="./Images/PreparingToBuildOnIOS7.png" alt="Alt text"><br>
-<img src="./Images/PreparingToBuildOnIOS8.png" alt="Alt text"><br>
-<img src="./Images/PreparingToBuildOnIOS9.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS7.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS8.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS9.png" alt="Alt text"></p>
 <h3 id="создание-appid"><a name="AppIDCreation">Создание AppID</a></h3>
 <p>Для создания mobileprovision необходимо использовать AppID<br>
-<img src="./Images/PreparingToBuildOnIOS10.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS10.png" alt="Alt text"><br>
 <strong>Меню для создания AppID</strong><br>
-<img src="./Images/PreparingToBuildOnIOS11.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS11.png" alt="Alt text"><br>
 Для регистрации AppID необходим BundleID</p>
 <h3 id="получаем-12p">Получаем 12p</h3>
 <p>Нужен OSx для работы с &quot;Ассистентом сертификации&quot;</p>
 <ol>
 <li><p>В машине на OSX запускаем приложение &quot;Связка ключей&quot; из него можно отправить запрос сертификата формата .certSigningRequest (CSR) у бюро
-<img src="./Images/PreparingToBuildOnIOS12.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS12.png" alt="Alt text"></p>
 </li>
 <li><p>В появившимся окне нужно указать почту на которую зарегистрирован аккаунт разработчика<br>
-<img src="./Images/PreparingToBuildOnIOS13.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS13.png" alt="Alt text"></p>
 </li>
 <li><p>Сохраняем файл (CSR) на диск, далее он нам понадобится при создании сертификата p12
-<img src="./Images/PreparingToBuildOnIOS14.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS14.png" alt="Alt text"></p>
 </li>
 <li><p>Теперь заходим в аккаунт разработчика на панель Сертификаты и создаем новый сертификат формата cer
-<img src="./Images/PreparingToBuildOnIOS15.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS15.png" alt="Alt text"></p>
 </li>
 <li><p>В одном из следующих диалоговых окон будет поле для внесения в него (CSR) файла
-<img src="./Images/PreparingToBuildOnIOS16.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS16.png" alt="Alt text"></p>
 </li>
 <li><p>Перенести полученный сертификат формата cer в машину с OSX занести информацию о нем в связку ключей, и экспортировать потом из нее в формате p12
-<img src="./Images/PreparingToBuildOnIOS17.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS17.png" alt="Alt text"></p>
 </li>
 <li><p>При экспорте необходимо будет ввести пароль для доступа к файлу p12 (его необходимо так же будет внести при билде в CloudBuild)
-<img src="./Images/PreparingToBuildOnIOS18.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS18.png" alt="Alt text"></p>
 </li>
 </ol>
 <h3 id="действия-при-успешном-cloudbuild">Действия при успешном CloudBuild</h3>
@@ -163,22 +163,22 @@
 <ol>
 <li><p>Скачиваем проект на OSX<br>
 Теперь необходимо скачать наш проект в формате ipa на машину с OSX для дальнейшей транспортировки на сервера apple<br>
-<img src="./Images/PreparingToBuildOnIOS19.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS19.png" alt="Alt text"></p>
 </li>
 <li><p>Подготавливаем приложение в аккаунте разработчика<br>
 В нашем аккаунте разработчика необходимо перейти в AppStoreConnect там выбрать вкладку &quot;Мои приложения&quot;<br>
-<img src="./Images/PreparingToBuildOnIOS20.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS20.png" alt="Alt text"></p>
 </li>
 </ol>
 <p>Выбрать пункт &quot;Создать новое приложение&quot;<br>
-<img src="./Images/PreparingToBuildOnIOS21.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS21.png" alt="Alt text"></p>
 <p>Далее заполняем несколько форм в id пакета записываем bundleid в SKU любой свой идентификатор<br>
-<img src="./Images/PreparingToBuildOnIOS22.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS22.png" alt="Alt text"></p>
 <p>Только теперь , после того как приложение внесено в аккаунт разработчика, мы устанавливаем программу &quot;Transporter&quot; которая перенесет наше приложение на сервер apple (Если программа не была внесена заранее в ваш аккаунт то появится ошибка)<br>
-<img src="./Images/PreparingToBuildOnIOS23.png" alt="Alt text"><br>
-<img src="./Images/PreparingToBuildOnIOS24.png" alt="Alt text"><br>
-<img src="./Images/PreparingToBuildOnIOS25.png" alt="Alt text"><br>
-<img src="./Images/PreparingToBuildOnIOS26.png" alt="Alt text"></p>
+<img src="../Images/PreparingToBuildOnIOS23.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS24.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS25.png" alt="Alt text"><br>
+<img src="../Images/PreparingToBuildOnIOS26.png" alt="Alt text"></p>
 <h2 id="6-предоставить-информацию-о-соответствии-экспортным-требованиям">6. ПРЕДОСТАВИТЬ ИНФОРМАЦИЮ О СООТВЕТСТВИИ ЭКСПОРТНЫМ ТРЕБОВАНИЯМ</h2>
 <p>После того как наша сборка будет доставлена на сервера apple и обработана, для того что бы возможно было начать тестирование в приложении TestFlyight необходимо внести информацию о соответствии экспортным требованиям</p>
 <h2 id="7-назначить-тестировщиков">7. НАЗНАЧИТЬ ТЕСТИРОВЩИКОВ</h2>
@@ -190,6 +190,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Goldfinchworks/GWDocFXProject/blob/main/developmentPipline/PreparingToBuildOnIOS.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

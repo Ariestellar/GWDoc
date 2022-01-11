@@ -80,37 +80,37 @@
 <h1 id="работа-с-user-interface">Работа с User Interface</h1>
 
 <h2 id="пользовательское-меню">Пользовательское меню</h2>
-<p><img src="/Images/WorkWithUserInterface1.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface1.png" alt="Alt text"></p>
 <p>В иерархии сцены UI находится в префабе VROrigin который можно найти в VRCommonComponents, добавить на сцену и кастомизировать под целевой тренажер.</p>
 <h2 id="панель-информация-о-контроллере-controllerinfo">Панель информация о контроллере (ControllerInfo)</h2>
-<p><img src="/Images/WorkWithUserInterface2.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface2.png" alt="Alt text"></p>
 <p>Панель вызывается в начале любого тренажера при старте сцены в режиме Prestage, для ознакомления или напоминания о порядке пользования контроллером</p>
 <h2 id="панель-выбора-режима-тренажера-selectmode">Панель выбора режима тренажера (SelectMode)</h2>
-<p><img src="/Images/WorkWithUserInterface3.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface3.png" alt="Alt text"></p>
 <p>После того как пользователь ознакомился с информацией о пользовании контроллером появляется меню выбора режима тренажера.</p>
 <p>Обучение- в этом режиме пользователю не дают совершить ошибок при прохождении тренажера</p>
 <p>Тренировка - пользователь может допустить ошибку но нет ограничений на их количество</p>
 <p>Экзамен - у пользователя есть определенное разрешаемое количество ошибок если он его превышает то тренажер заканчивается</p>
 <h2 id="панель-меню-паузы-pause">Панель меню паузы (Pause)</h2>
-<p><img src="/Images/WorkWithUserInterface4.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface4.png" alt="Alt text"></p>
 <p>Панель меню паузы вызывается при нажатии на контроллере кнопки &quot;M&quot; при вызове тренажер останавливается.Кнопки &quot;Продолжить&quot; - продолжает работу в тренажере откатывая изменения которые спровоцировала допущенная ошибка, &quot;Повторить&quot; - вызывает меню выбора режима тренажеры для того что бы начать проходить тренажер заново.</p>
 <h2 id="панель-меню-поражения-failed">Панель меню поражения (Failed)</h2>
-<p><img src="/Images/WorkWithUserInterface5.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface5.png" alt="Alt text"></p>
 <p>Вызывается когда игрок совершает ошибку, в теле панели появляется описание конкретной ошибки которую допустил пользователь.Кнопки &quot;Продолжить&quot; - продолжает работу в тренажере откатывая изменения которые спровоцировала допущенная ошибка, &quot;Повторить&quot; - вызывает меню выбора режима тренажеры для того что бы начать проходить тренажер заново. При превышении допустимого количества ошибок в режиме экзамена, кнопка &quot;Продолжить&quot; будет отсутствовать.</p>
 <h2 id="панель-успешного-прохождения-passed">Панель успешного прохождения (Passed)</h2>
-<p><img src="/Images/WorkWithUserInterface6.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface6.png" alt="Alt text"></p>
 <p>Вызывается когда игрок успешно прошел тренажер, в теле панели появляется надпись описывающая какой тренажер и в каком режимы был пройдет (в дальнейшем статистика по ошибокам и.т.д). Кнопка &quot;Повторить&quot; - вызывает меню выбора режима тренажеры для того что бы начать проходить тренажер заново.</p>
 <h2 id="особенности-панелей-ui">Особенности панелей UI</h2>
-<p><img src="/Images/WorkWithUserInterface7.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface7.png" alt="Alt text"></p>
 <p>Для того что бы панели UI отрисовывались поверх всей геометрии сцены, но позже геометрии рук пользователя  необходимо установить материал UI с кастомным шейдером(UIDefaultCustom) в котором определен порядок отрисовки, на тексте UI тоже должен быть материал с кастомный шейдером (TMPCustom)</p>
 <h2 id="порядок-отрисовки-renderqueue">Порядок отрисовки (RenderQueue)</h2>
-<p><img src="/Images/WorkWithUserInterface8.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface8.png" alt="Alt text"></p>
 <p>Вся геометрия - 2000</p>
 <p>Скайбокс - 2500</p>
 <p>UI - 2502</p>
 <p>Руки - 2550</p>
 <h2 id="особенности-шейдеров">Особенности шейдеров</h2>
-<p><img src="/Images/WorkWithUserInterface9.png" alt="Alt text"></p>
+<p><img src="../Images/WorkWithUserInterface9.png" alt="Alt text"></p>
 <p>Шейдеры UIDefaultCustom и TMPCustom обязательно должны выключать запись в Zбуффер для того что бы исключить их сравнение с другими отрисоваными объектами в диапазоне глубины камеры, тогда они будут всегда отрисовыватся поверх всего что бы то ни было, но ниже их очереди отрисовки (2502/2549 для UI и Text соответсвенно) шейдер рук (StandartCustom) напротив включает запись в ZBuffer так как должен не отрисовывать руки если их что то перекрывает в диапазоне глубины камеры</p>
 </article>
           </div>
@@ -119,6 +119,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Goldfinchworks/GWDocFXProject/blob/main/simulatorDevelopmentGuide/WorkWithUserInterface.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

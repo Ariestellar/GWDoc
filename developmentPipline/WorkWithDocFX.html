@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1054;&#1089;&#1085;&#1086;&#1074;&#1099; &#1088;&#1072;&#1073;&#1086;&#1090;&#1099; &#1089; DocFx </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1054;&#1089;&#1085;&#1086;&#1074;&#1099; &#1088;&#1072;&#1073;&#1086;&#1090;&#1099; &#1089; DocFx ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="основы-работы-с-docfx">Основы работы с DocFx</h1>
+
+<p>[Официальная инструкция по работе с DocFX]{https://dotnet.github.io/docfx/}</p>
+<p>Скачайте docfx с офф сайта см. выше и распакуйте (в примере C:...SomeDir...\docfx)</p>
+<p>Далее по тексту происходит работа в CMD:</p>
+<p>set PATH=%PATH%;C:...SomeDir...\docfx - Добавить в PATH (окружение)</p>
+<p>Создаем директорию для проекта с документацией (в примере D:\docfx_walkthrough)</p>
+<p>cd /d D:\docfx_walkthrough - в cmd переходим в эту директорию
+Примечание: Команда cd без параметра /d (d - это не название диска а команда) не меняет диск. Или до команды, или после выполните переход на диск.</p>
+<p>D:\docfx_walkthrough&gt;docfx init -q -инициализировать проект с документацией</p>
+<p>D:\docfx_walkthrough&gt;docfx docfx_project/docfx.json - создать сайт с документацией
+Примечание: После любых изменений вызываем эту команду что бы пересобрать сайт</p>
+<p>D:\docfx_walkthrough&gt;docfx serve docfx_project/_site - запустить сайт на локальном сервере (для проверки http://localhost:8080/)
+Примечание: Как перестанет быть нужным пишем команду stop</p>
+<p>--- Здесь мы создали сайт и убедились что он запускается и работает исправно ---</p>
+<p>Далее нужно собрать метафайлы для наполнения API документации
+Нам не подходит дефолтный вариант когда метафайлы собираются из решения Assembly-CSharp.csproj проекта т.к при исполнении команды падают Warnings
+Warning:<a href="D:/Learning/KnowledgeIsPower/Assembly-CSharp.csproj">ExtractMetadata</a>Workspace failed with: [Warning] Found project reference without a matching metadata reference: D:\Learning\KnowledgeIsPower\SimpleInput.Runtime.csproj
+...
+Они порождают следующие Warnings:
+Warning:[ExtractMetadata]Workspace failed with: [Failure] Файл 'D:\Learning\KnowledgeIsPower\docfx_project\src\Assets\CodeBase\Infrastructure\AssetManagement\AssetProvider.cs' не найден.
+...
+По причине: Это когда в проекте есть ссылка на проект, которую нельзя сопоставить с выходным путем (кодом). Это происходит с многоцелевыми проектами (проект на целен на Unity решение)
+Но нам подходит вариант когда мы собираем мета данные прямо из файлов скриптов для того что бы мы ориентировались на скрипты а не на решения необходимо поменять строки в файле docfx.json
+Параметров: src, files Для примера использованна ссылка на проект который находился на том же диске где и проект с документацией &quot;D:\Learning\KnowledgeIsPower&quot;</p>
+<p>...
+&quot;metadata&quot;: [
+{
+&quot;src&quot;: [
+{
+&quot;src&quot;: &quot;../. ./&quot;,
+&quot;files&quot;: [
+&quot;Learning/KnowledgeIsPower/Assets/CodeBase/**.cs&quot;
+]
+}
+],
+&quot;dest&quot;: &quot;api&quot;,
+&quot;disableGitFeatures&quot;: false,
+&quot;disableDefaultFilter&quot;: false
+}<br>
+],
+...</p>
+<p>Так же в этом файле что бы появилась поисковая строка в правом верхнем углу на всех статьях
+необходимо в этом же файле добавить строку
+...
+&quot;postProcessors&quot;: [ &quot;ExtractSearchIndex&quot; ]
+...</p>
+<p>После редактирования этого файла нужно запустить создания мета данных</p>
+<p>D:\docfx_walkthrough&gt;cd D:\docfx_walkthrough\docfx_project - переходим в каталог docfx_project проекта документации</p>
+<p>D:\docfx_walkthrough\docfx_project&gt;docfx metadata - создаем мета данные из библиотеки классов</p>
+<p>D:\docfx_walkthrough\docfx_project&gt;cd D:\docfx_walkthrough - переходим обратно в корень проекта документации</p>
+<p>D:\docfx_walkthrough&gt;docfx docfx_project/docfx.json - пересобираем проект с документацией т.к. были изменения</p>
+<p>D:\docfx_walkthrough&gt;docfx serve docfx_project/_site - запустить сайт на локальном сервере (для проверки http://localhost:8080/)
+Примечание: Как перестанет быть нужным пишем команду stop</p>
+<p>--- Здесь мы запустили и проверили что вкладка API наполнилась всеми нашими скриптами из проекта ---</p>
+<p>Что бы добавить новые разделы, после создании папки соответсвующего раздела и занесения его в toc.yml корня проекта
+необходимо занести этот каталог как параметр в файл docfx.json
+Пример:
+...
+&quot;build&quot;: {
+&quot;content&quot;: [
+{
+&quot;files&quot;: [
+&quot;api/<strong>.yml&quot;,
+&quot;api/index.md&quot;
+]
+},
+{
+&quot;files&quot;: [
+&quot;articles/</strong>.md&quot;,
+&quot;articles/<strong>/toc.yml&quot;,
+&quot;toc.yml&quot;,
+&quot;*.md&quot;
+]
+},
+{
+&quot;files&quot;: [
+&quot;developmentPipline/</strong>&quot;
+]
+},
+{
+&quot;files&quot;: [
+&quot;simulatorDevelopmentGuide/**&quot;
+]
+}
+],
+...</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Goldfinchworks/GWDocFXProject/blob/main/developmentPipline/WorkWithDocFX.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

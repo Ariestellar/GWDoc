@@ -81,53 +81,53 @@
 
 <p><span style="color:red"> *Экспортируются таким образом только меши и материалы (не текстуры и не normal/height/metallic… maps)
 Чтобы экспортировать модель с текстурами, необходимо… </span></p>
-<p><img src="/Images/ExportToFBX1.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX1.png" alt="Alt text"></p>
 <p>Убрать галочку Export unrendered</p>
 <p><span style="color:red"> *Экспортировать из Unity объекты, созданные с помощью внешних плагинов типа ProBuilder (где меш создается скриптами) если у них есть MeshRenderer, можно из PlayMod</span></p>
 <ol>
 <li>Все отдельные объекты, которые хотим перенести в одну модель, объединить под одним родителем (в иерархии сделать дочерними от одного объекта). Иначе плагин не поймет, что именно нужно экспортировать. Структуру внутри перенесенных объектов менять не нужно</li>
 </ol>
-<p><img src="/Images/ExportToFBX2.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX2.png" alt="Alt text"></p>
 <ol start="2">
 <li>Удалить из этого объекта все неактивные объекты (если есть). Потому что плагин всех их экспортирует наравне с активными и вместо одного кресла, у вас может оказаться три одинаковых с разными текстурами в одном месте (см. Ошибку Z-Buffer как пример того, как это выглядит)</li>
 </ol>
-<p><img src="/Images/ExportToFBX3.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX3.png" alt="Alt text"></p>
 <p>*Eсли мы собираем для заказчика модель, то нужно сначала закинуть все текстуры и материалы в отдельные папки, ТОЛЬКО ПОТОМ экспортировать модель и копировать папки (не изменяя их после экспорта). И тогда можно будет нормально работать с текстурированными моделями.
 Большая часть текстур сама подтянеться, но часть всё таки нужно будет настраивать вручную.</p>
 <ol start="3">
 <li>Выбрать нужный объект в иерархии или в папке проекта</li>
 </ol>
-<p><img src="/Images/ExportToFBX4.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX4.png" alt="Alt text"></p>
 <p>Или</p>
-<p><img src="/Images/ExportToFBX5.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX5.png" alt="Alt text"></p>
 <ol start="4">
 <li>GameObject -&gt; Export to FBX...</li>
 </ol>
-<p><img src="/Images/ExportToFBX6.png" alt="Alt text">
-<img src="/Images/ExportToFBX7.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX6.png" alt="Alt text">
+<img src="../Images/ExportToFBX7.png" alt="Alt text"></p>
 <ol start="5">
 <li><p>Выбрать верные параметры (Убрать галочку Export unrendered)</p>
 </li>
-<li><p><img src="/Images/ExportToFBX8.png" alt="Alt text"></p>
+<li><p><img src="../Images/ExportToFBX8.png" alt="Alt text"></p>
 </li>
 </ol>
 <p>Так будет называться модель (но ее можно в любой момент переназвать)</p>
 <ol start="7">
-<li><img src="/Images/ExportToFBX9.png" alt="Alt text"></li>
+<li><img src="../Images/ExportToFBX9.png" alt="Alt text"></li>
 </ol>
 <p>По этому пути модель экспортируется (по умолчанию, в папку Assets проекта). Советую в папку вне проекта, иначе модель может начать использоваться вами и измениться в процессе</p>
 <ol start="8">
 <li>Проверить, что правильно выбрали объект</li>
 </ol>
-<p><img src="/Images/ExportToFBX10.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX10.png" alt="Alt text"></p>
 <ol start="9">
 <li>Экспортировать модель в необходимом формате (Blender не любит ASCII )</li>
 </ol>
-<p><img src="/Images/ExportToFBX11.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX11.png" alt="Alt text"></p>
 <ol start="10">
 <li>Проверить все параметры и нажать “Export”</li>
 </ol>
-<p><img src="/Images/ExportToFBX12.png" alt="Alt text"></p>
+<p><img src="../Images/ExportToFBX12.png" alt="Alt text"></p>
 <p>Теперь модель экспортирована!</p>
 </article>
           </div>
@@ -136,6 +136,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Goldfinchworks/GWDocFXProject/blob/main/developmentPipline/ExportToFBX.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
