@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class AudioManager
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AudioManager
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -100,6 +100,31 @@
   </h3>
   
   
+  <h4 id="VR_common_components_AudioManager_currentCoroutine" data-uid="VR_common_components.AudioManager.currentCoroutine">currentCoroutine</h4>
+  <div class="markdown level1 summary"><p>Ссылка на текущую корутину</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Coroutine currentCoroutine</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Coroutine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="VR_common_components_AudioManager_TargetAudioSource" data-uid="VR_common_components.AudioManager.TargetAudioSource">TargetAudioSource</h4>
   <div class="markdown level1 summary"><p>Целевой источник звука</p>
 </div>
@@ -125,6 +150,62 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="VR_common_components_AudioManager_AudioManagerCoroutine_" data-uid="VR_common_components.AudioManager.AudioManagerCoroutine*"></a>
+  <h4 id="VR_common_components_AudioManager_AudioManagerCoroutine_AudioClip_System_Single_System_Single_" data-uid="VR_common_components.AudioManager.AudioManagerCoroutine(AudioClip,System.Single,System.Single)">AudioManagerCoroutine(AudioClip, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Корутина отвечающая за проигрывания аудио</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator AudioManagerCoroutine(AudioClip clip, float delay, float restartTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Аудио клип для проигрывания</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">delay</span></td>
+        <td><p>Задержка до начала проигрывания</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">restartTime</span></td>
+        <td><p>Время перезапуска проигрывания</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VR_common_components_AudioManager_Init_" data-uid="VR_common_components.AudioManager.Init*"></a>
@@ -154,6 +235,26 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="VR_common_components_AudioManager_OnDisable_" data-uid="VR_common_components.AudioManager.OnDisable*"></a>
+  <h4 id="VR_common_components_AudioManager_OnDisable" data-uid="VR_common_components.AudioManager.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_AudioManager_OnEnable_" data-uid="VR_common_components.AudioManager.OnEnable*"></a>
+  <h4 id="VR_common_components_AudioManager_OnEnable" data-uid="VR_common_components.AudioManager.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnEnable()</code></pre>
+  </div>
   
   
   <a id="VR_common_components_AudioManager_Play_" data-uid="VR_common_components.AudioManager.Play*"></a>
@@ -224,6 +325,33 @@
   </table>
   
   
+  <a id="VR_common_components_AudioManager_PlayListener_" data-uid="VR_common_components.AudioManager.PlayListener*"></a>
+  <h4 id="VR_common_components_AudioManager_PlayListener_VR_common_components_CustomEventObject_" data-uid="VR_common_components.AudioManager.PlayListener(VR_common_components.CustomEventObject)">PlayListener(CustomEventObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PlayListener(CustomEventObject param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.CustomEventObject.html">CustomEventObject</a></td>
+        <td><span class="parametername">param</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VR_common_components_AudioManager_Stop_" data-uid="VR_common_components.AudioManager.Stop*"></a>
   <h4 id="VR_common_components_AudioManager_Stop" data-uid="VR_common_components.AudioManager.Stop">Stop()</h4>
   <div class="markdown level1 summary"><p>Остановка проигрывания аудио</p>
@@ -233,6 +361,33 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
   </div>
+  
+  
+  <a id="VR_common_components_AudioManager_StopListener_" data-uid="VR_common_components.AudioManager.StopListener*"></a>
+  <h4 id="VR_common_components_AudioManager_StopListener_VR_common_components_CustomEventObject_" data-uid="VR_common_components.AudioManager.StopListener(VR_common_components.CustomEventObject)">StopListener(CustomEventObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StopListener(CustomEventObject param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.CustomEventObject.html">CustomEventObject</a></td>
+        <td><span class="parametername">param</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

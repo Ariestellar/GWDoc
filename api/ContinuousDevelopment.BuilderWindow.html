@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BuilderWindow
+   | GWDoc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BuilderWindow
+   | GWDoc ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ContinuousDevelopment.BuilderWindow">
+  
+  
+  <h1 id="ContinuousDevelopment_BuilderWindow" data-uid="ContinuousDevelopment.BuilderWindow" class="text-break">Class BuilderWindow
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BuilderWindow</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IPostprocessBuildWithReport</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ContinuousDevelopment.html">ContinuousDevelopment</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="ContinuousDevelopment_BuilderWindow_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BuilderWindow : EditorWindow, IPostprocessBuildWithReport</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="ContinuousDevelopment_BuilderWindow_builderSettings" data-uid="ContinuousDevelopment.BuilderWindow.builderSettings">builderSettings</h4>
+  <div class="markdown level1 summary"><p>Настройки билда
+Применение: нужно что бы получить оснвные переменные для билда</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BuilderSettings builderSettings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ContinuousDevelopment.BuilderSettings.html">BuilderSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ContinuousDevelopment_BuilderWindow_currentConveyorTrainers" data-uid="ContinuousDevelopment.BuilderWindow.currentConveyorTrainers">currentConveyorTrainers</h4>
+  <div class="markdown level1 summary"><p>Текущий тренажер по порядку в конвейере
+Применение: нужно что бы переключатся на следующий тренажер после билда</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int currentConveyorTrainers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ContinuousDevelopment_BuilderWindow_currentSelectLocalTargetPlatform" data-uid="ContinuousDevelopment.BuilderWindow.currentSelectLocalTargetPlatform">currentSelectLocalTargetPlatform</h4>
+  <div class="markdown level1 summary"><p>Выбранная локальная платформа,
+Применения: поле нужно для установки в окне эдитора</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocalBuildTarget currentSelectLocalTargetPlatform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ContinuousDevelopment.LocalBuildTarget.html">LocalBuildTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ContinuousDevelopment_BuilderWindow_currentSelectTargetPlatform" data-uid="ContinuousDevelopment.BuilderWindow.currentSelectTargetPlatform">currentSelectTargetPlatform</h4>
+  <div class="markdown level1 summary"><p>Текущая выбранная платформа, для отслеживания статуса переключения платформ
+Применения: поле нужно для установки актуальной платформы для билда</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BuildTarget currentSelectTargetPlatform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildTarget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ContinuousDevelopment_BuilderWindow_distributionVersion" data-uid="ContinuousDevelopment.BuilderWindow.distributionVersion">distributionVersion</h4>
+  <div class="markdown level1 summary"><p>Выбранная версия распространения,
+Применения: поле нужно для установки в окне эдитора</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LicenseType distributionVersion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LicenseType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ContinuousDevelopment_BuilderWindow_requiredScenes" data-uid="ContinuousDevelopment.BuilderWindow.requiredScenes">requiredScenes</h4>
+  <div class="markdown level1 summary"><p>Обязательные сцены для всех тренажеров (всегда должны добавлятся во все тренажеры)
+Применение: на каждой итерации добавляются в основной пулл сцен для каждого отдельного тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; requiredScenes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="ContinuousDevelopment_BuilderWindow_scenesForBuild" data-uid="ContinuousDevelopment.BuilderWindow.scenesForBuild">scenesForBuild</h4>
+  <div class="markdown level1 summary"><p>Итоговый пул сцен для билда
+Применения: после добавления сюда всех необходимых сцен переписывается в массив сцен билда перед сборкой</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; scenesForBuild</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_callbackOrder_" data-uid="ContinuousDevelopment.BuilderWindow.callbackOrder*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_callbackOrder" data-uid="ContinuousDevelopment.BuilderWindow.callbackOrder">callbackOrder</h4>
+  <div class="markdown level1 summary"><p>От реализации интерфейса IPostprocessBuildWithReport</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int callbackOrder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_ChangeHandModel_" data-uid="ContinuousDevelopment.BuilderWindow.ChangeHandModel*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_ChangeHandModel_System_String_" data-uid="ContinuousDevelopment.BuilderWindow.ChangeHandModel(System.String)">ChangeHandModel(String)</h4>
+  <div class="markdown level1 summary"><p>Заменяем модель руки VROrigin префаба в зависимости Oculus это или Vive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void ChangeHandModel(string prefabName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prefabName</span></td>
+        <td><p>Имя префаба рук</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_ChangeUIPanel_" data-uid="ContinuousDevelopment.BuilderWindow.ChangeUIPanel*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_ChangeUIPanel" data-uid="ContinuousDevelopment.BuilderWindow.ChangeUIPanel">ChangeUIPanel()</h4>
+  <div class="markdown level1 summary"><p>Изменяет префаб UI
+Заменяет ссылку на UI в зависимости от типа распространяемой лицензии
+Заменяет картинку с контролеррами в зависимости от модели focus или Oculus</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void ChangeUIPanel()</code></pre>
+  </div>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_CheckPlatform_" data-uid="ContinuousDevelopment.BuilderWindow.CheckPlatform*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_CheckPlatform" data-uid="ContinuousDevelopment.BuilderWindow.CheckPlatform">CheckPlatform()</h4>
+  <div class="markdown level1 summary"><p>Проверка прогресса установки смены платформы в EditorUpdate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void CheckPlatform()</code></pre>
+  </div>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_IterationConveyor_" data-uid="ContinuousDevelopment.BuilderWindow.IterationConveyor*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_IterationConveyor" data-uid="ContinuousDevelopment.BuilderWindow.IterationConveyor">IterationConveyor()</h4>
+  <div class="markdown level1 summary"><p>Итерация конвейера
+Применение: нужен для индивидуальных настроек тренажера в конвейере</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void IterationConveyor()</code></pre>
+  </div>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_OnPostprocessBuild_" data-uid="ContinuousDevelopment.BuilderWindow.OnPostprocessBuild*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_OnPostprocessBuild_BuildReport_" data-uid="ContinuousDevelopment.BuilderWindow.OnPostprocessBuild(BuildReport)">OnPostprocessBuild(BuildReport)</h4>
+  <div class="markdown level1 summary"><p>Обратный вызов по окончанию сборки от реализации интерфейса IPostprocessBuildWithReport
+Приминение: после того как билд закончился запускаем новый в соответсвии с конвейером</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPostprocessBuild(BuildReport report)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BuildReport</span></td>
+        <td><span class="parametername">report</span></td>
+        <td><p>Отчет содержащий информацию о сборке, такую ​​как целевая платформа и выходной путь</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_PreparingTimeCheker_" data-uid="ContinuousDevelopment.BuilderWindow.PreparingTimeCheker*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_PreparingTimeCheker" data-uid="ContinuousDevelopment.BuilderWindow.PreparingTimeCheker">PreparingTimeCheker()</h4>
+  <div class="markdown level1 summary"><p>Подготавливаем TimeCheker к определенному стору и типу распространения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void PreparingTimeCheker()</code></pre>
+  </div>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_SetBuildSettings_" data-uid="ContinuousDevelopment.BuilderWindow.SetBuildSettings*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_SetBuildSettings" data-uid="ContinuousDevelopment.BuilderWindow.SetBuildSettings">SetBuildSettings()</h4>
+  <div class="markdown level1 summary"><p>Установка настроек билда перед сменой платформы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void SetBuildSettings()</code></pre>
+  </div>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_SettingPostChangePlatform_" data-uid="ContinuousDevelopment.BuilderWindow.SettingPostChangePlatform*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_SettingPostChangePlatform" data-uid="ContinuousDevelopment.BuilderWindow.SettingPostChangePlatform">SettingPostChangePlatform()</h4>
+  <div class="markdown level1 summary"><p>Установка настроек после смены платформы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void SettingPostChangePlatform()</code></pre>
+  </div>
+  
+  
+  <a id="ContinuousDevelopment_BuilderWindow_StartConveyor_" data-uid="ContinuousDevelopment.BuilderWindow.StartConveyor*"></a>
+  <h4 id="ContinuousDevelopment_BuilderWindow_StartConveyor" data-uid="ContinuousDevelopment.BuilderWindow.StartConveyor">StartConveyor()</h4>
+  <div class="markdown level1 summary"><p>Стартуем конвейер билдов
+Применение: нужен для задания общих параметров для всех тренажеров<br>
+-обязательные для всех сцены
+-получение настроек билда</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartConveyor()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IPostprocessBuildWithReport</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

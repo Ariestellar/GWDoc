@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FTPAnalytics
+   | GWDoc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FTPAnalytics
+   | GWDoc ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AnalyticsFTP.FTPAnalytics">
+  
+  
+  <h1 id="AnalyticsFTP_FTPAnalytics" data-uid="AnalyticsFTP.FTPAnalytics" class="text-break">Class FTPAnalytics
+  </h1>
+  <div class="markdown level0 summary"><p>Класс необходимый для сбора аналитики (путем обработки событий) и записи ее в файлики а так же инициирования отправления на сервер<br>
+Находится на объекте AnalyticsManger в сценах тренажеров<br><br>
+для сбора статистики и последующей записи необходимо расставить события в соответсвующие названиям точках:<br>
+-Пользователь начал прохождение режима симулятора<br>
+-Пользователь начал прохождение шага<br>
+-Пользователь допустил ошибку<br>
+-Пользователь завершил прохождение шага<br>
+-Пользователь завершил прохождение режима симулятора<br>
+Зависимости:<br>
+Для работы необходимы кастомные статические классы:<br>
+-EventManager<br>
+-FTPManager<br>
+-GlobalTrainerData<br>
+-GlobalUserData<br></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FTPAnalytics</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AnalyticsFTP.html">AnalyticsFTP</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="AnalyticsFTP_FTPAnalytics_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FTPAnalytics : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="AnalyticsFTP_FTPAnalytics__fullPath" data-uid="AnalyticsFTP.FTPAnalytics._fullPath">_fullPath</h4>
+  <div class="markdown level1 summary"><p>Полный путь для записи логов на клиенте
+Определяется в методе ModeStart(), т.к. только там мы получаем всю необходимую информацию о названии файлика</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string _fullPath</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AnalyticsFTP_FTPAnalytics__isOn" data-uid="AnalyticsFTP.FTPAnalytics._isOn">_isOn</h4>
+  <div class="markdown level1 summary"><p>Поле отвечает за включение/выключение модуля <br>
+Устанавливается в сцене на компоненте<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool _isOn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AnalyticsFTP_FTPAnalytics__startTimeCurrentSimulatorStep" data-uid="AnalyticsFTP.FTPAnalytics._startTimeCurrentSimulatorStep">_startTimeCurrentSimulatorStep</h4>
+  <div class="markdown level1 summary"><p>Время начала текущего шага симулятора записывается при срабатывании StepStart(), обнуляется в StepCompleted()
+Применение: что бы была возможность подсчитать время прохождения шага</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime _startTimeCurrentSimulatorStep</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_CreateDirectoryForNewUser_" data-uid="AnalyticsFTP.FTPAnalytics.CreateDirectoryForNewUser*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_CreateDirectoryForNewUser_System_String_System_String_" data-uid="AnalyticsFTP.FTPAnalytics.CreateDirectoryForNewUser(System.String,System.String)">CreateDirectoryForNewUser(String, String)</h4>
+  <div class="markdown level1 summary"><p>Создание директорий для записи логов на клиенте и на сервере
+Применение: если при проверки (проверки необходимо делать при попытки любой записи, или при первом входе клиента в тренажер)
+директория на клиенте отсутствует, следовательно это новый пользователь, необходимо создать для него директории записи
+и на клиенте и на сервере</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateDirectoryForNewUser(string pathDirectory, string userName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pathDirectory</span></td>
+        <td><p>Путь для создания директории на клиенте</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">userName</span></td>
+        <td><p>Имя пользователя для создании одноименнойц папки на сервере</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_ExitTrainersForSendServer_" data-uid="AnalyticsFTP.FTPAnalytics.ExitTrainersForSendServer*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_ExitTrainersForSendServer" data-uid="AnalyticsFTP.FTPAnalytics.ExitTrainersForSendServer">ExitTrainersForSendServer()</h4>
+  <div class="markdown level1 summary"><p>Метод заглушка, пока не нашел необходимый API который отвечает за завершение прохождения режима
+Применение (где необходимо вызвать на событиях нажатия кнопок пользователем):
+-при смене режима тренажера
+-при завершении прохождения режима тренажера
+-при завершении тернажера перед выходом
+-при завершении тренажера когда допущенно максимальное количество ошибок</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitTrainersForSendServer()</code></pre>
+  </div>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_ModeStart_" data-uid="AnalyticsFTP.FTPAnalytics.ModeStart*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_ModeStart_VR_common_components_CustomEventObject_" data-uid="AnalyticsFTP.FTPAnalytics.ModeStart(VR_common_components.CustomEventObject)">ModeStart(CustomEventObject)</h4>
+  <div class="markdown level1 summary"><p>Начало прохождения одного из режимов симулятора (кроме Prestage)
+Необходимо вызывать при старте режима тренажера
+Создаем папку если ее еще нет. Создаем файл внутри папки с названием тренажера, режимом и датой, если его еще нет</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ModeStart(CustomEventObject param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.CustomEventObject.html">CustomEventObject</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>Текущий режим тренажера</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_Mode_ompleted_" data-uid="AnalyticsFTP.FTPAnalytics.Mode&#1057;ompleted*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_Mode_ompleted_VR_common_components_CustomEventObject_" data-uid="AnalyticsFTP.FTPAnalytics.Mode&#1057;ompleted(VR_common_components.CustomEventObject)">Mode&#1057;ompleted(CustomEventObject)</h4>
+  <div class="markdown level1 summary"><p>Отправка данных после прохождения одного из режимов симулятора
+Применение (где необходимо вызвать):
+-при смене режима тренажера
+-при завершении прохождения режима тренажера
+-при завершении тернажера перед выходом
+-при завершении тренажера когда допущенно максимальное количество ошибок</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Mode&#1057;ompleted(CustomEventObject param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.CustomEventObject.html">CustomEventObject</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>GlobalTrainerData.TrainerModes - текущий режим</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_OnDisable_" data-uid="AnalyticsFTP.FTPAnalytics.OnDisable*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_OnDisable" data-uid="AnalyticsFTP.FTPAnalytics.OnDisable">OnDisable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnDisable()</code></pre>
+  </div>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_OnEnable_" data-uid="AnalyticsFTP.FTPAnalytics.OnEnable*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_OnEnable" data-uid="AnalyticsFTP.FTPAnalytics.OnEnable">OnEnable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnEnable()</code></pre>
+  </div>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_StepCompleted_" data-uid="AnalyticsFTP.FTPAnalytics.StepCompleted*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_StepCompleted_VR_common_components_CustomEventObject_" data-uid="AnalyticsFTP.FTPAnalytics.StepCompleted(VR_common_components.CustomEventObject)">StepCompleted(CustomEventObject)</h4>
+  <div class="markdown level1 summary"><p>Сбор и запись данных о завершении прохождения шага
+Применение (где необходимо вызвать):
+-при завершении шага тренажера
+-при завершении тренажера перед выходом
+-при завершении тренажера когда допущенно максимальное количество ошибок</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StepCompleted(CustomEventObject param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.CustomEventObject.html">CustomEventObject</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>string - название шага</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_StepStart_" data-uid="AnalyticsFTP.FTPAnalytics.StepStart*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_StepStart_VR_common_components_CustomEventObject_" data-uid="AnalyticsFTP.FTPAnalytics.StepStart(VR_common_components.CustomEventObject)">StepStart(CustomEventObject)</h4>
+  <div class="markdown level1 summary"><p>Сбор данных(без отправки) о начале прохождения шага
+Необходимо вызывать при старте шага тренажера</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StepStart(CustomEventObject param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.CustomEventObject.html">CustomEventObject</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>Без параметров</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_UserMadeFailing_" data-uid="AnalyticsFTP.FTPAnalytics.UserMadeFailing*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_UserMadeFailing_VR_common_components_CustomEventObject_" data-uid="AnalyticsFTP.FTPAnalytics.UserMadeFailing(VR_common_components.CustomEventObject)">UserMadeFailing(CustomEventObject)</h4>
+  <div class="markdown level1 summary"><p>Сбор и отправка данных о совершении пользователем ошибки
+Необходимо вызвать в момент совершении ошибки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UserMadeFailing(CustomEventObject param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.CustomEventObject.html">CustomEventObject</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>string - название ошибки</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AnalyticsFTP_FTPAnalytics_WriteCSV_" data-uid="AnalyticsFTP.FTPAnalytics.WriteCSV*"></a>
+  <h4 id="AnalyticsFTP_FTPAnalytics_WriteCSV_System_String_System_String_System_String_" data-uid="AnalyticsFTP.FTPAnalytics.WriteCSV(System.String,System.String,System.String)">WriteCSV(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Запись в файл данных для отправки
+Если директория для записи отсутствует тогда создаем ее и на клиенте и на сервере</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void WriteCSV(string messageStep, string messageFail, string time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">messageStep</span></td>
+        <td><p>Запись о шаге</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">messageFail</span></td>
+        <td><p>Запись об ошибке</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>Запись о времени</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

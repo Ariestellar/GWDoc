@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class HandModelRenderSingltone
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HandModelRenderSingltone
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -83,7 +83,8 @@
   
   <h1 id="VR_common_components_HandModelRenderSingltone" data-uid="VR_common_components.HandModelRenderSingltone" class="text-break">Class HandModelRenderSingltone
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Класс, ркелизующий модуль-буфер для работы с моделями рук и рейкастами</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -96,6 +97,82 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class HandModelRenderSingltone : MonoBehaviour</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="VR_common_components_HandModelRenderSingltone__handProperties" data-uid="VR_common_components.HandModelRenderSingltone._handProperties">_handProperties</h4>
+  <div class="markdown level1 summary"><p>Массив, хранящий свойства обеих рук</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HandModelRenderSingltone.HandProperties[] _handProperties</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.HandModelRenderSingltone.HandProperties.html">HandModelRenderSingltone.HandProperties</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_HandModelRenderSingltone__mode" data-uid="VR_common_components.HandModelRenderSingltone._mode">_mode</h4>
+  <div class="markdown level1 summary"><p>Режим работы модуля</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HandModelRenderSingltone.ConcealmentMode _mode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.HandModelRenderSingltone.ConcealmentMode.html">HandModelRenderSingltone.ConcealmentMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_HandModelRenderSingltone_instance" data-uid="VR_common_components.HandModelRenderSingltone.instance">instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static HandModelRenderSingltone instance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.HandModelRenderSingltone.html">HandModelRenderSingltone</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -127,9 +204,202 @@
   </h3>
   
   
+  <a id="VR_common_components_HandModelRenderSingltone_DisableGrabber_" data-uid="VR_common_components.HandModelRenderSingltone.DisableGrabber*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_DisableGrabber_VR_common_components_GrabbableObject_Hand_System_Int32_" data-uid="VR_common_components.HandModelRenderSingltone.DisableGrabber(VR_common_components.GrabbableObject.Hand,System.Int32)">DisableGrabber(GrabbableObject.Hand, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableGrabber(GrabbableObject.Hand hand, int hashCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
+        <td><span class="parametername">hand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hashCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandModelRenderSingltone_DisableRaycast_" data-uid="VR_common_components.HandModelRenderSingltone.DisableRaycast*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_DisableRaycast_VR_common_components_GrabbableObject_Hand_System_Int32_" data-uid="VR_common_components.HandModelRenderSingltone.DisableRaycast(VR_common_components.GrabbableObject.Hand,System.Int32)">DisableRaycast(GrabbableObject.Hand, Int32)</h4>
+  <div class="markdown level1 summary"><p>Метод, выключающий рейкаст для конкретной руки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableRaycast(GrabbableObject.Hand hand, int hashCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
+        <td><span class="parametername">hand</span></td>
+        <td><p>Рука</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hashCode</span></td>
+        <td><p>Хеш-код объекта, который вызвал выключение</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandModelRenderSingltone_EnableGrabber_" data-uid="VR_common_components.HandModelRenderSingltone.EnableGrabber*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_EnableGrabber_VR_common_components_GrabbableObject_Hand_System_Int32_" data-uid="VR_common_components.HandModelRenderSingltone.EnableGrabber(VR_common_components.GrabbableObject.Hand,System.Int32)">EnableGrabber(GrabbableObject.Hand, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableGrabber(GrabbableObject.Hand hand, int hashCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
+        <td><span class="parametername">hand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hashCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandModelRenderSingltone_EnableRaycast_" data-uid="VR_common_components.HandModelRenderSingltone.EnableRaycast*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_EnableRaycast_VR_common_components_GrabbableObject_Hand_System_Int32_" data-uid="VR_common_components.HandModelRenderSingltone.EnableRaycast(VR_common_components.GrabbableObject.Hand,System.Int32)">EnableRaycast(GrabbableObject.Hand, Int32)</h4>
+  <div class="markdown level1 summary"><p>Метод, включающий рейкаст для конкретной руки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableRaycast(GrabbableObject.Hand hand, int hashCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
+        <td><span class="parametername">hand</span></td>
+        <td><p>Рука</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hashCode</span></td>
+        <td><p>Хеш-код объекта, который вызвал включение</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandModelRenderSingltone_ForceDisableRaycast_" data-uid="VR_common_components.HandModelRenderSingltone.ForceDisableRaycast*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_ForceDisableRaycast_VR_common_components_GrabbableObject_Hand_" data-uid="VR_common_components.HandModelRenderSingltone.ForceDisableRaycast(VR_common_components.GrabbableObject.Hand)">ForceDisableRaycast(GrabbableObject.Hand)</h4>
+  <div class="markdown level1 summary"><p>Метод, принудительно выключающий рейкаст конкретной руки и разблокирующий обычную работу модуля для этой руки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceDisableRaycast(GrabbableObject.Hand hand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
+        <td><span class="parametername">hand</span></td>
+        <td><p>Рука</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandModelRenderSingltone_ForceEnableRaycast_" data-uid="VR_common_components.HandModelRenderSingltone.ForceEnableRaycast*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_ForceEnableRaycast_VR_common_components_GrabbableObject_Hand_" data-uid="VR_common_components.HandModelRenderSingltone.ForceEnableRaycast(VR_common_components.GrabbableObject.Hand)">ForceEnableRaycast(GrabbableObject.Hand)</h4>
+  <div class="markdown level1 summary"><p>Метод, принудительно включающий рейкаст конкретной руки и блокирующий обычную работу модуля для этой руки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceEnableRaycast(GrabbableObject.Hand hand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
+        <td><span class="parametername">hand</span></td>
+        <td><p>Рука</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VR_common_components_HandModelRenderSingltone_HideAllHandModel_" data-uid="VR_common_components.HandModelRenderSingltone.HideAllHandModel*"></a>
   <h4 id="VR_common_components_HandModelRenderSingltone_HideAllHandModel" data-uid="VR_common_components.HandModelRenderSingltone.HideAllHandModel">HideAllHandModel()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Метод, показывающий все модели рук</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -139,7 +409,8 @@
   
   <a id="VR_common_components_HandModelRenderSingltone_HideHandModel_" data-uid="VR_common_components.HandModelRenderSingltone.HideHandModel*"></a>
   <h4 id="VR_common_components_HandModelRenderSingltone_HideHandModel_VR_common_components_GrabbableObject_Hand_" data-uid="VR_common_components.HandModelRenderSingltone.HideHandModel(VR_common_components.GrabbableObject.Hand)">HideHandModel(GrabbableObject.Hand)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Метод скрывающий конкретную модель руки</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -158,15 +429,38 @@
       <tr>
         <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
         <td><span class="parametername">hand</span></td>
-        <td></td>
+        <td><p>Рука, которую необходимо скрыть</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
+  <a id="VR_common_components_HandModelRenderSingltone_InitGrabbers_" data-uid="VR_common_components.HandModelRenderSingltone.InitGrabbers*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_InitGrabbers" data-uid="VR_common_components.HandModelRenderSingltone.InitGrabbers">InitGrabbers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InitGrabbers()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_HandModelRenderSingltone_InitRaycasters_" data-uid="VR_common_components.HandModelRenderSingltone.InitRaycasters*"></a>
+  <h4 id="VR_common_components_HandModelRenderSingltone_InitRaycasters" data-uid="VR_common_components.HandModelRenderSingltone.InitRaycasters">InitRaycasters()</h4>
+  <div class="markdown level1 summary"><p>Метод, вызывающийся при инициализации и позволяющий найти рейкасты на сцене, если они не прилинкованы вручную</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InitRaycasters()</code></pre>
+  </div>
+  
+  
   <a id="VR_common_components_HandModelRenderSingltone_ShowAllHandModel_" data-uid="VR_common_components.HandModelRenderSingltone.ShowAllHandModel*"></a>
   <h4 id="VR_common_components_HandModelRenderSingltone_ShowAllHandModel" data-uid="VR_common_components.HandModelRenderSingltone.ShowAllHandModel">ShowAllHandModel()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Метод, скрывающий все модели рук</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,7 +470,8 @@
   
   <a id="VR_common_components_HandModelRenderSingltone_ShowHandModel_" data-uid="VR_common_components.HandModelRenderSingltone.ShowHandModel*"></a>
   <h4 id="VR_common_components_HandModelRenderSingltone_ShowHandModel_VR_common_components_GrabbableObject_Hand_" data-uid="VR_common_components.HandModelRenderSingltone.ShowHandModel(VR_common_components.GrabbableObject.Hand)">ShowHandModel(GrabbableObject.Hand)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Метод показывающий конкретную модель руки</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -195,7 +490,8 @@
       <tr>
         <td><a class="xref" href="VR_common_components.GrabbableObject.Hand.html">GrabbableObject.Hand</a></td>
         <td><span class="parametername">hand</span></td>
-        <td></td>
+        <td><p>Рука, которую необходимо показать</p>
+</td>
       </tr>
     </tbody>
   </table>

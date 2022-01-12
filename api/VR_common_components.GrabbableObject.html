@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class GrabbableObject
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GrabbableObject
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -225,6 +225,30 @@
   </table>
   
   
+  <h4 id="VR_common_components_GrabbableObject_differentGrip" data-uid="VR_common_components.GrabbableObject.differentGrip">differentGrip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool differentGrip</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="VR_common_components_GrabbableObject_GrabButton" data-uid="VR_common_components.GrabbableObject.GrabButton">GrabButton</h4>
   <div class="markdown level1 summary"><p>Кнопка граба</p>
 </div>
@@ -250,13 +274,38 @@
   </table>
   
   
-  <h4 id="VR_common_components_GrabbableObject_HandDeviceTrackers" data-uid="VR_common_components.GrabbableObject.HandDeviceTrackers">HandDeviceTrackers</h4>
+  <h4 id="VR_common_components_GrabbableObject_gravityChanged" data-uid="VR_common_components.GrabbableObject.gravityChanged">gravityChanged</h4>
+  <div class="markdown level1 summary"><p>Флаг, ?(isKinematic == false) перед ивентом граба</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool gravityChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_HandRenderModel" data-uid="VR_common_components.GrabbableObject.HandRenderModel">HandRenderModel</h4>
   <div class="markdown level1 summary"><p>Массив ссылок на DeviceTracker рук</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform[] HandDeviceTrackers</code></pre>
+    <pre><code class="lang-csharp hljs">public static Transform[] HandRenderModel</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,6 +318,56 @@
     <tbody>
       <tr>
         <td><span class="xref">Transform</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_initParent" data-uid="VR_common_components.GrabbableObject.initParent">initParent</h4>
+  <div class="markdown level1 summary"><p>Начальный родитель объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Transform initParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_lastHand" data-uid="VR_common_components.GrabbableObject.lastHand">lastHand</h4>
+  <div class="markdown level1 summary"><p>ID руки, которая держала объект в предыдущем ивенте граба</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int lastHand</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -324,6 +423,30 @@
   </table>
   
   
+  <h4 id="VR_common_components_GrabbableObject_OnTransferBetweenHands" data-uid="VR_common_components.GrabbableObject.OnTransferBetweenHands">OnTransferBetweenHands</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnTransferBetweenHands</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="VR_common_components_GrabbableObject_PositionInHand" data-uid="VR_common_components.GrabbableObject.PositionInHand">PositionInHand</h4>
   <div class="markdown level1 summary"><p>Позиция объекта в руке при взятии</p>
 </div>
@@ -331,6 +454,30 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector3 PositionInHand</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_PositionInLeftHand" data-uid="VR_common_components.GrabbableObject.PositionInLeftHand">PositionInLeftHand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 PositionInLeftHand</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -397,8 +544,136 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_RotationInLeftHand" data-uid="VR_common_components.GrabbableObject.RotationInLeftHand">RotationInLeftHand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 RotationInLeftHand</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_startPosition" data-uid="VR_common_components.GrabbableObject.startPosition">startPosition</h4>
+  <div class="markdown level1 summary"><p>Начальная позиция объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 startPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_startRotation" data-uid="VR_common_components.GrabbableObject.startRotation">startRotation</h4>
+  <div class="markdown level1 summary"><p>Начальный поворот объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Quaternion startRotation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_GrabbableObject_startScale" data-uid="VR_common_components.GrabbableObject.startScale">startScale</h4>
+  <div class="markdown level1 summary"><p>Начальная скаляция объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 startScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="VR_common_components_GrabbableObject_EnableRaycast_" data-uid="VR_common_components.GrabbableObject.EnableRaycast*"></a>
+  <h4 id="VR_common_components_GrabbableObject_EnableRaycast_System_Boolean_" data-uid="VR_common_components.GrabbableObject.EnableRaycast(System.Boolean)">EnableRaycast(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Включение/отключение raycast`а</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EnableRaycast(bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>true - включить, false - отключить</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VR_common_components_GrabbableObject_GetGrabbedHand_" data-uid="VR_common_components.GrabbableObject.GetGrabbedHand*"></a>
@@ -484,6 +759,17 @@
   </table>
   
   
+  <a id="VR_common_components_GrabbableObject_OverrideStartPosition_" data-uid="VR_common_components.GrabbableObject.OverrideStartPosition*"></a>
+  <h4 id="VR_common_components_GrabbableObject_OverrideStartPosition" data-uid="VR_common_components.GrabbableObject.OverrideStartPosition">OverrideStartPosition()</h4>
+  <div class="markdown level1 summary"><p>Перезапись начальной позиции</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OverrideStartPosition()</code></pre>
+  </div>
+  
+  
   <a id="VR_common_components_GrabbableObject_ReleaseObject_" data-uid="VR_common_components.GrabbableObject.ReleaseObject*"></a>
   <h4 id="VR_common_components_GrabbableObject_ReleaseObject" data-uid="VR_common_components.GrabbableObject.ReleaseObject">ReleaseObject()</h4>
   <div class="markdown level1 summary"><p>Отпускание объекта</p>
@@ -547,6 +833,77 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="VR_common_components_GrabbableObject_SetPositionInHand_" data-uid="VR_common_components.GrabbableObject.SetPositionInHand*"></a>
+  <h4 id="VR_common_components_GrabbableObject_SetPositionInHand" data-uid="VR_common_components.GrabbableObject.SetPositionInHand">SetPositionInHand()</h4>
+  <div class="markdown level1 summary"><p>Установка позиции объекта относительно руки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetPositionInHand()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_GrabbableObject_Start_" data-uid="VR_common_components.GrabbableObject.Start*"></a>
+  <h4 id="VR_common_components_GrabbableObject_Start" data-uid="VR_common_components.GrabbableObject.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_GrabbableObject_ToStartPosition_" data-uid="VR_common_components.GrabbableObject.ToStartPosition*"></a>
+  <h4 id="VR_common_components_GrabbableObject_ToStartPosition" data-uid="VR_common_components.GrabbableObject.ToStartPosition">ToStartPosition()</h4>
+  <div class="markdown level1 summary"><p>Возвращение объекта в начальную позицию</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ToStartPosition()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_GrabbableObject_TransferBetweenHands_" data-uid="VR_common_components.GrabbableObject.TransferBetweenHands*"></a>
+  <h4 id="VR_common_components_GrabbableObject_TransferBetweenHands_System_Int32_" data-uid="VR_common_components.GrabbableObject.TransferBetweenHands(System.Int32)">TransferBetweenHands(Int32)</h4>
+  <div class="markdown level1 summary"><p>Передача объекта между руками</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransferBetweenHands(int hand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hand</span></td>
+        <td><p>ID руки, в которую передавать объект</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_GrabbableObject_UpdateInitParameters_" data-uid="VR_common_components.GrabbableObject.UpdateInitParameters*"></a>
+  <h4 id="VR_common_components_GrabbableObject_UpdateInitParameters" data-uid="VR_common_components.GrabbableObject.UpdateInitParameters">UpdateInitParameters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateInitParameters()</code></pre>
+  </div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">IColliderEventDragStartHandler</span>

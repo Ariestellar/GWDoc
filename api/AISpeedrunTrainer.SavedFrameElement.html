@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class SavedFrameElement
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SavedFrameElement
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -83,7 +83,8 @@
   
   <h1 id="AISpeedrunTrainer_SavedFrameElement" data-uid="AISpeedrunTrainer.SavedFrameElement" class="text-break">Class SavedFrameElement
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Класс, хранящий данные о записанном кадре</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -126,44 +127,22 @@ public class SavedFrameElement</code></pre>
   
   
   <a id="AISpeedrunTrainer_SavedFrameElement__ctor_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor*"></a>
-  <h4 id="AISpeedrunTrainer_SavedFrameElement__ctor_System_Boolean_AISpeedrunTrainer_SavedFrameEventType_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor(System.Boolean,AISpeedrunTrainer.SavedFrameEventType)">SavedFrameElement(Boolean, SavedFrameEventType)</h4>
+  <h4 id="AISpeedrunTrainer_SavedFrameElement__ctor" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor">SavedFrameElement()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SavedFrameElement(bool _isLocal = false, SavedFrameEventType eventType = SavedFrameEventType.None)</code></pre>
+    <pre><code class="lang-csharp hljs">public SavedFrameElement()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">_isLocal</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
-        <td><span class="parametername">eventType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="AISpeedrunTrainer_SavedFrameElement__ctor_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor*"></a>
-  <h4 id="AISpeedrunTrainer_SavedFrameElement__ctor_Transform_System_Boolean_AISpeedrunTrainer_SavedFrameEventType_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor(Transform,System.Boolean,AISpeedrunTrainer.SavedFrameEventType)">SavedFrameElement(Transform, Boolean, SavedFrameEventType)</h4>
+  <h4 id="AISpeedrunTrainer_SavedFrameElement__ctor_RigidPose_RigidPose_RigidPose_System_Single_System_String_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor(RigidPose,RigidPose,RigidPose,System.Single,System.String)">SavedFrameElement(RigidPose, RigidPose, RigidPose, Single, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SavedFrameElement(Transform t, bool _isLocal = false, SavedFrameEventType eventType = SavedFrameEventType.None)</code></pre>
+    <pre><code class="lang-csharp hljs">public SavedFrameElement(RigidPose head, RigidPose rightHand, RigidPose leftHand, float frameDeltaTime, string stepName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,102 +155,28 @@ public class SavedFrameElement</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Transform</span></td>
-        <td><span class="parametername">t</span></td>
+        <td><span class="xref">RigidPose</span></td>
+        <td><span class="parametername">head</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">_isLocal</span></td>
+        <td><span class="xref">RigidPose</span></td>
+        <td><span class="parametername">rightHand</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
-        <td><span class="parametername">eventType</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="AISpeedrunTrainer_SavedFrameElement__ctor_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor*"></a>
-  <h4 id="AISpeedrunTrainer_SavedFrameElement__ctor_Vector3_Quaternion_AISpeedrunTrainer_SavedFrameEventType_System_Boolean_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor(Vector3,Quaternion,AISpeedrunTrainer.SavedFrameEventType,System.Boolean)">SavedFrameElement(Vector3, Quaternion, SavedFrameEventType, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SavedFrameElement(Vector3 position, Quaternion rotation, SavedFrameEventType eventType = SavedFrameEventType.None, bool _isLocal = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">position</span></td>
+        <td><span class="xref">RigidPose</span></td>
+        <td><span class="parametername">leftHand</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Quaternion</span></td>
-        <td><span class="parametername">rotation</span></td>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">frameDeltaTime</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
-        <td><span class="parametername">eventType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">_isLocal</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="AISpeedrunTrainer_SavedFrameElement__ctor_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor*"></a>
-  <h4 id="AISpeedrunTrainer_SavedFrameElement__ctor_Vector3_Vector3_AISpeedrunTrainer_SavedFrameEventType_System_Boolean_" data-uid="AISpeedrunTrainer.SavedFrameElement.#ctor(Vector3,Vector3,AISpeedrunTrainer.SavedFrameEventType,System.Boolean)">SavedFrameElement(Vector3, Vector3, SavedFrameEventType, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SavedFrameElement(Vector3 position, Vector3 eulerRotation, SavedFrameEventType eventType = SavedFrameEventType.None, bool _isLocal = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">position</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">eulerRotation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
-        <td><span class="parametername">eventType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">_isLocal</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">stepName</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -280,12 +185,13 @@ public class SavedFrameElement</code></pre>
   </h3>
   
   
-  <h4 id="AISpeedrunTrainer_SavedFrameElement_EventType" data-uid="AISpeedrunTrainer.SavedFrameElement.EventType">EventType</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_EventTypes" data-uid="AISpeedrunTrainer.SavedFrameElement.EventTypes">EventTypes</h4>
+  <div class="markdown level1 summary"><p>Список ивентов, записанных в данном кадре</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SavedFrameEventType EventType</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;SavedFrameEventType&gt; EventTypes</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -297,19 +203,19 @@ public class SavedFrameElement</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="AISpeedrunTrainer_SavedFrameElement_isLocal" data-uid="AISpeedrunTrainer.SavedFrameElement.isLocal">isLocal</h4>
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_FrameDB" data-uid="AISpeedrunTrainer.SavedFrameElement.FrameDB">FrameDB</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool isLocal</code></pre>
+    <pre><code class="lang-csharp hljs">public float FrameDB</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -321,19 +227,45 @@ public class SavedFrameElement</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Single</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="AISpeedrunTrainer_SavedFrameElement_Location" data-uid="AISpeedrunTrainer.SavedFrameElement.Location">Location</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_FrameSinceStartupTime" data-uid="AISpeedrunTrainer.SavedFrameElement.FrameSinceStartupTime">FrameSinceStartupTime</h4>
+  <div class="markdown level1 summary"><p>Время начала кадра от запуска тренажера</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RigidPose Location</code></pre>
+    <pre><code class="lang-csharp hljs">public float FrameSinceStartupTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_HeadLocation" data-uid="AISpeedrunTrainer.SavedFrameElement.HeadLocation">HeadLocation</h4>
+  <div class="markdown level1 summary"><p>Локальное положение шлема в виртуальном пространстве относительно VROrigin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidPose HeadLocation</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -350,13 +282,113 @@ public class SavedFrameElement</code></pre>
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_HeightLocation" data-uid="AISpeedrunTrainer.SavedFrameElement.HeightLocation">HeightLocation</h4>
+  <div class="markdown level1 summary"><p>Локальное положение Height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidPose HeightLocation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RigidPose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_LeftHandLocation" data-uid="AISpeedrunTrainer.SavedFrameElement.LeftHandLocation">LeftHandLocation</h4>
+  <div class="markdown level1 summary"><p>Локальное положение левого контроллера в виртуальном пространстве относительно VROrigin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidPose LeftHandLocation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RigidPose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_RightHandLocation" data-uid="AISpeedrunTrainer.SavedFrameElement.RightHandLocation">RightHandLocation</h4>
+  <div class="markdown level1 summary"><p>Локальное положение правого контроллера в виртуальном пространстве относительно VROrigin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RigidPose RightHandLocation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RigidPose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_StepName" data-uid="AISpeedrunTrainer.SavedFrameElement.StepName">StepName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StepName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
   
   <a id="AISpeedrunTrainer_SavedFrameElement_Identity_" data-uid="AISpeedrunTrainer.SavedFrameElement.Identity*"></a>
   <h4 id="AISpeedrunTrainer_SavedFrameElement_Identity" data-uid="AISpeedrunTrainer.SavedFrameElement.Identity">Identity</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Возвращает пустую запись кадра</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -381,13 +413,14 @@ public class SavedFrameElement</code></pre>
   </h3>
   
   
-  <a id="AISpeedrunTrainer_SavedFrameElement_SetLocation_" data-uid="AISpeedrunTrainer.SavedFrameElement.SetLocation*"></a>
-  <h4 id="AISpeedrunTrainer_SavedFrameElement_SetLocation_Transform_AISpeedrunTrainer_SavedFrameEventType_System_Boolean_" data-uid="AISpeedrunTrainer.SavedFrameElement.SetLocation(Transform,AISpeedrunTrainer.SavedFrameEventType,System.Boolean)">SetLocation(Transform, SavedFrameEventType, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="AISpeedrunTrainer_SavedFrameElement_AddEvent_" data-uid="AISpeedrunTrainer.SavedFrameElement.AddEvent*"></a>
+  <h4 id="AISpeedrunTrainer_SavedFrameElement_AddEvent_AISpeedrunTrainer_SavedFrameEventType_" data-uid="AISpeedrunTrainer.SavedFrameElement.AddEvent(AISpeedrunTrainer.SavedFrameEventType)">AddEvent(SavedFrameEventType)</h4>
+  <div class="markdown level1 summary"><p>Метод, добавляющий ивент в список</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLocation(Transform t, SavedFrameEventType eventType = SavedFrameEventType.None, bool _isLocal = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddEvent(SavedFrameEventType eventType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -400,103 +433,10 @@ public class SavedFrameElement</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Transform</span></td>
-        <td><span class="parametername">t</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
         <td><span class="parametername">eventType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">_isLocal</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="AISpeedrunTrainer_SavedFrameElement_SetLocation_" data-uid="AISpeedrunTrainer.SavedFrameElement.SetLocation*"></a>
-  <h4 id="AISpeedrunTrainer_SavedFrameElement_SetLocation_Vector3_Quaternion_AISpeedrunTrainer_SavedFrameEventType_System_Boolean_" data-uid="AISpeedrunTrainer.SavedFrameElement.SetLocation(Vector3,Quaternion,AISpeedrunTrainer.SavedFrameEventType,System.Boolean)">SetLocation(Vector3, Quaternion, SavedFrameEventType, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLocation(Vector3 position, Quaternion rotation, SavedFrameEventType eventType = SavedFrameEventType.None, bool _isLocal = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">position</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Quaternion</span></td>
-        <td><span class="parametername">rotation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
-        <td><span class="parametername">eventType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">_isLocal</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="AISpeedrunTrainer_SavedFrameElement_SetLocation_" data-uid="AISpeedrunTrainer.SavedFrameElement.SetLocation*"></a>
-  <h4 id="AISpeedrunTrainer_SavedFrameElement_SetLocation_Vector3_Vector3_AISpeedrunTrainer_SavedFrameEventType_System_Boolean_" data-uid="AISpeedrunTrainer.SavedFrameElement.SetLocation(Vector3,Vector3,AISpeedrunTrainer.SavedFrameEventType,System.Boolean)">SetLocation(Vector3, Vector3, SavedFrameEventType, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLocation(Vector3 position, Vector3 eulerRotation, SavedFrameEventType eventType = SavedFrameEventType.None, bool _isLocal = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">position</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Vector3</span></td>
-        <td><span class="parametername">eulerRotation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.SavedFrameEventType.html">SavedFrameEventType</a></td>
-        <td><span class="parametername">eventType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">_isLocal</span></td>
-        <td></td>
+        <td><p>Тип ивента</p>
+</td>
       </tr>
     </tbody>
   </table>

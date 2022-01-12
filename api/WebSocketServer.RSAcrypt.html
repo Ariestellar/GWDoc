@@ -1,0 +1,1149 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RSAcrypt
+   | GWDoc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RSAcrypt
+   | GWDoc ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="WebSocketServer.RSAcrypt">
+  
+  
+  <h1 id="WebSocketServer_RSAcrypt" data-uid="WebSocketServer.RSAcrypt" class="text-break">Class RSAcrypt
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RSAcrypt</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="WebSocketServer.html">WebSocketServer</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="WebSocketServer_RSAcrypt_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static class RSAcrypt</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt__privatekey" data-uid="WebSocketServer.RSAcrypt._privatekey">_privatekey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static RSAParameters _privatekey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RSAParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt__privateKey" data-uid="WebSocketServer.RSAcrypt._privateKey">_privateKey</h4>
+  <div class="markdown level1 summary"><p>Частный ключ для дешефровки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static string _privateKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt__privateServerSmallKey" data-uid="WebSocketServer.RSAcrypt._privateServerSmallKey">_privateServerSmallKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string _privateServerSmallKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt__publickey" data-uid="WebSocketServer.RSAcrypt._publickey">_publickey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static RSAParameters _publickey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RSAParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt__publicKey" data-uid="WebSocketServer.RSAcrypt._publicKey">_publicKey</h4>
+  <div class="markdown level1 summary"><p>Публичный код для шифрования</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static string _publicKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt__publicServerSmallKey" data-uid="WebSocketServer.RSAcrypt._publicServerSmallKey">_publicServerSmallKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string _publicServerSmallKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_cspp" data-uid="WebSocketServer.RSAcrypt.cspp">cspp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static CspParameters cspp</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CspParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_defaultPrivateKey" data-uid="WebSocketServer.RSAcrypt.defaultPrivateKey">defaultPrivateKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const string defaultPrivateKey = &quot;&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_defaultPublicKey" data-uid="WebSocketServer.RSAcrypt.defaultPublicKey">defaultPublicKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const string defaultPublicKey = &quot;&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_keyName" data-uid="WebSocketServer.RSAcrypt.keyName">keyName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const string keyName = &quot;GWPro&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_PrivateServerKey" data-uid="WebSocketServer.RSAcrypt.PrivateServerKey">PrivateServerKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PrivateServerKey = &quot;&lt;RSAKeyValue&gt;&lt;Modulus&gt;hGYw2JWnkPqKtlXnk6cdCiblqsbT25Ofj56E7abQQdwerC3EHDIp0QM92xiLktnMQ4FqRkwxugzM7HprI3F32fOPPqi0NR5xYdeQzXKWYumCaV5tezEysNyw2wxK4LTCGPXXYqqM2PniJI6CujDXsOlEYCMdlW/wszNK/oQ0IomsSf4VgWYn+GbXOQy8JyVEYCX1+BsfgpzBwOCW+SC9eTfcCgUNr3FE7SUHs2LKyqVivuWgB6Bt/Mhligo+8OX6b1KladlRewiBVtKWldeQ9ZLbxCjIdysRax5DVsmneUmN8lEyA7x3XtNxAe+k18ffdDgQzA8vM9bcyWXM+3ES9fqa/I8gsSuwMOX/LpnbFUnKI7lbO0zyI0UvhVtg7l64VGW8plKHs2oKFdcSQX/M0M5xe/eKKEA7mnyTl5vZjnNJHyhjf6bRgRpwHnaJFkCRgUmXIFvlED8vxoMwXdYmmri9ul3mTmM3BIf84KqOuoecHGyJkHTMpp7L8AtQjptSJhNJP5pDK+fOYb2mbrIntg94RN6fBoBiIYOlrI3BtjVcVkaSO33Sy8leC8kq9pD4Mjy/lvUJAu5fpe6d832hjA/tBk6qf0/GNbrgrcAHoqCjWYrqp3ZWPxhYcMOAMIXrOstUVFM+XuXiqD4q4vRpJ94O1MnifWdriYot/rEkwhcAtnIa3q0F6EEY3BbLUGpIRex8s17JvIvrOA9ZiIoWk5ko55q1lbDjrno8YDLc8VBEiaA1LF9ZInTqGHeBUE2HOymAQW183V+p1PtGAmVSACy4V7ZmQ+kfR0mGCEcKrphaJYJLxd2BChQxKZPh39n8AtHHqBOH1S6OwnFYcEfS07rn8RZc5Gkd43ygXEIrk2r9fJ8BlVNhH4ceIQPgTylR7X5+FwuAHjVU6rWlypOuM6dW9Xfm8wqrwsnhtH6q9cDWG8ygKKx/CpkszpUcMmu96FWzmjc3V/Ap41OXqWi/ZSxGezunWGm4IMupUsHVHImi+jBFwI5s/utU5ldg8Nrt0d+RTqyvEl739mkyLeg5m1OR1r6+WAIVCki7aR8Etgm8G/kZ5L6e2XMUh8XKqfeAY8QDA/x1MJy8gUZ3oyAkfJlQTM24T4m9WNjPCMu6HB1IVjv0RgYoBhqCI8Nou/4p+MjatQi6Kdnly+YcNFyHlu48gjhYV5w5tH+hHS8rMe+tsqC5IkxSdUMjkBWBPuCUxS5baPzsdoIfWNLgaPZGLtPOIPkCpGPb5nGxIso9+C5hSkFvbA+IY3Wx/HYuET15CjBskrUaw4Tj0De7V7vRGj+TSrFqmJ3E6CSKyHCSGMASyXcDKFWodx0QzMaoJKI+jmxY8uR9jcnZu42LeEBDKQ==&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;P&gt;sevL1jC2P1gb2v2OEITgPp1KfLyz85mAB+jrIRtOlVC64DYFFpWpCPeEgcOt+7fggCc7NVhic7tcqmhOvHSOvciWottQw+uKIaVD8HbexvavbqpCSjnXkJ0D5KiMzfm6814oQoHXxYbp2xNV3bJDpb4oFZD8VjJ/BBIfqJvsMDyBp6Jbi09GfVyKQAbXmwMC+sqfOMcYApM4bt7T1tMTLXDt1ByytlyZvq4mf6cgPsYhcrPmRb7uvPcaQRCkuAg4z/sRxSWeOIm3Ws/10xO5FrHjBywlyRE8+dKL3PI2iQ4MbDOi6wf4ruzXzVXxhHMg47jCimxs7DPkZpscBY9oNbOIfzsPx8NNc/SOprXCQ4OQz93W99HiQ4bLnyDzpMVDnt7dYXDZ2smbMX+8JchY/x/17uCCQ7n5i0f23z/5q+Ewf4mb0Swx//mI5vln2Jz2ZybUL00Tb2rT1GvMqJ02beYQa5AFYHMQ7YHUM+dLbimyfNJZxOkZuRbbujTkPRWJ38rmaXiXVpCkXIr3gi/YVkJ2/kUAu0qhCkCq4BUygV0hJwpfyubzvEGUpdn8zvsofkQx+BiwDf+tZDmopLq7y37ovJ6f1PDZHCit8RUZuk2Z1plSCrqup8auX40DsZ2oA84u7FaIR70oW9VMzZBX1pXhsOYYQfR8bGYO99MdOlk=&lt;/P&gt;&lt;Q&gt;voBS97kL5mt+RSNFa4N/t+cD6qofb0NXuz32BRNkKqVbZf+VBx5Wlv26dUamdx0NL+732YvvihzUIcV+oxHzKkZTbP39U1b8M1Tgazw13qs5CgCnjNUBf89MbwmckpqIz63A2zEVweTU1TXqPj3hv7su10orNKlldgU6K5ISrRUXVM+s7splwotpIy4s7XHw1zfK2eKGjwu7UVWACW0o/O/IlHXYRzZxtJSPVY0gZYB6OxO8db6zI/bPllBs6UC0goqTl1ZMrmlc2vBwexOKT2AJkMclwBFQtupVYbt9zD4ioeex769mCmSnbQjxxEFELoWVpzYKVEnOsscRKK0OPijOKXKXprW1hadEDEyyA5vMOfZwCa4iICn6gRR1JeShN94bdoA+VqdOr30zQ3Sippw4HXKCTt5QGsVyBMsb+T3Idlqi2XPumzjzJsKNjVqrbL2WC5LpPYUXFTFPaOGUO8xlSkRLtPwfVC9QrBM60VU8fZ/dm5aAp1/wePlhb/KZCnwe7WRzuOGUJTfkhQL5WLtwCA09reO+UgM9Ik3J6RoIss84LKkSBvp9bSzP7jSzhJLQQHojgTWen6z7/KKeP3n+kHiEYYs8iHeLhmmCDam26PbV6CI+Vl21of1BPmnDhNRfswpSPfqhRctsxs7p7yu+EiXoNavKNBvBZooDlVE=&lt;/Q&gt;&lt;DP&gt;bzLwMu4++VgYEMZoA+sIPBoSc+N8lMNbQZZRXl+yvZ+3LGqWw4bGHtST/IZQNwK1TWM3nh+faLWxNM/8Zcxzainz+9UWpVyQ+HZR//hLRA7plkDTLZD5KWj5BfBSEGoEbhZrEyYTtWCcyE9NW0IPBYfThacYDseAmwq4vqi09XDbl+nhTTA+3hr4TQv5tOgs9JGu8c19NB7PJnwd6iYB1mS+P9Ov3koBzSsK5L2PaaxrO0U0pmKu02uc/Q1p5Zs95r8EXDMmsC9iaV+QRFwPUh/bxJ/S/dfIRFtTDsRTUVV2binXqQ1SYAGm3q7YQ++wnqLa86jQatAD8B0BZng6qVWL+fjv4+osfkxa29a9k3SnDUOZF0oWIB4fJVVy8YhYuvKPalcd0aAvXsB21yZgeROAocuvnqSdUm+n2+AgK0yTAyL+P71fgpxy8+js/nUbi1y5QNbrTrd1rU2ym6+mVQl1OcTJl35TFh4OgmIMws1MwLa3ZFpLuWKP8dEc1RChGz20xDaaX4AHOc+g4b0FeOQRetmlm2kJPV8tbN/SsQeDsOLK/AVcUEysmvujBbnzlPcKRAUqA5XIyNtAi7QpqwWmcDyzqGLfTrod/I8zhTz66STqIcqLXlDOqul3ZYsjdz1mFk/+3NdcYgjt94w/Wd5TMDye7JnhKd6ffER2AAE=&lt;/DP&gt;&lt;DQ&gt;I82ASlh32RVoxNutJ1iuf0SmosrYX5PbgDBT9X5AfBdZxyCyxIS6J2SGT5Y4oPhPyytxX2yCV4W1hKdWdpVgCxjugvR1UN1vRsJz7xOA2Fl7vdqDot9BieDO76txxsfOYKG6NjfSa/9y1KNuY8ZDkEJAumuRFTOlAvpWhWvNoMPu/5yMVtCpMVf8KYV7IiEg74Hn2O1O9sFwsgeMqbjfVDJIk0ZWoIOl+RdWnPCKHyl3T3UVHVf62Q6A0zJIVco4YrRiqrWocbsRnYBE04zHmMVm5tPWz3MxpT8DTvvq16Dx51XhRjfDyL5EDST6MzVE+C1ZA/UPGepJM6ZgHjHwFFSc8oM75zQNapIWIu2jIzR7vIUJZ3hXp43cK7hJkBaZCiPvK2VM0gJdsnOoV8wq6X9AuKAVx3bWvUFQfYAiwMQQ0dWU96NnO7sHT8iOy/s3bpdvBLvWpB5ISU5cK00CC/8NJlkRlXEw/iRqV/zBOCh51u5duukdQtewHTxZSK3if2r2cQ1JBn0214vaofj+HeQUWR8L8Yt08Hr1WWYfRXUEH378gsA/yBn5yrP6XD2BY7An/YY2+Ai4yC+9qCxz62AlLMfJsX92n/s/uMJJlAHKg5wodZlB9/9irJApW+6KtYMofUC6VjWta62gwviOVMn2zfhb3QJtXT++KGRV6hE=&lt;/DQ&gt;&lt;InverseQ&gt;pJnC3hFjj2NyntkNGicQGioqzaeqgpg6kmgPx2zWp+Q4PoyNF1AAfad6My56bDeewsdcqlQGFAGjIMZrvGwk4JJBL0JUtYCW5QtCrodaU4GO6d0PZe2m4PR4vZMoMbOysNCTQNqQjHVx8/alfrRoLdzTuzEWbTZxINxdJwOkKCbBvCegeHz4AvmaiwMInIlu71DbkRY949HkqvlfGwSt4SzivcGT4vsP5agAsVxENhIPtSAiPUlQ5fSMOd+0TF5mK3W0PT6X7yt1y4z0B0VFu8hfNW1+ia4ocyBcSLsjshUmHefRIO3Y/PbPnCHwkEEmV9yhkR1tfdFohY7KvQ4or41GxF6NaKGhcROwPhPb2WuC6NIE0DJb/Zk8kIoWr1W0GZnAU19mUZWvYgASJEdNNXcrS6riBf5wiwMx8ejsXS0DfXUMJ0Zw5qSTha1jDsQtbpxxKwxiAnFAYNUkT/CH56mby6d6RpRyhu7Pcvp78+njUEFeM7/wWHipfhKIpWFYIcxHhuFYohHvb8Bu303QFM+Ylt5+KY7utwB0/wUlfvmadVZD4DqpS6BiEntLKf4XQUHnwuvFd1ct2RURurUn6ZkeL+P299NOFGuQJAKjyJVH/qhxlJqLbxCTvInuLhVT9HVFgPIMC++rZwOXGNe48x0MzPQDxjt3kxQk7KjclhU=&lt;/InverseQ&gt;&lt;D&gt;g2a0pc/pjV7K2mnpusYJcTDnkZVhYDRkEPLftMlxOVwQaQvG7cDvdYxFELSMmYNlUb4YToqCc8cOfsiEmpmbvIkYqrRenbWIC/YYtX47ORHNp2vbNn++cn+lWtEZY2iilokvabIgtZtTULrLjaS5/M+WV9+iFdUSS5flnzJwV7LRdmIgz9smYkcW5Xz5I9S9xrsGImYw4L1ZImcED17qDWteC+e2DGBbawzsVqH+6B46IYHeUJNtdYsiE11V2Fo3MdMRbjsLvhLT4uqAH1jheoh1anqbcoIg+HIBnRnoB9zzbwIcpE6hHlC1gJlpveqVoE+ghBWx4D4nxA4v4YD4s34z4eLfLFdSt0Uc/RAfukIQx2HH5NPaIR0iK7VkP09sm/6Yu21/VpYwSjq42J7RFI8/XCxyRr5xKULobHh19AYBFVZNYbybgwlNKz6zkY0lm+4AelIZxgUgEmHTV94ZVEdzrYpR74xSZ0HbvNIpc4Dxc9hYszDoh5lkh+mC2vXWEwnjEae1cNbQIntJueVAulUiJR/ZLmeufNqeS+Io1gChktLZgQfAdRZ2KzZNWIbKfXmDIHwypGEWNqXax3TxJwQLVs4uMspmyp6dLHRAX6wUUuMnPmqY8GfmJowxJndS3Xg9Sq+PYDnBuP5yK+ssji+6AoAXNCS3OrsUKQmAlMs3+DwyTYTqThYVGC2WesYbHBEbzGsx/2VauqpitpCcWxkyij1Cf/EhaK4lgzKJl4BTGzfB3ZK7/roaAvM1M4TOhei0U/KNMaDusX7I70z+tVQA6ivfGWfFhpf52DP6xcUcbYB0lMDsubLchEdAVEWjffCbRPQVjwhx+NgPIIYueyfVBLUwV8wYd/Nd6RsoUC0vzkrIsNAzfMVFW4nVlPrT3MobaPTuGtXHKqgeSYNCf6uqDV3akt0dKSbtuJyoFImbuCNh7Av7OaRyWfYj8jjo7FhG5GRV8o+382tbWvxUrFZsY+m5Pz+dYvnVyF0gdp+LsZKjbLXNKrY3g1UqG5T44bIuRtjioxIFH7zrm6GokFU96U0S9D7JjC+ufyUk+TaJGr8ztXCAd1Zr/CgGa1aOTPLt8fcjQdB8oSPQvv30KGTkNY98opGyHebCxdKVkdug1vGxkk5ohb1ZIJLmZ0w8zA7qs8gvSj7hKtiLQE+mH4Lr+twrHou/Iph4y7uaxjt928dMQbWin1sm+HpJ4bvLWvs1vKv5uVcezBzJm5697MtVMJ5kk6NL0ZOyZM80yBvPt4uOkQ0PojwllWvyu/pFHAy5nTZRCYCkcqpkhhJgXvYu1pxmY7Xvnwnwa+58G70Om8zacnmII+DXnh2geKzlV0TYpV27cF1jJyXUpW2SgQ==&lt;/D&gt;&lt;/RSAKeyValue&gt;&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_PrivateServerMiddleKey" data-uid="WebSocketServer.RSAcrypt.PrivateServerMiddleKey">PrivateServerMiddleKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PrivateServerMiddleKey = &quot;&lt;RSAKeyValue&gt;&lt;Modulus&gt;rTPJu8AwzFF4GMQYTJUb+Ew5TDn6zhRmThnosLAdv7aE3qRQ2Or4C+SrLy+/iP1SA/b4L/T1YMUpZCf+YLQL5q2w9UrAPfjgI44TP+ufW9GutmXLEY6Rmx5vPByH7VebO7+h4v3GK0sCL3mbi0Mx8b+fb3nMBOscJTzgdsHPFJRH3kM7hw/NVWrUZmci9VBb++P14vjMmf/niPeSelEzyCGI6eTB2sswoP0GmEBMwIHqVAP3cBVY5DRgXrx9q6L3LNb4YyR8LYTPzoT69HZiN4lVNFpWOSmmnfdnA2A6yNsnC87Kwe4m76ii7u4oRMAupwYKsRBVWkz/vmcNJOW7eoVVC++VbjS7BaWZqeucVsU6uqbpgbjmwwqeQgnUpGQDlXaDDmdlm6Pojst8mDp2hqLz/lX/Wp461iPB7aVjzY5CEtnVwmd2b5gxp0yS+BLAjUNQ1TD/AEUQ/kzQIhQa5/j1b77yKe98y2KPt8/CBVFXR6L8LELrE/1SGAFdQG5dQadzTuZZprOllmk85hf2s0Ad1tPjKxjAXb1XXWrRM2GqGgErU4FLMcZYfPAaxNBdc3zx6favY3BRqmTHyHB0KV+1lBIhVdLKC5RPj9QxYuNaMD9meJh9dvAZ2zS9XlV1SC560ZpjnNZ9H0RC1Y1jrHhil8jxY/6HsINJG1BDXqE=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;P&gt;5+yAqkkvNrI1weMME/whAv0qQ3ysuaIXU8aEVjjWORVEPebQtafToTKIcwxfZZSIYdII3FeLkN8o5L37cColVQKcrPxihn1alV3fCGOXgX2vD7FfQ3nqD2nA2nG2CWLjfiZq9WjKQj0HHxwDhOmkbPHDue1rZCGrPyH6iG5Q2Tuf3lTpPSWhIFvdVxZOnn8vD7jBSL/4Pdk9cprHs0O4qmMwHD4kFI68vcuwKil+2noHTHbenyL2G8++aPFY6r4Wsw0EWnje6LJoakjZob6MEcELlzr5EH/SKQoQEsLM2wtWWAXR2DQXccWGgwF76dBBC6vDGeV/5ALgUJdVjOmclQ==&lt;/P&gt;&lt;Q&gt;vy66zz0Ci82I6KqOR/9vkVv215QZVjNGBncKoPMsJH9dGaFQsjDou5GvEqL0QegHlwaVH8jOwm8LeGJZcaI4tw5unjbayRl1oTiKdeQeN5yKdUZWL1ftJytJiY0548nJPX7pouC0aMCF6aIOmyElq5GzICZR/MmzelAwfHqMqSRtBclrSwknI3ESU6xVZ2wmqZkr1NeszHkf2XmIk1t29MnKbva2ZAwAxb7geNUmKVBDVjCmCj6gUMcXMFcWj98kyhu+w7SBLDW3pBBfhO5ufwvLGdAp2I+LaQf521MbyhEwCTfO2rIOm0qahOTD9S/829r0i8zjL/6LqEjX9tvq3Q==&lt;/Q&gt;&lt;DP&gt;uxj6O2XK5u8hmwaVidHOt+CQpd0AYsk21GjD/eLgPzC+2slH+iQoAFUJ6vZCR2pqE7AjYc5mUzsUfGQfYb8+WrQ+vPbmbOTXnMQb12KwqNBB2AEZfw/tGP4RjKhLWIskR3KquswMzx74jcpFtIXgFdt8MJQuHJtk0QuSV1nXc0g8klohxyiCMd6qU0U1q3ui9aXwl8X2d763aasgC6hIY3ydJUukQ8lazipyNbFAGvRyyubidbL4pDsVuwdo2gb7vPp1Vp9IBKVYwtV+bJOR4AjCVwBGSV80pdLuYJQyO0uMHnqjbS2o9CmLeEhMNLXCo62vOUcBw2nmmF1dsM4NeQ==&lt;/DP&gt;&lt;DQ&gt;B6/OTQTL9GkIJyqsW9K2XqbO7u4CcsfO+fWRVNVSIgmI6b3lq7RxtxDtdBdfMMMugvD9z/BX99NVJ7r0k7ANDbcj1XKpK0q9wwSt9H1+hYfivUJdtruXSmrgIwqtmC4FzFYs+KKGPmv3NmSQp8YWaKaMCC/iPgKyF6nfuTGINEjFpWTqznKIw1EJhpm4OVdM2qbQ71bYmMQJ9sl/J0WXK9JtNDbxMGaXJVw+VD1lsmWKv41nL6RC99x5XzUxMAmtxf6FlgLM6sUiJBOQc5zOjocf3GLVO+LRnSB3+EyIIoC8aLJ4u6xLEA1Y1x0Hj/Uk+oX8LR7Ix6Y5YUPEgyVmdQ==&lt;/DQ&gt;&lt;InverseQ&gt;tLcYfQsAgkuUo0Rgq3odSc99PF4HeUBQJqSiniZ2UT7ixduy7m3AmrjGtP2CLFmfyPsJ8YWoCqObPYX3ovul5xvh5lqTZn2W+4mOnRKugJistY4oio+TsEVZVhpozB01bpM56HfJ8wsLbdW8zkdY7JilBVGNMDAP6R2QSxQYN2U40zSPHv0P/ZKronbMw9TtH+QTQbfpu+cB6vwbKhPZp3GgN8m7rRcKZAmDIEmxvGRSyC42IFibLEJRQ2/CVSvAEaHp9BbYvamgKFZDe0tUcsbQxR5YINSsqax2XABKzst7OWo+DAICc5FEIoeJR17mPMlplMmItkzoc0PMP747hA==&lt;/InverseQ&gt;&lt;D&gt;MsYXwV5Z78uCNWBm7yxXArb1pQ7qIzd/ti2KNSGr1uOel9X7jVt0U6g5Np/8uh/oxxjDMOvScwfZVm8S9y5QvtL0KTQ8nu4yZrnjkr1z/eq+GOJGYWM19A879Jc4ka845o8K2gwi59YZUemIW47bOU8/YeKGmHqDybbK5oVyO0ost09mR/Wt7/hdQ5fAe8GO9YyiLGNbN1n5egF5gzoCwAx0onxZB9bA7rC+GivfVB/Bndd71fOsF1nzVlJTVNl1NEPglM/BR2bDtHrvRnLd4AH2ZF6HIELBgVVhcW/oS7FTBPceITO7Xk5FVV2jmGPuSTBQOg/btZkU77At/j8KcihTMnUpikLCddBqfLVSIEd8GxMP+hNZ8kF+V4CExtqz9ASQ8qEHnvyv/pWL0ypy9IhxdhFieid8rwAXpzzPS/USgnCh2/pfp81pQPkUvuKhC7OlVNTfUEXauGnryZP4Co2yygLPN0XhN1oFR1j3kfjavz3mRXsjBvRa1JI9XDJqC+mnI64vSv3muRrlpDC9/DDj3iN+iFH6lU6epV+S+d8t5uch1eFiOPLMgxUnxXqnOTak0IWU5SDOyErPjjijRSFAvpCFV+jOLckbqdU8F4j7vuEojTncQLt79zGLLckAe++6nHeAJC5wMSdozMhOhb8Zdd9fPNmDetxIXk2wJkE=&lt;/D&gt;&lt;/RSAKeyValue&gt;&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_PublicServerKey" data-uid="WebSocketServer.RSAcrypt.PublicServerKey">PublicServerKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PublicServerKey = &quot;&lt;RSAKeyValue&gt;&lt;Modulus&gt;hGYw2JWnkPqKtlXnk6cdCiblqsbT25Ofj56E7abQQdwerC3EHDIp0QM92xiLktnMQ4FqRkwxugzM7HprI3F32fOPPqi0NR5xYdeQzXKWYumCaV5tezEysNyw2wxK4LTCGPXXYqqM2PniJI6CujDXsOlEYCMdlW/wszNK/oQ0IomsSf4VgWYn+GbXOQy8JyVEYCX1+BsfgpzBwOCW+SC9eTfcCgUNr3FE7SUHs2LKyqVivuWgB6Bt/Mhligo+8OX6b1KladlRewiBVtKWldeQ9ZLbxCjIdysRax5DVsmneUmN8lEyA7x3XtNxAe+k18ffdDgQzA8vM9bcyWXM+3ES9fqa/I8gsSuwMOX/LpnbFUnKI7lbO0zyI0UvhVtg7l64VGW8plKHs2oKFdcSQX/M0M5xe/eKKEA7mnyTl5vZjnNJHyhjf6bRgRpwHnaJFkCRgUmXIFvlED8vxoMwXdYmmri9ul3mTmM3BIf84KqOuoecHGyJkHTMpp7L8AtQjptSJhNJP5pDK+fOYb2mbrIntg94RN6fBoBiIYOlrI3BtjVcVkaSO33Sy8leC8kq9pD4Mjy/lvUJAu5fpe6d832hjA/tBk6qf0/GNbrgrcAHoqCjWYrqp3ZWPxhYcMOAMIXrOstUVFM+XuXiqD4q4vRpJ94O1MnifWdriYot/rEkwhcAtnIa3q0F6EEY3BbLUGpIRex8s17JvIvrOA9ZiIoWk5ko55q1lbDjrno8YDLc8VBEiaA1LF9ZInTqGHeBUE2HOymAQW183V+p1PtGAmVSACy4V7ZmQ+kfR0mGCEcKrphaJYJLxd2BChQxKZPh39n8AtHHqBOH1S6OwnFYcEfS07rn8RZc5Gkd43ygXEIrk2r9fJ8BlVNhH4ceIQPgTylR7X5+FwuAHjVU6rWlypOuM6dW9Xfm8wqrwsnhtH6q9cDWG8ygKKx/CpkszpUcMmu96FWzmjc3V/Ap41OXqWi/ZSxGezunWGm4IMupUsHVHImi+jBFwI5s/utU5ldg8Nrt0d+RTqyvEl739mkyLeg5m1OR1r6+WAIVCki7aR8Etgm8G/kZ5L6e2XMUh8XKqfeAY8QDA/x1MJy8gUZ3oyAkfJlQTM24T4m9WNjPCMu6HB1IVjv0RgYoBhqCI8Nou/4p+MjatQi6Kdnly+YcNFyHlu48gjhYV5w5tH+hHS8rMe+tsqC5IkxSdUMjkBWBPuCUxS5baPzsdoIfWNLgaPZGLtPOIPkCpGPb5nGxIso9+C5hSkFvbA+IY3Wx/HYuET15CjBskrUaw4Tj0De7V7vRGj+TSrFqmJ3E6CSKyHCSGMASyXcDKFWodx0QzMaoJKI+jmxY8uR9jcnZu42LeEBDKQ==&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="WebSocketServer_RSAcrypt_PublicServerMiddleKey" data-uid="WebSocketServer.RSAcrypt.PublicServerMiddleKey">PublicServerMiddleKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string PublicServerMiddleKey = &quot;&lt;RSAKeyValue&gt;&lt;Modulus&gt;rTPJu8AwzFF4GMQYTJUb+Ew5TDn6zhRmThnosLAdv7aE3qRQ2Or4C+SrLy+/iP1SA/b4L/T1YMUpZCf+YLQL5q2w9UrAPfjgI44TP+ufW9GutmXLEY6Rmx5vPByH7VebO7+h4v3GK0sCL3mbi0Mx8b+fb3nMBOscJTzgdsHPFJRH3kM7hw/NVWrUZmci9VBb++P14vjMmf/niPeSelEzyCGI6eTB2sswoP0GmEBMwIHqVAP3cBVY5DRgXrx9q6L3LNb4YyR8LYTPzoT69HZiN4lVNFpWOSmmnfdnA2A6yNsnC87Kwe4m76ii7u4oRMAupwYKsRBVWkz/vmcNJOW7eoVVC++VbjS7BaWZqeucVsU6uqbpgbjmwwqeQgnUpGQDlXaDDmdlm6Pojst8mDp2hqLz/lX/Wp461iPB7aVjzY5CEtnVwmd2b5gxp0yS+BLAjUNQ1TD/AEUQ/kzQIhQa5/j1b77yKe98y2KPt8/CBVFXR6L8LELrE/1SGAFdQG5dQadzTuZZprOllmk85hf2s0Ad1tPjKxjAXb1XXWrRM2GqGgErU4FLMcZYfPAaxNBdc3zx6favY3BRqmTHyHB0KV+1lBIhVdLKC5RPj9QxYuNaMD9meJh9dvAZ2zS9XlV1SC560ZpjnNZ9H0RC1Y1jrHhil8jxY/6HsINJG1BDXqE=&lt;/Modulus&gt;&lt;Exponent&gt;AQAB&lt;/Exponent&gt;&lt;/RSAKeyValue&gt;&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_PrivateKey_" data-uid="WebSocketServer.RSAcrypt.PrivateKey*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_PrivateKey" data-uid="WebSocketServer.RSAcrypt.PrivateKey">PrivateKey</h4>
+  <div class="markdown level1 summary"><p>Частный ключ для дешефровки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PrivateKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_PublicKey_" data-uid="WebSocketServer.RSAcrypt.PublicKey*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_PublicKey" data-uid="WebSocketServer.RSAcrypt.PublicKey">PublicKey</h4>
+  <div class="markdown level1 summary"><p>Публичный код для шифрования</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PublicKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="WebSocketServer_RSAcrypt__toByte_" data-uid="WebSocketServer.RSAcrypt._toByte*"></a>
+  <h4 id="WebSocketServer_RSAcrypt__toByte_System_String_" data-uid="WebSocketServer.RSAcrypt._toByte(System.String)">_toByte(String)</h4>
+  <div class="markdown level1 summary"><p>Метод переводит String в байты</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static byte[] _toByte(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt__toString_" data-uid="WebSocketServer.RSAcrypt._toString*"></a>
+  <h4 id="WebSocketServer_RSAcrypt__toString_System_Byte___" data-uid="WebSocketServer.RSAcrypt._toString(System.Byte[])">_toString(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Метод меняет кодировку</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static string _toString(byte[] decrContent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">decrContent</span></td>
+        <td><p>массив байтов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_Decrypt_" data-uid="WebSocketServer.RSAcrypt.Decrypt*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_Decrypt_ArraySegment_System_Byte__System_String_" data-uid="WebSocketServer.RSAcrypt.Decrypt(ArraySegment{System.Byte},System.String)">Decrypt(ArraySegment&lt;Byte&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ArraySegment&lt;byte&gt; Decrypt(ArraySegment&lt;byte&gt; message, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ArraySegment</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ArraySegment</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_Decrypt_" data-uid="WebSocketServer.RSAcrypt.Decrypt*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_Decrypt_System_String_" data-uid="WebSocketServer.RSAcrypt.Decrypt(System.String)">Decrypt(String)</h4>
+  <div class="markdown level1 summary"><p>Метод дешифрует используя Часный ключ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Decrypt(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>текс для шифрования</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_DecryptByte_" data-uid="WebSocketServer.RSAcrypt.DecryptByte*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_DecryptByte_System_Byte___" data-uid="WebSocketServer.RSAcrypt.DecryptByte(System.Byte[])">DecryptByte(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] DecryptByte(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_DecryptByteWithDefaultPrivatKey_" data-uid="WebSocketServer.RSAcrypt.DecryptByteWithDefaultPrivatKey*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_DecryptByteWithDefaultPrivatKey_System_Byte___" data-uid="WebSocketServer.RSAcrypt.DecryptByteWithDefaultPrivatKey(System.Byte[])">DecryptByteWithDefaultPrivatKey(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] DecryptByteWithDefaultPrivatKey(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_DecryptByteWithGetPrivatKey_" data-uid="WebSocketServer.RSAcrypt.DecryptByteWithGetPrivatKey*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_DecryptByteWithGetPrivatKey_System_Byte___System_String_" data-uid="WebSocketServer.RSAcrypt.DecryptByteWithGetPrivatKey(System.Byte[],System.String)">DecryptByteWithGetPrivatKey(Byte[], String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] DecryptByteWithGetPrivatKey(byte[] bytes, string privateKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">privateKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_Encrypt_" data-uid="WebSocketServer.RSAcrypt.Encrypt*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_Encrypt_ArraySegment_System_Byte__System_String_" data-uid="WebSocketServer.RSAcrypt.Encrypt(ArraySegment{System.Byte},System.String)">Encrypt(ArraySegment&lt;Byte&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ArraySegment&lt;byte&gt; Encrypt(ArraySegment&lt;byte&gt; message, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ArraySegment</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ArraySegment</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_Encrypt_" data-uid="WebSocketServer.RSAcrypt.Encrypt*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_Encrypt_System_String_" data-uid="WebSocketServer.RSAcrypt.Encrypt(System.String)">Encrypt(String)</h4>
+  <div class="markdown level1 summary"><p>Метод шифрудет данные с указаным публичным  ключем</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Encrypt(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>Текс для расшидрования</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_EncryptByte_" data-uid="WebSocketServer.RSAcrypt.EncryptByte*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_EncryptByte_System_Byte___" data-uid="WebSocketServer.RSAcrypt.EncryptByte(System.Byte[])">EncryptByte(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] EncryptByte(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_EncryptByteWithDefaultPublicKey_" data-uid="WebSocketServer.RSAcrypt.EncryptByteWithDefaultPublicKey*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_EncryptByteWithDefaultPublicKey_System_Byte___" data-uid="WebSocketServer.RSAcrypt.EncryptByteWithDefaultPublicKey(System.Byte[])">EncryptByteWithDefaultPublicKey(Byte[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] EncryptByteWithDefaultPublicKey(byte[] bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_EncryptByteWithGetPublicKey_" data-uid="WebSocketServer.RSAcrypt.EncryptByteWithGetPublicKey*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_EncryptByteWithGetPublicKey_System_Byte___System_String_" data-uid="WebSocketServer.RSAcrypt.EncryptByteWithGetPublicKey(System.Byte[],System.String)">EncryptByteWithGetPublicKey(Byte[], String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] EncryptByteWithGetPublicKey(byte[] bytes, string publicKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">publicKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_GenerateKeys_" data-uid="WebSocketServer.RSAcrypt.GenerateKeys*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_GenerateKeys" data-uid="WebSocketServer.RSAcrypt.GenerateKeys">GenerateKeys()</h4>
+  <div class="markdown level1 summary"><p>Метод генерирует два ключа публичный и часный и сохраняет их файлы</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateKeys()</code></pre>
+  </div>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_GenerateKeysWithString_" data-uid="WebSocketServer.RSAcrypt.GenerateKeysWithString*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_GenerateKeysWithString_System_String_" data-uid="WebSocketServer.RSAcrypt.GenerateKeysWithString(System.String)">GenerateKeysWithString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RSACryptoServiceProvider GenerateKeysWithString(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RSACryptoServiceProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="WebSocketServer_RSAcrypt_GetKeys_" data-uid="WebSocketServer.RSAcrypt.GetKeys*"></a>
+  <h4 id="WebSocketServer_RSAcrypt_GetKeys" data-uid="WebSocketServer.RSAcrypt.GetKeys">GetKeys()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetKeys()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

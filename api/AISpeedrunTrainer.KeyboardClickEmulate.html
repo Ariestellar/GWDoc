@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class KeyboardClickEmulate
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class KeyboardClickEmulate
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -83,7 +83,8 @@
   
   <h1 id="AISpeedrunTrainer_KeyboardClickEmulate" data-uid="AISpeedrunTrainer.KeyboardClickEmulate" class="text-break">Class KeyboardClickEmulate
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Эмуляция клавиатуры и мыши</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -120,13 +121,155 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class KeyboardClickEmulate</code></pre>
   </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_s_inputList" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.s_inputList">s_inputList</h4>
+  <div class="markdown level1 summary"><p>Список ивентов, которые необходимо сэмулировать</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static List&lt;KeyboardClickEmulate.INPUT&gt; s_inputList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="AISpeedrunTrainer.KeyboardClickEmulate.INPUT.html">KeyboardClickEmulate.INPUT</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
+  <a id="AISpeedrunTrainer_KeyboardClickEmulate_AddKeyDown_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddKeyDown*"></a>
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_AddKeyDown_KeyCode_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddKeyDown(KeyCode)">AddKeyDown(KeyCode)</h4>
+  <div class="markdown level1 summary"><p>Метод добавляющий ивент о нажатии клавиши клавиатуры в список</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddKeyDown(KeyCode key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">KeyCode</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>KeyCode клавиши</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_KeyboardClickEmulate_AddKeyUp_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddKeyUp*"></a>
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_AddKeyUp_KeyCode_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddKeyUp(KeyCode)">AddKeyUp(KeyCode)</h4>
+  <div class="markdown level1 summary"><p>Метод добавляющий ивент об отпускании клавиши клавиатуры в список</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddKeyUp(KeyCode key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">KeyCode</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>KeyCode клавиши</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_KeyboardClickEmulate_AddMouseDown_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddMouseDown*"></a>
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_AddMouseDown_AISpeedrunTrainer_KeyboardClickEmulate_MouseButton_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddMouseDown(AISpeedrunTrainer.KeyboardClickEmulate.MouseButton)">AddMouseDown(KeyboardClickEmulate.MouseButton)</h4>
+  <div class="markdown level1 summary"><p>Метод добавляющий ивент о нажатии клавиши мыши в список</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMouseDown(KeyboardClickEmulate.MouseButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.KeyboardClickEmulate.MouseButton.html">KeyboardClickEmulate.MouseButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_KeyboardClickEmulate_AddMouseUp_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddMouseUp*"></a>
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_AddMouseUp_AISpeedrunTrainer_KeyboardClickEmulate_MouseButton_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.AddMouseUp(AISpeedrunTrainer.KeyboardClickEmulate.MouseButton)">AddMouseUp(KeyboardClickEmulate.MouseButton)</h4>
+  <div class="markdown level1 summary"><p>Метод добавляющий ивент об отпускании клавиши мыши в список</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddMouseUp(KeyboardClickEmulate.MouseButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.KeyboardClickEmulate.MouseButton.html">KeyboardClickEmulate.MouseButton</a></td>
+        <td><span class="parametername">button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="AISpeedrunTrainer_KeyboardClickEmulate_EmulateClick_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.EmulateClick*"></a>
   <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_EmulateClick_KeyCode_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.EmulateClick(KeyCode)">EmulateClick(KeyCode)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Метод, эмулирующий одиночное нажатие на клавишу клавиатуры</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -145,6 +288,119 @@
       <tr>
         <td><span class="xref">KeyCode</span></td>
         <td><span class="parametername">key</span></td>
+        <td><p>KeyCode клавишы</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_KeyboardClickEmulate_GetCursorPos_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.GetCursorPos*"></a>
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_GetCursorPos_AISpeedrunTrainer_KeyboardClickEmulate_MousePoint__" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.GetCursorPos(AISpeedrunTrainer.KeyboardClickEmulate.MousePoint@)">GetCursorPos(out KeyboardClickEmulate.MousePoint)</h4>
+  <div class="markdown level1 summary"><p>Метод, получающий данные о текущей позиции мыши</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static extern bool GetCursorPos(out KeyboardClickEmulate.MousePoint lpMousePoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.KeyboardClickEmulate.MousePoint.html">KeyboardClickEmulate.MousePoint</a></td>
+        <td><span class="parametername">lpMousePoint</span></td>
+        <td><p>Текущая позиция мыши</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Получена ли позиция?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_KeyboardClickEmulate_SendAllEvents_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.SendAllEvents*"></a>
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_SendAllEvents" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.SendAllEvents">SendAllEvents()</h4>
+  <div class="markdown level1 summary"><p>Метод эмулирующий все ивенты, из списка, а затем очищающий его</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SendAllEvents()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_KeyboardClickEmulate_SendInput_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.SendInput*"></a>
+  <h4 id="AISpeedrunTrainer_KeyboardClickEmulate_SendInput_System_UInt32_AISpeedrunTrainer_KeyboardClickEmulate_INPUT___System_Int32_" data-uid="AISpeedrunTrainer.KeyboardClickEmulate.SendInput(System.UInt32,AISpeedrunTrainer.KeyboardClickEmulate.INPUT[],System.Int32)">SendInput(UInt32, KeyboardClickEmulate.INPUT[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Метод, посылающий в систему данные об ивенте от клавиатуры, мыши и других устройств</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static extern uint SendInput(uint cInputs, KeyboardClickEmulate.INPUT[] pInputs, int cbSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">cInputs</span></td>
+        <td><p>Количество инпутов</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.KeyboardClickEmulate.INPUT.html">KeyboardClickEmulate.INPUT</a>[]</td>
+        <td><span class="parametername">pInputs</span></td>
+        <td><p>Массив инпутов</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">cbSize</span></td>
+        <td><p>Размер одной еденицы массива инпутов</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
         <td></td>
       </tr>
     </tbody>

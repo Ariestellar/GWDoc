@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class GrabbableObjectStropovka
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GrabbableObjectStropovka
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -250,6 +250,31 @@
   </table>
   
   
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_gravityChanged" data-uid="CargoWithRopes.GrabbableObjectStropovka.gravityChanged">gravityChanged</h4>
+  <div class="markdown level1 summary"><p>Флаг, ?(isKinematic == false) перед ивентом граба</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool gravityChanged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="CargoWithRopes_GrabbableObjectStropovka_HandAnimators" data-uid="CargoWithRopes.GrabbableObjectStropovka.HandAnimators">HandAnimators</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -293,6 +318,56 @@
     <tbody>
       <tr>
         <td><span class="xref">Transform</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_initParent" data-uid="CargoWithRopes.GrabbableObjectStropovka.initParent">initParent</h4>
+  <div class="markdown level1 summary"><p>Начальный родитель объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Transform initParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_lastHand" data-uid="CargoWithRopes.GrabbableObjectStropovka.lastHand">lastHand</h4>
+  <div class="markdown level1 summary"><p>ID руки, которая держала объект в предыдущем ивенте граба</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int lastHand</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -373,6 +448,31 @@
   </table>
   
   
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_RaycastCasters" data-uid="CargoWithRopes.GrabbableObjectStropovka.RaycastCasters">RaycastCasters</h4>
+  <div class="markdown level1 summary"><p>Массив ссылок на рейкасты рук</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Transform[] RaycastCasters</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="CargoWithRopes_GrabbableObjectStropovka_ReturnToStartPosition" data-uid="CargoWithRopes.GrabbableObjectStropovka.ReturnToStartPosition">ReturnToStartPosition</h4>
   <div class="markdown level1 summary"><p>Необходимо ли возвращать объект в начальную позицию после отпускания</p>
 </div>
@@ -421,8 +521,112 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_startPosition" data-uid="CargoWithRopes.GrabbableObjectStropovka.startPosition">startPosition</h4>
+  <div class="markdown level1 summary"><p>Начальная позиция объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 startPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_startRotation" data-uid="CargoWithRopes.GrabbableObjectStropovka.startRotation">startRotation</h4>
+  <div class="markdown level1 summary"><p>Начальный поворот объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Quaternion startRotation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_startScale" data-uid="CargoWithRopes.GrabbableObjectStropovka.startScale">startScale</h4>
+  <div class="markdown level1 summary"><p>Начальная скаляция объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 startScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="CargoWithRopes_GrabbableObjectStropovka_EnableRaycast_" data-uid="CargoWithRopes.GrabbableObjectStropovka.EnableRaycast*"></a>
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_EnableRaycast_System_Boolean_" data-uid="CargoWithRopes.GrabbableObjectStropovka.EnableRaycast(System.Boolean)">EnableRaycast(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Включение/отключение raycast`а</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EnableRaycast(bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>true - включить, false - отключить</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="CargoWithRopes_GrabbableObjectStropovka_GetGrabbedHand_" data-uid="CargoWithRopes.GrabbableObjectStropovka.GetGrabbedHand*"></a>
@@ -508,6 +712,17 @@
   </table>
   
   
+  <a id="CargoWithRopes_GrabbableObjectStropovka_OverrideStartPosition_" data-uid="CargoWithRopes.GrabbableObjectStropovka.OverrideStartPosition*"></a>
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_OverrideStartPosition" data-uid="CargoWithRopes.GrabbableObjectStropovka.OverrideStartPosition">OverrideStartPosition()</h4>
+  <div class="markdown level1 summary"><p>Перезапись начальной позиции</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OverrideStartPosition()</code></pre>
+  </div>
+  
+  
   <a id="CargoWithRopes_GrabbableObjectStropovka_ReleaseObject_" data-uid="CargoWithRopes.GrabbableObjectStropovka.ReleaseObject*"></a>
   <h4 id="CargoWithRopes_GrabbableObjectStropovka_ReleaseObject" data-uid="CargoWithRopes.GrabbableObjectStropovka.ReleaseObject">ReleaseObject()</h4>
   <div class="markdown level1 summary"><p>Отпускание объекта</p>
@@ -568,6 +783,67 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CargoWithRopes_GrabbableObjectStropovka_SetPositionInHand_" data-uid="CargoWithRopes.GrabbableObjectStropovka.SetPositionInHand*"></a>
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_SetPositionInHand" data-uid="CargoWithRopes.GrabbableObjectStropovka.SetPositionInHand">SetPositionInHand()</h4>
+  <div class="markdown level1 summary"><p>Установка позиции объекта относительно руки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetPositionInHand()</code></pre>
+  </div>
+  
+  
+  <a id="CargoWithRopes_GrabbableObjectStropovka_Start_" data-uid="CargoWithRopes.GrabbableObjectStropovka.Start*"></a>
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_Start" data-uid="CargoWithRopes.GrabbableObjectStropovka.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start()</code></pre>
+  </div>
+  
+  
+  <a id="CargoWithRopes_GrabbableObjectStropovka_ToStartPosition_" data-uid="CargoWithRopes.GrabbableObjectStropovka.ToStartPosition*"></a>
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_ToStartPosition" data-uid="CargoWithRopes.GrabbableObjectStropovka.ToStartPosition">ToStartPosition()</h4>
+  <div class="markdown level1 summary"><p>Возвращение объекта в начальную позицию</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ToStartPosition()</code></pre>
+  </div>
+  
+  
+  <a id="CargoWithRopes_GrabbableObjectStropovka_TransferBetweenHands_" data-uid="CargoWithRopes.GrabbableObjectStropovka.TransferBetweenHands*"></a>
+  <h4 id="CargoWithRopes_GrabbableObjectStropovka_TransferBetweenHands_System_Int32_" data-uid="CargoWithRopes.GrabbableObjectStropovka.TransferBetweenHands(System.Int32)">TransferBetweenHands(Int32)</h4>
+  <div class="markdown level1 summary"><p>Передача объекта между руками</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransferBetweenHands(int hand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">hand</span></td>
+        <td><p>ID руки, в которую передавать объект</p>
+</td>
       </tr>
     </tbody>
   </table>

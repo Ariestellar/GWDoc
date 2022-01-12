@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class SmoothTeleportPoints
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SmoothTeleportPoints
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -110,6 +110,12 @@
       <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_maxDistanceForClick">RaycastableObject.maxDistanceForClick</a>
     </div>
     <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_BlockRaycast">RaycastableObject.BlockRaycast</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CauseBadEvent">RaycastableObject.CauseBadEvent</a>
+    </div>
+    <div>
       <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerDown_PointerEventData_">RaycastableObject.OnPointerDown(PointerEventData)</a>
     </div>
     <div>
@@ -124,6 +130,18 @@
     <div>
       <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckDistance_PointerEventData_">RaycastableObject.CheckDistance(PointerEventData)</a>
     </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckBlockRaycastClick">RaycastableObject.CheckBlockRaycastClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckBlockRaycastMove">RaycastableObject.CheckBlockRaycastMove()</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_SetBlockRaycast_System_Boolean_">RaycastableObject.SetBlockRaycast(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_SetCauseBadEvent_System_Boolean_">RaycastableObject.SetCauseBadEvent(Boolean)</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="RabotyNaVisote.html">RabotyNaVisote</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
@@ -133,6 +151,205 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints__carabiners" data-uid="RabotyNaVisote.SmoothTeleportPoints._carabiners">_carabiners</h4>
+  <div class="markdown level1 summary"><p>массив карабинов на сцене</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Carabiner[] _carabiners</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RabotyNaVisote.Carabiner.html">Carabiner</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints__endPos" data-uid="RabotyNaVisote.SmoothTeleportPoints._endPos">_endPos</h4>
+  <div class="markdown level1 summary"><p>переменная финального вектора персонажа</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 _endPos</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints__handsController" data-uid="RabotyNaVisote.SmoothTeleportPoints._handsController">_handsController</h4>
+  <div class="markdown level1 summary"><p>переменная контроллера рук</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HandsController _handsController</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RabotyNaVisote.HandsController.html">HandsController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints__speed" data-uid="RabotyNaVisote.SmoothTeleportPoints._speed">_speed</h4>
+  <div class="markdown level1 summary"><p>переменная скорости перемещения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float _speed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints__stairSounds" data-uid="RabotyNaVisote.SmoothTeleportPoints._stairSounds">_stairSounds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StairSounds _stairSounds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RabotyNaVisote.StairSounds.html">StairSounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints__teleported" data-uid="RabotyNaVisote.SmoothTeleportPoints._teleported">_teleported</h4>
+  <div class="markdown level1 summary"><p>переменная отвечающая за то нужно ли перемещать персонажа</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool _teleported</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints__teleportToFloor" data-uid="RabotyNaVisote.SmoothTeleportPoints._teleportToFloor">_teleportToFloor</h4>
+  <div class="markdown level1 summary"><p>переменная телепорта на скрипта телепорта на этаж при ошибке</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TeleportToFloor _teleportToFloor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RabotyNaVisote.TeleportToFloor.html">TeleportToFloor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints_CameraTransform" data-uid="RabotyNaVisote.SmoothTeleportPoints.CameraTransform">CameraTransform</h4>
+  <div class="markdown level1 summary"><p>переменная позиции камеры</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Transform CameraTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="RabotyNaVisote_SmoothTeleportPoints_canTeleport" data-uid="RabotyNaVisote.SmoothTeleportPoints.canTeleport">canTeleport</h4>
@@ -183,8 +400,118 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints_Player" data-uid="RabotyNaVisote.SmoothTeleportPoints.Player">Player</h4>
+  <div class="markdown level1 summary"><p>переменная позиции пользователя</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Transform Player</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="RabotyNaVisote_SmoothTeleportPoints_CalculateRotate_" data-uid="RabotyNaVisote.SmoothTeleportPoints.CalculateRotate*"></a>
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints_CalculateRotate_Vector3_System_Single_" data-uid="RabotyNaVisote.SmoothTeleportPoints.CalculateRotate(Vector3,System.Single)">CalculateRotate(Vector3, Single)</h4>
+  <div class="markdown level1 summary"><p>метод правильного вычесления финальной позиции перемещения</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 CalculateRotate(Vector3 pos, float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RabotyNaVisote_SmoothTeleportPoints_DistanceToCarabinAndHand_" data-uid="RabotyNaVisote.SmoothTeleportPoints.DistanceToCarabinAndHand*"></a>
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints_DistanceToCarabinAndHand" data-uid="RabotyNaVisote.SmoothTeleportPoints.DistanceToCarabinAndHand">DistanceToCarabinAndHand()</h4>
+  <div class="markdown level1 summary"><p>метод проверки дистанции до карабинов и рук у ступеньки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool DistanceToCarabinAndHand()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RabotyNaVisote_SmoothTeleportPoints_FixedUpdate_" data-uid="RabotyNaVisote.SmoothTeleportPoints.FixedUpdate*"></a>
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints_FixedUpdate" data-uid="RabotyNaVisote.SmoothTeleportPoints.FixedUpdate">FixedUpdate()</h4>
+  <div class="markdown level1 summary"><p>реализация самого перемещения пользователя</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void FixedUpdate()</code></pre>
+  </div>
   
   
   <a id="RabotyNaVisote_SmoothTeleportPoints_HardTeleport_" data-uid="RabotyNaVisote.SmoothTeleportPoints.HardTeleport*"></a>
@@ -195,6 +522,16 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void HardTeleport()</code></pre>
+  </div>
+  
+  
+  <a id="RabotyNaVisote_SmoothTeleportPoints_Start_" data-uid="RabotyNaVisote.SmoothTeleportPoints.Start*"></a>
+  <h4 id="RabotyNaVisote_SmoothTeleportPoints_Start" data-uid="RabotyNaVisote.SmoothTeleportPoints.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start()</code></pre>
   </div>
   
   

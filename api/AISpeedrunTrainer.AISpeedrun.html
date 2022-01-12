@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class AISpeedrun
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AISpeedrun
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -83,7 +83,8 @@
   
   <h1 id="AISpeedrunTrainer_AISpeedrun" data-uid="AISpeedrunTrainer.AISpeedrun" class="text-break">Class AISpeedrun
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Основной управляющий скрипт бота</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -100,8 +101,275 @@
   </h3>
   
   
-  <h4 id="AISpeedrunTrainer_AISpeedrun_EndOfListEvent" data-uid="AISpeedrunTrainer.AISpeedrun.EndOfListEvent">EndOfListEvent</h4>
+  <h4 id="AISpeedrunTrainer_AISpeedrun__currentScenarioAlreadySaved" data-uid="AISpeedrunTrainer.AISpeedrun._currentScenarioAlreadySaved">_currentScenarioAlreadySaved</h4>
   <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool _currentScenarioAlreadySaved</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun__endOfList" data-uid="AISpeedrunTrainer.AISpeedrun._endOfList">_endOfList</h4>
+  <div class="markdown level1 summary"><p>Флаг, показывающий, закончилось ли воспроизведение сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool _endOfList</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun__mode" data-uid="AISpeedrunTrainer.AISpeedrun._mode">_mode</h4>
+  <div class="markdown level1 summary"><p>Режим бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AISpeedrun.AISpeedrunMode _mode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrun.AISpeedrunMode.html">AISpeedrun.AISpeedrunMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun__nonFullstackPassTargetMode" data-uid="AISpeedrunTrainer.AISpeedrun._nonFullstackPassTargetMode">_nonFullstackPassTargetMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GlobalTrainerData.TrainerModes _nonFullstackPassTargetMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GlobalTrainerData.TrainerModes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun__nonFullstackPassTargetSceneName" data-uid="AISpeedrunTrainer.AISpeedrun._nonFullstackPassTargetSceneName">_nonFullstackPassTargetSceneName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string _nonFullstackPassTargetSceneName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun__nonFullstackPassTargetSceneNameIndex" data-uid="AISpeedrunTrainer.AISpeedrun._nonFullstackPassTargetSceneNameIndex">_nonFullstackPassTargetSceneNameIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int _nonFullstackPassTargetSceneNameIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun__scenarioData" data-uid="AISpeedrunTrainer.AISpeedrun._scenarioData">_scenarioData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AISpeedrunScenarioData _scenarioData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrunScenarioData.html">AISpeedrunScenarioData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun__scenarioDataLoaded" data-uid="AISpeedrunTrainer.AISpeedrun._scenarioDataLoaded">_scenarioDataLoaded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool _scenarioDataLoaded</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_DetailedLog" data-uid="AISpeedrunTrainer.AISpeedrun.DetailedLog">DetailedLog</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DetailedLog</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_DontOverrideMainMenu" data-uid="AISpeedrunTrainer.AISpeedrun.DontOverrideMainMenu">DontOverrideMainMenu</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DontOverrideMainMenu</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_EnableDetailedLog" data-uid="AISpeedrunTrainer.AISpeedrun.EnableDetailedLog">EnableDetailedLog</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableDetailedLog</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_EndOfListEvent" data-uid="AISpeedrunTrainer.AISpeedrun.EndOfListEvent">EndOfListEvent</h4>
+  <div class="markdown level1 summary"><p>Ивент, вызываемый по окончании воспроизведения сценария</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -124,8 +392,33 @@
   </table>
   
   
-  <h4 id="AISpeedrunTrainer_AISpeedrun_HeadTracker" data-uid="AISpeedrunTrainer.AISpeedrun.HeadTracker">HeadTracker</h4>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_FullstackPass" data-uid="AISpeedrunTrainer.AISpeedrun.FullstackPass">FullstackPass</h4>
   <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FullstackPass</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_HeadTracker" data-uid="AISpeedrunTrainer.AISpeedrun.HeadTracker">HeadTracker</h4>
+  <div class="markdown level1 summary"><p>Ссылка на кастомный трекер камеры</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -148,8 +441,58 @@
   </table>
   
   
-  <h4 id="AISpeedrunTrainer_AISpeedrun_LeftHandTracker" data-uid="AISpeedrunTrainer.AISpeedrun.LeftHandTracker">LeftHandTracker</h4>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_HeadTrackerName" data-uid="AISpeedrunTrainer.AISpeedrun.HeadTrackerName">HeadTrackerName</h4>
+  <div class="markdown level1 summary"><p>Название трекера камеры. Должно быть идентично переменной TrackerName компонента CustomVivePoseTracker на камере</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeadTrackerName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_HeightObject" data-uid="AISpeedrunTrainer.AISpeedrun.HeightObject">HeightObject</h4>
   <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform HeightObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_LeftHandTracker" data-uid="AISpeedrunTrainer.AISpeedrun.LeftHandTracker">LeftHandTracker</h4>
+  <div class="markdown level1 summary"><p>Ссылка на кастомный трекер левой руки</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -172,12 +515,13 @@
   </table>
   
   
-  <h4 id="AISpeedrunTrainer_AISpeedrun_mode" data-uid="AISpeedrunTrainer.AISpeedrun.mode">mode</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_LeftHandTrackerName" data-uid="AISpeedrunTrainer.AISpeedrun.LeftHandTrackerName">LeftHandTrackerName</h4>
+  <div class="markdown level1 summary"><p>Название трекера левой руки. Должно быть идентично переменной TrackerName компонента CustomVivePoseTracker на DeviceTracker левой руки</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AISpeedrun.Mode mode</code></pre>
+    <pre><code class="lang-csharp hljs">public string LeftHandTrackerName</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -189,7 +533,57 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrun.Mode.html">AISpeedrun.Mode</a></td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_LessonManagerHandler" data-uid="AISpeedrunTrainer.AISpeedrun.LessonManagerHandler">LessonManagerHandler</h4>
+  <div class="markdown level1 summary"><p>Ссылка на модуль, обрабатывающий данные LessonManager во время воспроизведения сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LMHandler LessonManagerHandler</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.LMHandler.html">LMHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_MAX_ITERATION_COUNT" data-uid="AISpeedrunTrainer.AISpeedrun.MAX_ITERATION_COUNT">MAX_ITERATION_COUNT</h4>
+  <div class="markdown level1 summary"><p>Максимальное количество итераций поиска контроллеров и LessonManager на сцене</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const int MAX_ITERATION_COUNT = 60</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -197,7 +591,8 @@
   
   
   <h4 id="AISpeedrunTrainer_AISpeedrun_RightHandTracker" data-uid="AISpeedrunTrainer.AISpeedrun.RightHandTracker">RightHandTracker</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Ссылка на кастомный трекер правой руки</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -218,13 +613,164 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_RightHandTrackerName" data-uid="AISpeedrunTrainer.AISpeedrun.RightHandTrackerName">RightHandTrackerName</h4>
+  <div class="markdown level1 summary"><p>Название трекера правой руки. Должно быть идентично переменной TrackerName компонента CustomVivePoseTracker на DeviceTracker правой руки</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RightHandTrackerName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_s_scenarioIndex" data-uid="AISpeedrunTrainer.AISpeedrun.s_scenarioIndex">s_scenarioIndex</h4>
+  <div class="markdown level1 summary"><p>Индекс загружаемого/сохраняемого сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static int s_scenarioIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_s_scenarioLoaded" data-uid="AISpeedrunTrainer.AISpeedrun.s_scenarioLoaded">s_scenarioLoaded</h4>
+  <div class="markdown level1 summary"><p>Флаг, показывающий, был ли загружен сценарий</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static bool s_scenarioLoaded</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_s_state" data-uid="AISpeedrunTrainer.AISpeedrun.s_state">s_state</h4>
+  <div class="markdown level1 summary"><p>Состояние бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static AISpeedrun.AISpeedrunState s_state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrun.AISpeedrunState.html">AISpeedrun.AISpeedrunState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_ScenarioCreator" data-uid="AISpeedrunTrainer.AISpeedrun.ScenarioCreator">ScenarioCreator</h4>
+  <div class="markdown level1 summary"><p>Ссылка на модуль записи сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AISpeedrunScenarioCreator ScenarioCreator</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrunScenarioCreator.html">AISpeedrunScenarioCreator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="AISpeedrunTrainer_AISpeedrun_Simulator" data-uid="AISpeedrunTrainer.AISpeedrun.Simulator">Simulator</h4>
+  <div class="markdown level1 summary"><p>Ссылка на модуль воспроизведения записанного сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AISpeedrunSimulator Simulator</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrunSimulator.html">AISpeedrunSimulator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
   
   <a id="AISpeedrunTrainer_AISpeedrun_Instance_" data-uid="AISpeedrunTrainer.AISpeedrun.Instance*"></a>
   <h4 id="AISpeedrunTrainer_AISpeedrun_Instance" data-uid="AISpeedrunTrainer.AISpeedrun.Instance">Instance</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Реализация примитивного синглтона</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -245,17 +791,552 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   
   
-  <a id="AISpeedrunTrainer_AISpeedrun_EndOfList_" data-uid="AISpeedrunTrainer.AISpeedrun.EndOfList*"></a>
-  <h4 id="AISpeedrunTrainer_AISpeedrun_EndOfList" data-uid="AISpeedrunTrainer.AISpeedrun.EndOfList">EndOfList()</h4>
+  <a id="AISpeedrunTrainer_AISpeedrun_Mode_" data-uid="AISpeedrunTrainer.AISpeedrun.Mode*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_Mode" data-uid="AISpeedrunTrainer.AISpeedrun.Mode">Mode</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AISpeedrun.AISpeedrunMode Mode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrun.AISpeedrunMode.html">AISpeedrun.AISpeedrunMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_Scenario_" data-uid="AISpeedrunTrainer.AISpeedrun.Scenario*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_Scenario" data-uid="AISpeedrunTrainer.AISpeedrun.Scenario">Scenario</h4>
+  <div class="markdown level1 summary"><p>Объект, хранящий данные о воспроизводимом/записываемом сценарии</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AISpeedrunScenario Scenario { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrunScenario.html">AISpeedrunScenario</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_Awake_" data-uid="AISpeedrunTrainer.AISpeedrun.Awake*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_Awake" data-uid="AISpeedrunTrainer.AISpeedrun.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Awake()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_EndOfList_" data-uid="AISpeedrunTrainer.AISpeedrun.EndOfList*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_EndOfList" data-uid="AISpeedrunTrainer.AISpeedrun.EndOfList">EndOfList()</h4>
+  <div class="markdown level1 summary"><p>Метод, вызывающий ивент при окончании воспроизведения сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void EndOfList()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_FindScenario_" data-uid="AISpeedrunTrainer.AISpeedrun.FindScenario*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_FindScenario_System_String_GlobalTrainerData_TrainerModes_" data-uid="AISpeedrunTrainer.AISpeedrun.FindScenario(System.String,GlobalTrainerData.TrainerModes)">FindScenario(String, GlobalTrainerData.TrainerModes)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FindScenario(string sceneName, GlobalTrainerData.TrainerModes mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GlobalTrainerData.TrainerModes</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_GetCurrentScenarioIndex_" data-uid="AISpeedrunTrainer.AISpeedrun.GetCurrentScenarioIndex*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_GetCurrentScenarioIndex" data-uid="AISpeedrunTrainer.AISpeedrun.GetCurrentScenarioIndex">GetCurrentScenarioIndex()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCurrentScenarioIndex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_GetScenarioData_" data-uid="AISpeedrunTrainer.AISpeedrun.GetScenarioData*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_GetScenarioData_AISpeedrunTrainer_AISpeedrunScenarioData__" data-uid="AISpeedrunTrainer.AISpeedrun.GetScenarioData(AISpeedrunTrainer.AISpeedrunScenarioData@)">GetScenarioData(out AISpeedrunScenarioData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetScenarioData(out AISpeedrunScenarioData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrunScenarioData.html">AISpeedrunScenarioData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_GetScenarioDataListOfSceneNames_" data-uid="AISpeedrunTrainer.AISpeedrun.GetScenarioDataListOfSceneNames*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_GetScenarioDataListOfSceneNames_System_String____" data-uid="AISpeedrunTrainer.AISpeedrun.GetScenarioDataListOfSceneNames(System.String[]@)">GetScenarioDataListOfSceneNames(out String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetScenarioDataListOfSceneNames(out string[] sceneNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">sceneNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_GetState_" data-uid="AISpeedrunTrainer.AISpeedrun.GetState*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_GetState" data-uid="AISpeedrunTrainer.AISpeedrun.GetState">GetState()</h4>
+  <div class="markdown level1 summary"><p>Метод возвращающий текущее состояние бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AISpeedrun.AISpeedrunState GetState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrun.AISpeedrunState.html">AISpeedrun.AISpeedrunState</a></td>
+        <td><p>Текущее состояние</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_Init_" data-uid="AISpeedrunTrainer.AISpeedrun.Init*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_Init_Scene_LoadSceneMode_" data-uid="AISpeedrunTrainer.AISpeedrun.Init(Scene,LoadSceneMode)">Init(Scene, LoadSceneMode)</h4>
+  <div class="markdown level1 summary"><p>Метод, начинающий инициализацию бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Init(Scene scene, LoadSceneMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Scene</span></td>
+        <td><span class="parametername">scene</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">LoadSceneMode</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_InitCoroutine_" data-uid="AISpeedrunTrainer.AISpeedrun.InitCoroutine*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_InitCoroutine_System_String_" data-uid="AISpeedrunTrainer.AISpeedrun.InitCoroutine(System.String)">InitCoroutine(String)</h4>
+  <div class="markdown level1 summary"><p>Корутина, ищущая на сцене кастомные трекеры и LessonManager</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator InitCoroutine(string sceneName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_InitializeAISpeedrunScenarioDataList_" data-uid="AISpeedrunTrainer.AISpeedrun.InitializeAISpeedrunScenarioDataList*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_InitializeAISpeedrunScenarioDataList" data-uid="AISpeedrunTrainer.AISpeedrun.InitializeAISpeedrunScenarioDataList">InitializeAISpeedrunScenarioDataList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool InitializeAISpeedrunScenarioDataList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_InitializeOverrideObjects_" data-uid="AISpeedrunTrainer.AISpeedrun.InitializeOverrideObjects*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_InitializeOverrideObjects" data-uid="AISpeedrunTrainer.AISpeedrun.InitializeOverrideObjects">InitializeOverrideObjects()</h4>
+  <div class="markdown level1 summary"><p>Метод инициализирующий перезапись положения в виртуальном пространстве кастомных трекеров</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InitializeOverrideObjects()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_LoadScenario_" data-uid="AISpeedrunTrainer.AISpeedrun.LoadScenario*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_LoadScenario_System_String_AISpeedrunTrainer_AISpeedrunScenario__" data-uid="AISpeedrunTrainer.AISpeedrun.LoadScenario(System.String,AISpeedrunTrainer.AISpeedrunScenario@)">LoadScenario(String, out AISpeedrunScenario)</h4>
+  <div class="markdown level1 summary"><p>Метод, загружающий сценарий</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool LoadScenario(string filePath, out AISpeedrunScenario target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrunScenario.html">AISpeedrunScenario</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Успешна ли загрузка</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_LoadTrainer_" data-uid="AISpeedrunTrainer.AISpeedrun.LoadTrainer*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_LoadTrainer_System_String_GlobalTrainerData_TrainerModes_" data-uid="AISpeedrunTrainer.AISpeedrun.LoadTrainer(System.String,GlobalTrainerData.TrainerModes)">LoadTrainer(String, GlobalTrainerData.TrainerModes)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LoadTrainer(string sceneName, GlobalTrainerData.TrainerModes mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GlobalTrainerData.TrainerModes</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_OnApplicationFocus_" data-uid="AISpeedrunTrainer.AISpeedrun.OnApplicationFocus*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_OnApplicationFocus_System_Boolean_" data-uid="AISpeedrunTrainer.AISpeedrun.OnApplicationFocus(System.Boolean)">OnApplicationFocus(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnApplicationFocus(bool focus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">focus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_OnApplicationQuit_" data-uid="AISpeedrunTrainer.AISpeedrun.OnApplicationQuit*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_OnApplicationQuit" data-uid="AISpeedrunTrainer.AISpeedrun.OnApplicationQuit">OnApplicationQuit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnApplicationQuit()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_PauseOverrideObjects_" data-uid="AISpeedrunTrainer.AISpeedrun.PauseOverrideObjects*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_PauseOverrideObjects" data-uid="AISpeedrunTrainer.AISpeedrun.PauseOverrideObjects">PauseOverrideObjects()</h4>
+  <div class="markdown level1 summary"><p>Метод, приостанавливающий перезапись положения в виртуальном пространстве кастомных трекеров</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PauseOverrideObjects()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_PostInit_" data-uid="AISpeedrunTrainer.AISpeedrun.PostInit*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_PostInit" data-uid="AISpeedrunTrainer.AISpeedrun.PostInit">PostInit()</h4>
+  <div class="markdown level1 summary"><p>Метод, выполняющий инициализацию бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PostInit()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_SaveDataAndReleaseTrackedObject_" data-uid="AISpeedrunTrainer.AISpeedrun.SaveDataAndReleaseTrackedObject*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_SaveDataAndReleaseTrackedObject_System_String_" data-uid="AISpeedrunTrainer.AISpeedrun.SaveDataAndReleaseTrackedObject(System.String)">SaveDataAndReleaseTrackedObject(String)</h4>
+  <div class="markdown level1 summary"><p>Метод, сохраняющий записанный сценарий в файл и обнуляющий объект, для хранения сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveDataAndReleaseTrackedObject(string saveReason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">saveReason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_Start_" data-uid="AISpeedrunTrainer.AISpeedrun.Start*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_Start" data-uid="AISpeedrunTrainer.AISpeedrun.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start()</code></pre>
   </div>
   
   
@@ -267,6 +1348,117 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
   </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_SwitchState_" data-uid="AISpeedrunTrainer.AISpeedrun.SwitchState*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_SwitchState_AISpeedrunTrainer_AISpeedrun_AISpeedrunState_" data-uid="AISpeedrunTrainer.AISpeedrun.SwitchState(AISpeedrunTrainer.AISpeedrun.AISpeedrunState)">SwitchState(AISpeedrun.AISpeedrunState)</h4>
+  <div class="markdown level1 summary"><p>Метод, меняющий состояние бота</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void SwitchState(AISpeedrun.AISpeedrunState value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AISpeedrunTrainer.AISpeedrun.AISpeedrunState.html">AISpeedrun.AISpeedrunState</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Состояние</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_ToNextScenario_" data-uid="AISpeedrunTrainer.AISpeedrun.ToNextScenario*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_ToNextScenario" data-uid="AISpeedrunTrainer.AISpeedrun.ToNextScenario">ToNextScenario()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToNextScenario()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_ToScenario_" data-uid="AISpeedrunTrainer.AISpeedrun.ToScenario*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_ToScenario_System_String_GlobalTrainerData_TrainerModes_" data-uid="AISpeedrunTrainer.AISpeedrun.ToScenario(System.String,GlobalTrainerData.TrainerModes)">ToScenario(String, GlobalTrainerData.TrainerModes)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ToScenario(string sceneName, GlobalTrainerData.TrainerModes mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GlobalTrainerData.TrainerModes</span></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_UnpauseOverrideObjects_" data-uid="AISpeedrunTrainer.AISpeedrun.UnpauseOverrideObjects*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_UnpauseOverrideObjects" data-uid="AISpeedrunTrainer.AISpeedrun.UnpauseOverrideObjects">UnpauseOverrideObjects()</h4>
+  <div class="markdown level1 summary"><p>Метод, запускающий перезапись положения в виртуальном пространстве кастомных трекеров</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UnpauseOverrideObjects()</code></pre>
+  </div>
+  
+  
+  <a id="AISpeedrunTrainer_AISpeedrun_WaitForNextScene_" data-uid="AISpeedrunTrainer.AISpeedrun.WaitForNextScene*"></a>
+  <h4 id="AISpeedrunTrainer_AISpeedrun_WaitForNextScene_Scene_" data-uid="AISpeedrunTrainer.AISpeedrun.WaitForNextScene(Scene)">WaitForNextScene(Scene)</h4>
+  <div class="markdown level1 summary"><p>Метод, приостанавливающий воспроизведение/сохранение сценария</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitForNextScene(Scene scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Scene</span></td>
+        <td><span class="parametername">scene</span></td>
+        <td><p>Сцена</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

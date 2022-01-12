@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TransformSaverScriptableObject
+   | GWDoc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TransformSaverScriptableObject
+   | GWDoc ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="VR_common_components.Tools.TransformSaverScriptableObject">
+  
+  
+  <h1 id="VR_common_components_Tools_TransformSaverScriptableObject" data-uid="VR_common_components.Tools.TransformSaverScriptableObject" class="text-break">Class TransformSaverScriptableObject
+  </h1>
+  <div class="markdown level0 summary"><p>ScriptableObject, хранящий значения Transform и всех его дочерних элементов вглубь иерахии</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TransformSaverScriptableObject</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VR_common_components.Tools.html">VR_common_components.Tools</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="VR_common_components_Tools_TransformSaverScriptableObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TransformSaverScriptableObject : ScriptableObject, ISerializationCallbackReceiver</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="VR_common_components_Tools_TransformSaverScriptableObject_RootElement" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.RootElement">RootElement</h4>
+  <div class="markdown level1 summary"><p>Объект, относительно которого происходит сохранение</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransformSaverScriptableObject.Node RootElement</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.Tools.TransformSaverScriptableObject.Node.html">TransformSaverScriptableObject.Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_Tools_TransformSaverScriptableObject_SerializedNodes" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.SerializedNodes">SerializedNodes</h4>
+  <div class="markdown level1 summary"><p>Список сериализованных узлов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TransformSaverScriptableObject.SerializableNode&gt; SerializedNodes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="VR_common_components.Tools.TransformSaverScriptableObject.SerializableNode.html">TransformSaverScriptableObject.SerializableNode</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="VR_common_components_Tools_TransformSaverScriptableObject_AddNodeToSerializedNodes_" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.AddNodeToSerializedNodes*"></a>
+  <h4 id="VR_common_components_Tools_TransformSaverScriptableObject_AddNodeToSerializedNodes_VR_common_components_Tools_TransformSaverScriptableObject_Node_" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.AddNodeToSerializedNodes(VR_common_components.Tools.TransformSaverScriptableObject.Node)">AddNodeToSerializedNodes(TransformSaverScriptableObject.Node)</h4>
+  <div class="markdown level1 summary"><p>Метод, добавляющий узел в список сериализованных узлов</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddNodeToSerializedNodes(TransformSaverScriptableObject.Node n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VR_common_components.Tools.TransformSaverScriptableObject.Node.html">TransformSaverScriptableObject.Node</a></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>Узел</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_Tools_TransformSaverScriptableObject_OnAfterDeserialize_" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.OnAfterDeserialize*"></a>
+  <h4 id="VR_common_components_Tools_TransformSaverScriptableObject_OnAfterDeserialize" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.OnAfterDeserialize">OnAfterDeserialize()</h4>
+  <div class="markdown level1 summary"><p>Метод, преобразующий списочную структуру сохранения в древовидную</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAfterDeserialize()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_Tools_TransformSaverScriptableObject_OnBeforeSerialize_" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.OnBeforeSerialize*"></a>
+  <h4 id="VR_common_components_Tools_TransformSaverScriptableObject_OnBeforeSerialize" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.OnBeforeSerialize">OnBeforeSerialize()</h4>
+  <div class="markdown level1 summary"><p>Метод, преобразующий древовидную структуру сохранения в список</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeforeSerialize()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_Tools_TransformSaverScriptableObject_ReadNodeFromSerializedNodes_" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.ReadNodeFromSerializedNodes*"></a>
+  <h4 id="VR_common_components_Tools_TransformSaverScriptableObject_ReadNodeFromSerializedNodes_System_Int32_VR_common_components_Tools_TransformSaverScriptableObject_Node__" data-uid="VR_common_components.Tools.TransformSaverScriptableObject.ReadNodeFromSerializedNodes(System.Int32,VR_common_components.Tools.TransformSaverScriptableObject.Node@)">ReadNodeFromSerializedNodes(Int32, out TransformSaverScriptableObject.Node)</h4>
+  <div class="markdown level1 summary"><p>Метод, добавляющий узел в древовидную структуру</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReadNodeFromSerializedNodes(int index, out TransformSaverScriptableObject.Node node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Индекс узла</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VR_common_components.Tools.TransformSaverScriptableObject.Node.html">TransformSaverScriptableObject.Node</a></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>Родительский узел</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">ISerializationCallbackReceiver</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

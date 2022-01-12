@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class TeleportPoint
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TeleportPoint
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -110,10 +110,28 @@
       <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_maxDistanceForClick">RaycastableObject.maxDistanceForClick</a>
     </div>
     <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_BlockRaycast">RaycastableObject.BlockRaycast</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CauseBadEvent">RaycastableObject.CauseBadEvent</a>
+    </div>
+    <div>
       <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerDown_PointerEventData_">RaycastableObject.OnPointerDown(PointerEventData)</a>
     </div>
     <div>
       <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckDistance_PointerEventData_">RaycastableObject.CheckDistance(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckBlockRaycastClick">RaycastableObject.CheckBlockRaycastClick()</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_CheckBlockRaycastMove">RaycastableObject.CheckBlockRaycastMove()</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_SetBlockRaycast_System_Boolean_">RaycastableObject.SetBlockRaycast(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_SetCauseBadEvent_System_Boolean_">RaycastableObject.SetCauseBadEvent(Boolean)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VR_common_components.html">VR_common_components</a></h6>
@@ -126,12 +144,108 @@
   </h3>
   
   
+  <h4 id="VR_common_components_TeleportPoint_CameraTransform" data-uid="VR_common_components.TeleportPoint.CameraTransform">CameraTransform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Transform CameraTransform</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_TeleportPoint_HeightOverTP" data-uid="VR_common_components.TeleportPoint.HeightOverTP">HeightOverTP</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float HeightOverTP</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="VR_common_components_TeleportPoint_OffsetRelativelyFloor" data-uid="VR_common_components.TeleportPoint.OffsetRelativelyFloor">OffsetRelativelyFloor</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float OffsetRelativelyFloor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_TeleportPoint_Player" data-uid="VR_common_components.TeleportPoint.Player">Player</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Transform Player</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_TeleportPoint_StartY" data-uid="VR_common_components.TeleportPoint.StartY">StartY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float StartY</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -174,6 +288,53 @@
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="VR_common_components_TeleportPoint_CalculateRotate_" data-uid="VR_common_components.TeleportPoint.CalculateRotate*"></a>
+  <h4 id="VR_common_components_TeleportPoint_CalculateRotate_Vector3_System_Single_" data-uid="VR_common_components.TeleportPoint.CalculateRotate(Vector3,System.Single)">CalculateRotate(Vector3, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 CalculateRotate(Vector3 pos, float angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">angle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VR_common_components_TeleportPoint_OnPointerEnter_" data-uid="VR_common_components.TeleportPoint.OnPointerEnter*"></a>
@@ -261,6 +422,16 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="VR_common_components.RaycastableObject.html#VR_common_components_RaycastableObject_OnPointerUp_PointerEventData_">RaycastableObject.OnPointerUp(PointerEventData)</a></div>
+  
+  
+  <a id="VR_common_components_TeleportPoint_Start_" data-uid="VR_common_components.TeleportPoint.Start*"></a>
+  <h4 id="VR_common_components_TeleportPoint_Start" data-uid="VR_common_components.TeleportPoint.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start()</code></pre>
+  </div>
   
   
   <a id="VR_common_components_TeleportPoint_Teleport_" data-uid="VR_common_components.TeleportPoint.Teleport*"></a>

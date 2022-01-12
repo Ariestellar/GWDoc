@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class HandDragObject
-   </title>
+   | GWDoc </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HandDragObject
-   ">
+   | GWDoc ">
     <meta name="generator" content="docfx 2.58.9.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:navrel" content="">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -119,6 +119,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="VR_common_components.HandObjectState.html">HandObjectState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VR_common_components_HandDragObject_deltaPos" data-uid="VR_common_components.HandDragObject.deltaPos">deltaPos</h4>
+  <div class="markdown level1 summary"><p>Начальная разница позиций сферы граба и позиции объекта</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 deltaPos</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -275,6 +300,31 @@
   </table>
   
   
+  <h4 id="VR_common_components_HandDragObject_GrabSphereLastPosition" data-uid="VR_common_components.HandDragObject.GrabSphereLastPosition">GrabSphereLastPosition</h4>
+  <div class="markdown level1 summary"><p>Последняя позиция сферы граба</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 GrabSphereLastPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="VR_common_components_HandDragObject_MaxOffsetPoint" data-uid="VR_common_components.HandDragObject.MaxOffsetPoint">MaxOffsetPoint</h4>
   <div class="markdown level1 summary"><p>Крайняя правая точка. в которой может быть объект</p>
 </div>
@@ -323,6 +373,31 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="VR_common_components_HandDragObject_StartPosition" data-uid="VR_common_components.HandDragObject.StartPosition">StartPosition</h4>
+  <div class="markdown level1 summary"><p>Начальная позиция объекта (в локальных координатах относительно родителя)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 StartPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -351,6 +426,143 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="VR_common_components_HandDragObject_CalculateDeltaPosition_" data-uid="VR_common_components.HandDragObject.CalculateDeltaPosition*"></a>
+  <h4 id="VR_common_components_HandDragObject_CalculateDeltaPosition" data-uid="VR_common_components.HandDragObject.CalculateDeltaPosition">CalculateDeltaPosition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 CalculateDeltaPosition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandDragObject_CalculateFreezePosition_" data-uid="VR_common_components.HandDragObject.CalculateFreezePosition*"></a>
+  <h4 id="VR_common_components_HandDragObject_CalculateFreezePosition_Vector3_" data-uid="VR_common_components.HandDragObject.CalculateFreezePosition(Vector3)">CalculateFreezePosition(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Преобразование позиции объекта, используя блокировку передвижения объекта по осям</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 CalculateFreezePosition(Vector3 pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Конечноя позиция объекта</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><p>Рассчитанная позиция</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandDragObject_CalculateOffsetPosition_" data-uid="VR_common_components.HandDragObject.CalculateOffsetPosition*"></a>
+  <h4 id="VR_common_components_HandDragObject_CalculateOffsetPosition_Vector3_" data-uid="VR_common_components.HandDragObject.CalculateOffsetPosition(Vector3)">CalculateOffsetPosition(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Преобразование позиции объекта, используя данные о крайних точках</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 CalculateOffsetPosition(Vector3 pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td><p>Позиция объекта</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><p>Рассчитанная позиция</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VR_common_components_HandDragObject_FixedUpdate_" data-uid="VR_common_components.HandDragObject.FixedUpdate*"></a>
+  <h4 id="VR_common_components_HandDragObject_FixedUpdate" data-uid="VR_common_components.HandDragObject.FixedUpdate">FixedUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void FixedUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="VR_common_components_HandDragObject_Start_" data-uid="VR_common_components.HandDragObject.Start*"></a>
+  <h4 id="VR_common_components_HandDragObject_Start" data-uid="VR_common_components.HandDragObject.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Start()</code></pre>
+  </div>
 </article>
           </div>
           
