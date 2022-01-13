@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#1056;&#1072;&#1073;&#1086;&#1090;&#1072; &#1089; &#1095;&#1091;&#1078;&#1080;&#1084; &#1082;&#1086;&#1076;&#1086;&#1084; | GWDoc </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#1056;&#1072;&#1073;&#1086;&#1090;&#1072; &#1089; &#1095;&#1091;&#1078;&#1080;&#1084; &#1082;&#1086;&#1076;&#1086;&#1084; | GWDoc ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    <link rel="shortcut icon" href=".././Images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././Images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="работа-с-чужим-кодом">Работа с чужим кодом</h1>
+
+<p><em><strong>Все кроме вас пишут ужасный код</strong></em></p>
+<p><img src="../Images/WorkingWithSomeoneCode1.png" alt="Alt text"></p>
+<p>Львиная доля работы программиста - это работа с кодом написанным другими программистами.
+При этом неважно то, насколько запутанным выглядит подобный код, или то, как плохо он написан.
+«Чужим кодом», кстати, может быть то, что было написано самим программистом, скажем, год назад.</p>
+<h2 id="как-правильно-читать-чужую-работу">Как правильно читать чужую работу</h2>
+<p>В определенный момент нам будет необходимо использовать чужой компонент для своей работы
+При чтении чужого компонента мы придерживаемся такого порядка</p>
+<ol>
+<li>Читаем зависимости (находится они могут в сериализованных полях из инспектора, Start, Awake или пробрасываться через параметры методов к примеру Init()) этого компонента и убеждаемся что они доступны в нашем проекте проинициализированы должным образом и в правильном порядке, установлены Drag and Drop со сцены и.т.д</li>
+<li>Читаем публичное API компонента (в этом нам помогает наш код стайл, когда все публичные компоненты идут выше приватных)</li>
+<li>Обращаем внимание на статику которая провоцирует неявную зависимость (где нибудь внутри приватного метода может вызываться статичный метод или назначаться поле которое мы не учтем из за чего будет непонятно почему компонент ведет себя иначе) Такие статичные зависимости принято выписывать в комментариях summary класса</li>
+</ol>
+<h2 id="если-api-непонятно">Если API непонятно</h2>
+<p>Обязательно пишем о недопонимании работы API в общем чате для обсуждения и конкретизации и исправления непонятных нюансов
+<img src="../Images/WorkingWithSomeoneCode2.png" alt="Alt text"></p>
+<h2 id="если-api-понятно-и-поведение-ожидаемо">Если API понятно и поведение ожидаемо</h2>
+<p>Пользуемся данным компонентом.</p>
+<h2 id="если-api-понятно-и-поведение-отличается-от-ожидаемого">Если API понятно и поведение отличается от ожидаемого</h2>
+<ul>
+<li>если для его корректировки необходимы небольшие изменения в его реализации, то описываем проблему
+и те элементы которые хотим изменить в общий чат для обсуждения при одобрении автора и других пользователей этого компонента можно внести
+изменения а после успешных тестов во всех случаях использования компонента внести их в ветку разработки
+<img src="../Images/WorkingWithSomeoneCode3.png" alt="Alt text"></li>
+<li>если для его корректировки необходимы радикальные изменения, сообщаем в чате о том что этот компонент не подходит, его не используем, <em>пишем новый</em>, с нужными нам свойствами</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Goldfinchworks/GWDocFXProject/blob/main/developmentPipline/WorkingWithSomeoneCode.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

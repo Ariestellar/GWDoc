@@ -91,6 +91,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Images/17Step1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Images/17Step1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/17Step2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Images/17Step2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Images/1Step.jpg",
       "output": {
         "resource": {
@@ -1059,6 +1081,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Images/WorkingWithSomeoneCode1.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/WorkingWithSomeoneCode1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/WorkingWithSomeoneCode2.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/WorkingWithSomeoneCode2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/WorkingWithSomeoneCode3.png",
+      "output": {
+        "resource": {
+          "relative_path": "Images/WorkingWithSomeoneCode3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Images/favicon.ico",
       "output": {
         "resource": {
@@ -1140,6 +1195,17 @@
       "output": {
         "resource": {
           "relative_path": "Images/index4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Images/introSimulatorDEvelopmentGuide1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "Images/introSimulatorDEvelopmentGuide1.jpg"
         }
       },
       "is_incremental": false,
@@ -8230,7 +8296,7 @@
       "output": {
         ".html": {
           "relative_path": "developmentPipline/EnvironmentSetup.html",
-          "hash": "HGG6bKi8WPEmD7Lnq+iMgWlGSr32dLwx8DYI92NOJLs="
+          "hash": "83u7U0RhDONw/VTPW5vgUIDq7APoVjdCd4DcP4oX6eA="
         }
       },
       "is_incremental": false,
@@ -8254,7 +8320,7 @@
       "output": {
         ".html": {
           "relative_path": "developmentPipline/PackageSettingsHelmet.html",
-          "hash": "bzKHB6JMW+YDWxZz3gxMDcieX2tapSaSdkqrg1prTFs="
+          "hash": "/X2F0mF/zAOW38jylsJ9Pmjv0Ugfh2+sH+aAqgJGnuk="
         }
       },
       "is_incremental": false,
@@ -8302,7 +8368,19 @@
       "output": {
         ".html": {
           "relative_path": "developmentPipline/WorkWithDocFX.html",
-          "hash": "giYqXPqTfVx8XYVqx2FUinqUpS44ybl5e7rDWm50Fx8="
+          "hash": "sanm+RTc3SQAKeQC/4gj52qTuKubHDiDO16EyRXfPQA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "developmentPipline/WorkingWithSomeoneCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "developmentPipline/WorkingWithSomeoneCode.html",
+          "hash": "ddFVKoeBEwRuWXYhfdhQ/jA+Dzv9CFC+kw/OfcPdcR8="
         }
       },
       "is_incremental": false,
@@ -8338,7 +8416,7 @@
       "output": {
         ".html": {
           "relative_path": "developmentPipline/toc.html",
-          "hash": "Uq74UToGy08z7WEAA2joq0PVlLEcu2TWmT7A1LA7nus="
+          "hash": "BjXNGrlqnEmYBjCnyD4ecqJPJYFFtBJnIcHGmXqpaCM="
         }
       },
       "is_incremental": false,
@@ -8350,7 +8428,31 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "45cpqg7E9dGrevk/BL5rufR3hg2s4oraTMr5TrPZnGI="
+          "hash": "0DyrqzO+94gtaL4dxc4p1JqYSda3IIa2eJlRHGJa/ww="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "internalAssets/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "internalAssets/intro.html",
+          "hash": "/BLCLWYmHEtovfao6TgJM3OjrIBICcjv1eU1H6K2jQc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "internalAssets/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "internalAssets/toc.html",
+          "hash": "+e32bbVGbk4Qoa+Aom+eIXjugGDmHwLoAS4X+SM4OyI="
         }
       },
       "is_incremental": false,
@@ -8422,7 +8524,7 @@
       "output": {
         ".html": {
           "relative_path": "simulatorDevelopmentGuide/PreparingHelmetForSale.html",
-          "hash": "mA9NiyXlPcMMePnXincOQvc7owe4++appwXnH63Nkbo="
+          "hash": "ovjMFPSwR0DIqpGzyU8r6ULWNHSwPAWrud6ztdCOrqQ="
         }
       },
       "is_incremental": false,
@@ -8434,7 +8536,7 @@
       "output": {
         ".html": {
           "relative_path": "simulatorDevelopmentGuide/ProcedureForCreatingANewSimulator.html",
-          "hash": "QBEN+S+Ru3a9Qb98z8UVXahgt/w51eLk5vQnP9Fcvas="
+          "hash": "NTji+gXW4px50RsNYul28dy1oXFD1cN/YZNWnJHnqJw="
         }
       },
       "is_incremental": false,
@@ -8494,7 +8596,7 @@
       "output": {
         ".html": {
           "relative_path": "simulatorDevelopmentGuide/intro.html",
-          "hash": "UbgJcHIpBdRyPxZe0X7A/nZCU9sbfITqbfNakJAPATo="
+          "hash": "fDIF/ZOQnRS6XRN1XZzjRGtfAKQgP+ywMAJkBaJQxgk="
         }
       },
       "is_incremental": false,
@@ -8518,7 +8620,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "CXZ5J94EaAoVGx+aCGO5r9IKNqoBhyJW/RlGxAKfRoY="
+          "hash": "VniSoga23v0yLv2WS1zbYxP7iUiZVBFIU/LMbOEGwmE="
         }
       },
       "is_incremental": false,
@@ -8537,8 +8639,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 26,
-          "skipped_file_count": 25
+          "total_file_count": 28,
+          "skipped_file_count": 27
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
