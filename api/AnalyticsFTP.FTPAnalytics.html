@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -83,20 +83,25 @@
   
   <h1 id="AnalyticsFTP_FTPAnalytics" data-uid="AnalyticsFTP.FTPAnalytics" class="text-break">Class FTPAnalytics
   </h1>
-  <div class="markdown level0 summary"><p>Класс необходимый для сбора аналитики (путем обработки событий) и записи ее в файлики а так же инициирования отправления на сервер<br>
-Находится на объекте AnalyticsManger в сценах тренажеров<br><br>
-для сбора статистики и последующей записи необходимо расставить события в соответсвующие названиям точках:<br>
--Пользователь начал прохождение режима симулятора<br>
--Пользователь начал прохождение шага<br>
--Пользователь допустил ошибку<br>
--Пользователь завершил прохождение шага<br>
--Пользователь завершил прохождение режима симулятора<br>
-Зависимости:<br>
-Для работы необходимы кастомные статические классы:<br>
+  <div class="markdown level0 summary"><p>Класс необходимый для сбора аналитики (путем обработки событий) и записи ее в файлики а так же инициирования отправления на сервер
+Находится на объекте AnalyticsManger в сценах тренажеров
+API:
+для включения/выключения модуля
+-_isOn (true/false)
+для инициации отправления на сервер текущего записанного файла используется метод
+-ExitTrainersForSendServer();
+для сбора статистики и последующей записи необходимо расставить события в соответсвующие названиям точках:
+-Пользователь начал прохождение режима симулятора
+-Пользователь начал прохождение шага
+-Пользователь допустил ошибку
+-Пользователь завершил прохождение шага
+-Пользователь завершил прохождение режима симулятора
+Зависимости:
+Для работы необходимы кастомные статические классы:
 -EventManager<br>
--FTPManager<br>
--GlobalTrainerData<br>
--GlobalUserData<br></p>
+-FTPManager
+-GlobalTrainerData
+-GlobalUserData</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -141,8 +146,8 @@
   
   
   <h4 id="AnalyticsFTP_FTPAnalytics__isOn" data-uid="AnalyticsFTP.FTPAnalytics._isOn">_isOn</h4>
-  <div class="markdown level1 summary"><p>Поле отвечает за включение/выключение модуля <br>
-Устанавливается в сцене на компоненте<br></p>
+  <div class="markdown level1 summary"><p>Поле отвечает за включение/выключение модуля
+Устанавливается в сцене на компоненте</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
