@@ -1,6 +1,6 @@
 (function () {
-  importScripts('lunr.min.js');
-
+  importScripts('lunr.stemmer.support.js');
+  importScripts('lunr.ru.js');
   var lunrIndex;
 
   var stopWords = null;
@@ -49,6 +49,7 @@
     if (stopWords !== null && !isEmpty(searchData)) {
       lunrIndex = lunr(function () {
         this.pipeline.remove(lunr.stopWordFilter);
+      Add this line...>this.use(lunr.ru);        
         this.ref('href');
         this.field('title', { boost: 50 });
         this.field('keywords', { boost: 20 });
